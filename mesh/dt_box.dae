@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.83.1 commit date:2020-06-25, commit time:09:47, hash:8289fc688b3e</authoring_tool>
     </contributor>
-    <created>2020-07-28T09:11:05</created>
-    <modified>2020-07-28T09:11:05</modified>
+    <created>2020-07-30T11:41:23</created>
+    <modified>2020-07-30T11:41:23</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -68,10 +68,10 @@
   </library_effects>
   <library_images>
     <image id="Wood034_4K_Color_jpg" name="Wood034_4K_Color_jpg">
-      <init_from>Wood034_4K_Color.jpg</init_from>
+      <init_from>/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/expe_ontologies/experimentations/examples/textures/woods/Wood034_4K-JPG/Wood034_4K_Color.jpg</init_from>
     </image>
     <image id="cubes_png" name="cubes_png">
-      <init_from>cubes.png</init_from>
+      <init_from>/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/expe_ontologies/experimentations/examples/textures/cubes/cubes.png</init_from>
     </image>
   </library_images>
   <library_materials>
@@ -134,9 +134,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="case11_002" name="case11.002" type="NODE">
-        <matrix sid="transform">1 0 0 4.577855 0 1 0 7.495508 0 0 1 1.126479 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_076-mesh" name="case11.002">
+      <node id="case11" name="case11" type="NODE">
+        <matrix sid="transform">1 0 0 4.440436 0 1 0 7.495508 0 0 1 1.361472 0 0 0 1</matrix>
+        <instance_geometry url="#Cube_076-mesh" name="case11">
           <bind_material>
             <technique_common>
               <instance_material symbol="wood_plank-material" target="#wood_plank-material">
