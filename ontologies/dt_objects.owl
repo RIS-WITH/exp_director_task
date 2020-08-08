@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="dt_objects#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="dt_objects"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- dt_objects#DtBox -->
+
+    <owl:Class rdf:about="dt_objects#DtBox">
+        <rdfs:subClassOf rdf:resource="common_ground#Box"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#ReceiverVisibleDtBox -->
+
+    <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#DirectorVisibleDtBox -->
+
+    <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#VisibleDtBox -->
+
+    <owl:Class rdf:about="dt_objects#VisibleDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
+        <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#ReceiverReachableDtBox -->
+
+    <owl:Class rdf:about="dt_objects#ReceiverReachableDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#DirectorReachableDtBox -->
+
+    <owl:Class rdf:about="dt_objects#DirectorReachableDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#ReachableDtBox -->
+
+    <owl:Class rdf:about="dt_objects#ReachableDtBox">
+        <rdfs:subClassOf rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <rdfs:subClassOf rdf:resource="dt_objects#ReceiverReachableDtBox"/>
+    </owl:Class>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- dt_objects#table_1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#table_1">
+        <rdf:type rdf:resource="common_ground#Table"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBCG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCG_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGCB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GGCB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GGCB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGCB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGCB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BGCG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BGCG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCG_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBCG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BBCG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBCG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBCG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BGCB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BGCB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCB_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGCB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGCB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBTG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BBTG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BBTG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBTG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBTG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BGTG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BGTG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTG_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BGTB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_BGTB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTB_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BGTB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BGTB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTG_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBTB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGTB -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGTB">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GGTB_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GGTB_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGTB_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGTB_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GGTB_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GGTB_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_A1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_A1">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_A2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_A2">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B1">
+        <rdf:type rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B2">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B3 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B3">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B4 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B4">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B5 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B5">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C1">
+        <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C2">
+        <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C3 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C3">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C4 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C4">
+        <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C5 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C5">
+        <rdf:type rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
+        <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+    <!-- Cubes duplicata -->
+
+
+    <!-- dt_objects#cube_GBCB_2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_2_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCB_2_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCB_2_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_2_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBCB_2_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_2_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG_2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_2_form"/>
+        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTG_2_boder"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG_2_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_GBTG_2_boder -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2_boder">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the dt_objects https://sarthou.github.io/dt_objects/ -->
