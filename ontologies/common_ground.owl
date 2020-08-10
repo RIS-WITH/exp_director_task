@@ -727,6 +727,10 @@
         <owl:inverseOf rdf:resource="common_ground#isUnder"/>
         <rdfs:range rdf:resource="common_ground#Support"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="common_ground#isIn"/>
+            <rdf:Description rdf:about="common_ground#isOnTopOf"/>
+        </owl:propertyChainAxiom>
         <rdfs:label xml:lang="fr">qui est sur</rdfs:label>
         <rdfs:label xml:lang="en">that is on</rdfs:label>
         <onto:label xml:lang="fr">sur</onto:label>

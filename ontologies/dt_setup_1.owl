@@ -130,7 +130,7 @@
     <!-- dt_objects#cube_GBTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_A4"/>
+      <common_ground:isInContainer rdf:resource="dt_objects#box_B4"/>
     </owl:NamedIndividual>
 
 
@@ -138,7 +138,7 @@
     <!-- dt_objects#cube_GBTG_2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_A5"/>
+      <common_ground:isInContainer rdf:resource="dt_objects#box_B5"/>
     </owl:NamedIndividual>
 
 
@@ -146,7 +146,7 @@
     <!-- dt_objects#cube_GBTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_A3"/>
+      <common_ground:isInContainer rdf:resource="dt_objects#box_B3"/>
     </owl:NamedIndividual>
 
 
