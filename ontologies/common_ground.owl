@@ -99,6 +99,19 @@
 
 
 
+    <!-- common_ground#ConsoleTable -->
+
+    <owl:Class rdf:about="common_ground#ConsoleTable">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <rdfs:label xml:lang="en">console table</rdfs:label>
+        <rdfs:label xml:lang="fr">console</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/ikea_console.dae</common_ground:hasMesh>
+    </owl:Class>
+
+
+
     <!-- common_ground#Container -->
 
     <owl:Class rdf:about="common_ground#Container">
@@ -296,6 +309,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
         <rdfs:label xml:lang="en">table</rdfs:label>
         <rdfs:label xml:lang="fr">table</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/ikea_table.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -539,16 +553,6 @@
         <owl:inverseOf rdf:resource="common_ground#isInRightHandOf"/>
         <rdfs:range rdf:resource="common_ground#Pickable"/>
         <rdfs:domain rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-
-
-
-    <!-- common_ground#hasMesh -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasMesh">
-        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
-        <rdfs:domain rdf:resource="common_ground#Object"/>
     </owl:ObjectProperty>
 
 
@@ -812,6 +816,50 @@
 
 
 
+    <!-- expe_ontologies#hasArId -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hasArId">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
+
+    <!-- expe_ontologies#hasMesh -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hasMesh">
+        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
+        <rdfs:domain rdf:resource="common_ground#Object"/>
+    </owl:DatatypeProperty>
+
+
+
+
+    <!-- common_ground#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#topDataProperty">
+    </owl:DatatypeProperty>
+
+
+
+    <!-- common_ground#DisplayableRelation -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#DisplayableRelation">
+        <rdfs:subPropertyOf rdf:resource="common_ground#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- common_ground#VisualRelation -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#VisualRelation">
+        <rdfs:subPropertyOf rdf:resource="common_ground#topDataProperty"/>
+    </owl:DatatypeProperty>
+
+
+
+
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -995,6 +1043,7 @@
              <rdf:Description rdf:about="common_ground#Cube"/>
              <rdf:Description rdf:about="common_ground#Drawer"/>
              <rdf:Description rdf:about="common_ground#Table"/>
+             <rdf:Description rdf:about="common_ground#ConsoleTable"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -1005,6 +1054,7 @@
              <rdf:Description rdf:about="common_ground#Shelf"/>
              <rdf:Description rdf:about="common_ground#TV"/>
              <rdf:Description rdf:about="common_ground#Table"/>
+             <rdf:Description rdf:about="common_ground#ConsoleTable"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
