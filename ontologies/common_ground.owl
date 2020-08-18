@@ -609,9 +609,9 @@
 
 
 
-    <!-- common_ground#hasBoder -->
+    <!-- common_ground#hasBorder -->
 
-    <owl:ObjectProperty rdf:about="common_ground#hasBoder">
+    <owl:ObjectProperty rdf:about="common_ground#hasBorder">
         <rdfs:subPropertyOf rdf:resource="common_ground#hasGraphicElement"/>
         <rdfs:range rdf:resource="common_ground#Border"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
