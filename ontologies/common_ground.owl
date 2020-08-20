@@ -829,7 +829,6 @@
 
     <owl:DatatypeProperty rdf:about="expe_ontologies#hasMesh">
         <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
     </owl:DatatypeProperty>
 
