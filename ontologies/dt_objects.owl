@@ -80,6 +80,29 @@
     </owl:Class>
 
 
+
+    <!-- dt_objects#DtRole -->
+
+    <owl:Class rdf:about="dt_objects#DtRole">
+    </owl:Class>
+
+
+
+    <!-- dt_objects#DtDirector -->
+
+    <owl:Class rdf:about="dt_objects#DtDirector">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtRole"/>
+    </owl:Class>
+
+
+
+    <!-- dt_objects#DtReceiver -->
+
+    <owl:Class rdf:about="dt_objects#DtReceiver">
+        <rdfs:subClassOf rdf:resource="dt_objects#DtRole"/>
+    </owl:Class>
+
+
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
