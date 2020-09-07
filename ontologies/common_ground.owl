@@ -317,6 +317,7 @@
     <!-- common_ground#GraphicElement -->
 
     <owl:Class rdf:about="common_ground#GraphicElement">
+        <rdfs:subClassOf rdf:resource="common_ground#Entity"/>
     </owl:Class>
 
 

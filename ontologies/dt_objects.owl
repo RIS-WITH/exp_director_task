@@ -19,6 +19,15 @@
 
 
 
+    <!-- dt_objects#DtCube -->
+
+    <owl:Class rdf:about="dt_objects#DtCube">
+        <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
+        <!--common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box.dae</common_ground:hasMesh-->
+    </owl:Class>
+
+
+
     <!-- dt_objects#DtBox -->
 
     <owl:Class rdf:about="dt_objects#DtBox">
@@ -146,10 +155,10 @@
     <!-- dt_objects#cube_GBCG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBCG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBCG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -176,10 +185,10 @@
     <!-- dt_objects#cube_GGCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GGCB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GGCB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GGCB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -206,10 +215,10 @@
     <!-- dt_objects#cube_GBCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -236,10 +245,10 @@
     <!-- dt_objects#cube_BGCG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGCG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGCG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BGCG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BGCG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -266,10 +275,10 @@
     <!-- dt_objects#cube_BBCG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BBCG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -296,10 +305,10 @@
     <!-- dt_objects#cube_BGCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGCB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGCB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BGCB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BGCB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -326,10 +335,10 @@
     <!-- dt_objects#cube_BBTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBTG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BBTG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BBTG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -356,10 +365,10 @@
     <!-- dt_objects#cube_BGTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGTG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGTG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BGTG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BGTG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -386,10 +395,10 @@
     <!-- dt_objects#cube_BGTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGTB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGTB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_BGTB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BGTB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -416,10 +425,10 @@
     <!-- dt_objects#cube_GBTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTG_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -446,10 +455,10 @@
     <!-- dt_objects#cube_GBTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBTB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -476,10 +485,10 @@
     <!-- dt_objects#cube_GGTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGTB">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GGTB_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GGTB_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GGTB_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -640,10 +649,10 @@
     <!-- dt_objects#cube_GBCB_2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_2">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_2_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBCB_2_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_2_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -670,10 +679,10 @@
     <!-- dt_objects#cube_GBTG_2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2">
-        <rdf:type rdf:resource="common_ground#Cube"/>
+        <rdf:type rdf:resource="common_ground#DtCube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_2_form"/>
-        <common_ground:hasBoder rdf:resource="common_ground#cube_GBTG_2_boder"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_2_boder"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
