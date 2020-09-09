@@ -23,7 +23,7 @@
 
     <owl:Class rdf:about="dt_objects#DtCube">
         <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
-        <!--common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box.dae</common_ground:hasMesh-->
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_cube.dae</common_ground:hasMesh>
     </owl:Class>
 
 
