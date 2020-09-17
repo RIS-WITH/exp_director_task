@@ -19,7 +19,7 @@
   <!-- <arg name="ar_tag_config" default="$(find shipping_experiment)/config/ar_tags/ar_config.yaml"/>
   <arg name="cad_models_search_path" default="$(find shipping_experiment)/models/cad_models"/> -->
 
-  <node name="ar_perception" pkg="exp_director_tesk" type="ar_perception_node.py" args="" output="screen" respawn="false">
+  <node name="ar_perception" pkg="exp_director_task" type="ar_perception_node.py" args="" output="screen" respawn="false">
     <rosparam subst_value="true">
 
       rgb_camera_info_topic: $(arg rgb_camera_info_topic)
@@ -27,7 +27,6 @@
 
       publish_viz: $(arg publish_viz)
       publish_tf: $(arg publish_tf)
-
 
     </rosparam>
   </node>
