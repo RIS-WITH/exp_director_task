@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 import rospy
 import cv2
+from tf.transformations import quaternion_from_euler
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, CameraInfo
 from pyuwds3.types.camera import Camera
@@ -16,7 +17,8 @@ from pyuwds3.utils.marker_publisher import MarkerPublisher
 from pyuwds3.utils.world_publisher import WorldPublisher
 from ar_track_alvar_msgs.msg import AlvarMarkers
 import yaml
-from ontologenius.ontopy.ontologenius.ontologiesmanipulator import OntologiesManipulator
+from geometry_msgs.msg import PoseStamped
+from ontologenius import OntologiesManipulator
 
 DEFAULT_SENSOR_QUEUE_SIZE = 1
 
@@ -26,7 +28,7 @@ class ArPerceptionNode(object):
         """
         """
 
-
+        self.tag_service = rospy.Service("getPose", list, self.send_ar_tag, buff_size=65536)
         self.tf_bridge = TfBridge()
         self.onto = OntologiesManipulator()
         onto.get("robot")
@@ -143,7 +145,7 @@ class ArPerceptionNode(object):
         node = SceneNode()
         pose = Vector6D().from_msg(marker.pose.pose)
         nodeid = onto.individuals.getFrom("hasArId","int",marker.id)
-        self.id_link[marker.id]=nodeid
+        self.id_link[nodeid]=marker.id
         path=onto.individuals.getOn("nodeid",hasMesh)[0].split("#")[-1]
         node.label ="label"
         shape = Mesh(path,
@@ -156,7 +158,28 @@ class ArPerceptionNode(object):
         node.shapes.append(shape)
         self.ar_nodes[marker.id] = node
 
+    def send_ar_tag(self,list):
+        ret_list = []
+        for i in list:
+            pose_s =PoseStamped()
+            k=self.id_link[i]
+            node = self.ar_nodes[k]
+            if node.pose is None:
+                pose_s.header.frame_id=''
+            else:
+                pose_s.pose.position.x =node.pose.pos.x
+                pose_s.pose.position.y =node.pose.pos.y
+                pose_s.pose.position.z =node.pose.pos.z
+                quat = quaternion_from_euler(node.pose.rot.x,node.pose.rot.y,node.pose.rot.z)
+                pose_s.pose.orientation.x =quat[0]
+                pose_s.pose.orientation.y =quat[1]
+                pose_s.pose.orientation.z =quat[2]
+                pose_s.pose.orientation.w =quat[3]
+                pose_s.header.stamp = node.time
+                pose_.header.frame_id ='map'
+            ret_lis_.append(pose_s)
 
+        return ret_list
 
     def run(self):
         while not rospy.is_shutdown():
