@@ -147,7 +147,7 @@
 
     <owl:NamedIndividual rdf:about="dt_objects#table_1">
         <rdf:type rdf:resource="common_ground#ConsoleTable"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">2</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">54</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -219,7 +219,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">230</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -584,7 +584,7 @@
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">101</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -595,7 +595,7 @@
         <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
         <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -639,7 +639,7 @@
         <rdf:type rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
         <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">100</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -683,7 +683,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_2_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_2_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
