@@ -32,7 +32,7 @@ class ArPerceptionNode(object):
         """
 
         self.tag_service = rospy.Service("~getPose",GetPose, self.send_ar_tag, buff_size=65536)
-
+        print "test"
 
         self.tf_bridge = TfBridge()
 
@@ -83,6 +83,7 @@ class ArPerceptionNode(object):
     def observation_callback(self, ar_marker_msgs):
         """
         """
+
         # if self.robot_camera is not None or True:
         #
         #     header.stamp = rospy.Time()
@@ -113,6 +114,7 @@ class ArPerceptionNode(object):
 
 
 
+
             self.world_publisher.publish(all_nodes, [], header)
 
             # if self.publish_viz is True:
@@ -120,6 +122,8 @@ class ArPerceptionNode(object):
 
             if self.publish_tf is True:
                 self.tf_bridge.publish_tf_frames(all_nodes, [], header)
+            # print self.ar_nodes
+
 
     def new_node(self,marker):
         #Get real id of marker id from onto
@@ -132,11 +136,11 @@ class ArPerceptionNode(object):
         nodeid = self.onto.individuals.getFrom("hasArId","real#230")
         # nodeid = "cube_GBTG_2"
         # print self.onto.individuals.getType("Cube")
-        if nodeid = []:
+        if nodeid == []:
             self.blacklist_id.append(marker.id)
         else:
             self.id_link[nodeid[0]]=marker.id
-            path=self.onto.individuals.getOn(nodeid[0],hasMesh)[0].split("#")[-1]
+            path=self.onto.individuals.getOn(nodeid[0],"hasMesh")[0].split("#")[-1]
 
             node.label ="label"
             shape = Mesh(path,
@@ -153,7 +157,7 @@ class ArPerceptionNode(object):
         ret_list = []
         for i in msg.ids:
             pose_s =PoseStamped()
-            if not i in self.id_link.keys:
+            if not i in self.id_link.keys():
                 pose_s.header.frame_id=''
             else:
                 if i in self.id_link:
@@ -172,7 +176,6 @@ class ArPerceptionNode(object):
                     pose_s.pose.orientation.w =quat[3]
                     print(node)
                     pose_s.header.stamp = node.pose.pos.last_update
-                    pose_s.header.frame_id ='map'
             ret_list.append(pose_s)
             ret = GetPoseResponse()
             ret.poses=ret_list
