@@ -32,7 +32,6 @@ class ArPerceptionNode(object):
         """
 
         self.tag_service = rospy.Service("~getPose",GetPose, self.send_ar_tag, buff_size=65536)
-        print "test"
 
         self.tf_bridge = TfBridge()
 
@@ -132,8 +131,8 @@ class ArPerceptionNode(object):
 
         node = SceneNode()
         pose = Vector6D().from_msg(marker.pose.pose)
-        # nodeid = self.onto.individuals.getFrom("hasArId","real#"+str(marker.id))
-        nodeid = self.onto.individuals.getFrom("hasArId","real#230")
+        nodeid = self.onto.individuals.getFrom("hasArId","real#"+str(marker.id))
+        # nodeid = self.onto.individuals.getFrom("hasArId","real#230")
         # nodeid = "cube_GBTG_2"
         # print self.onto.individuals.getType("Cube")
         if nodeid == []:
