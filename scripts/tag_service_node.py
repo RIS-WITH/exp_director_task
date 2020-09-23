@@ -52,7 +52,7 @@ class TagServiceNode(object):
             if id not in self.scene_nodes.keys():
                 pose_s.header.frame_id=''
             else:
-                node = self.scene_node[id]
+                node = self.scene_nodes[id]
                 if node.pose is None:
                     pose_s.header.frame_id=''
                 else:
