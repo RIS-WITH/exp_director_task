@@ -56,7 +56,7 @@ class TagServiceNode(object):
                 if node.pose is None:
                     pose_s.header.frame_id=''
                 else:
-                    pose_s.pose.position =node.pose.pos.position.to_array()
+                    pose_s.pose.position =node.pose.pos.position().to_array()
                     pose_s.pose.orientation =node.pose.quaternion()
                     print(node)
                     pose_s.header.stamp = node.pose.pos.last_update
