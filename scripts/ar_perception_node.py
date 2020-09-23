@@ -31,7 +31,7 @@ class ArPerceptionNode(object):
         """
         """
 
-        self.tag_service = rospy.Service("~getPose",GetPose, self.send_ar_tag, buff_size=65536)
+        # self.tag_service = rospy.Service("~getPose",GetPose, self.send_ar_tag, buff_size=65536)
 
         self.tf_bridge = TfBridge()
 
@@ -41,7 +41,7 @@ class ArPerceptionNode(object):
 
 
         self.onto = OntologyManipulator("")
-        self.global_frame_id = rospy.get_param("~global_frame_id", "odom")
+        self.global_frame_id = rospy.get_param("~global_frame_id", "map")
 
         # self.bridge = CvBridge()
         # self.robot_camera = None
@@ -61,7 +61,6 @@ class ArPerceptionNode(object):
         # self.marker_publisher = MarkerPublisher("ar_markers")
 
         self.ar_pose_marker_sub = rospy.Subscriber("ar_pose_marker", AlvarMarkers, self.observation_callback)
-
         self.ar_nodes = {}
         self.blacklist_id = []
         self.id_link = {} # Dictionarry for tag ID
@@ -69,7 +68,7 @@ class ArPerceptionNode(object):
 
 
 
-    # def camera_info_callback(self, msg):
+    # def camera_info_callback(self, msg):get_worget_worldget_worldld
     #     """ """
     #     if self.camera_info is None:
     #         rospy.loginfo("[ar_perception] Camera info received !")
@@ -83,6 +82,7 @@ class ArPerceptionNode(object):
         """
         """
 
+
         # if self.robot_camera is not None or True:
         #
         #     header.stamp = rospy.Time()
@@ -93,29 +93,30 @@ class ArPerceptionNode(object):
         #     if success is not True:
         #         rospy.logwarn("[ar_perception] The camera sensor is not localized in world space (frame '{}'), please check if the sensor frame is published in /tf".format(self.global_frame_id))
         #     else:
-        header = ar_marker_msgs.header
-        header.frame_id = self.global_frame_id
+
         all_nodes = []
-
+        header = ar_marker_msgs.header
         for marker in ar_marker_msgs.markers:
-            if not(marker.id in self.blacklist_id):
-                if not (marker.id in self.ar_nodes):
-                    self.new_node(marker)
 
+            if not(marker.id in self.blacklist_id):
+                if not (marker.id in self.id_link):
+                    self.new_node(marker)
+                id = self.id_link[marker.id]
                 pose = Vector6D().from_msg(marker.pose.pose)
-                if self.ar_nodes[marker.id].pose is None:
-                    self.ar_nodes[marker.id].pose = Vector6DStable(x=pose.pos.x, y=pose.pos.y, z=pose.pos.z,
+                header = marker.header
+                if self.ar_nodes[id].pose is None:
+                    self.ar_nodes[id].pose = Vector6DStable(x=pose.pos.x, y=pose.pos.y, z=pose.pos.z,
                                                                    rx=pose.rot.x, ry=pose.rot.y, rz=pose.rot.z, time=header.stamp)
                 else:
-                    self.ar_nodes[marker.id].pose.pos.update(x=pose.pos.x, y=pose.pos.y, z=pose.pos.z, time=header.stamp)
-                    self.ar_nodes[marker.id].pose.rot.update(x=pose.rot.x, y=pose.rot.y, z=pose.rot.z, time=header.stamp)
-                all_nodes.append(self.ar_nodes[marker.id])
+                    self.ar_nodes[id].pose.pos.update(x=pose.pos.x, y=pose.pos.y, z=pose.pos.z, time=header.stamp)
+                    self.ar_nodes[id].pose.rot.update(x=pose.rot.x, y=pose.rot.y, z=pose.rot.z, time=header.stamp)
+
+                all_nodes.append(self.ar_nodes[id])
+                # print self.ar_nodes[id].id
 
 
 
-
-            self.world_publisher.publish(all_nodes, [], header)
-
+            self.world_publisher.publish(all_nodes, [],header)
             # if self.publish_viz is True:
             #     self.marker_publisher.publish(all_nodes, header)
 
@@ -138,7 +139,7 @@ class ArPerceptionNode(object):
         if nodeid == []:
             self.blacklist_id.append(marker.id)
         else:
-            self.id_link[nodeid[0]]=marker.id
+            self.id_link[marker.id]=nodeid[0]
             path=self.onto.individuals.getOn(nodeid[0],"hasMesh")[0].split("#")[-1]
 
             node.label ="label"
@@ -150,35 +151,34 @@ class ArPerceptionNode(object):
             shape.color[2] = 0
             shape.color[3] = 1.0
             node.shapes.append(shape)
-            self.ar_nodes[marker.id] = node
+            node.id = nodeid[0]
+            self.ar_nodes[nodeid[0]] = node
 
-    def send_ar_tag(self,msg):
-        ret_list = []
-        for i in msg.ids:
-            pose_s =PoseStamped()
-            if not i in self.id_link.keys():
-                pose_s.header.frame_id=''
-            else:
-                if i in self.id_link:
-                    k=self.id_link[i]
-                    node = self.ar_nodes[k]
-                if node.pose is None:
-                    pose_s.header.frame_id=''
-                else:
-                    pose_s.pose.position.x =node.pose.pos.x
-                    pose_s.pose.position.y =node.pose.pos.y
-                    pose_s.pose.position.z =node.pose.pos.z
-                    quat = quaternion_from_euler(node.pose.rot.x,node.pose.rot.y,node.pose.rot.z)
-                    pose_s.pose.orientation.x =quat[0]
-                    pose_s.pose.orientation.y =quat[1]
-                    pose_s.pose.orientation.z =quat[2]
-                    pose_s.pose.orientation.w =quat[3]
-                    print(node)
-                    pose_s.header.stamp = node.pose.pos.last_update
-            ret_list.append(pose_s)
-            ret = GetPoseResponse()
-            ret.poses=ret_list
-        return ret
+    # def send_ar_tag(self,msg):
+    #     ret_list = []
+    #     for i in msg.ids:
+    #         pose_s =PoseStamped()
+    #         if not i in self.ar_nodes.keys():
+    #             pose_s.header.frame_id=''
+    #         else:
+    #             node = self.ar_nodes[i]
+    #             if node.pose is None:
+    #                 pose_s.header.frame_id=''
+    #             else:
+    #                 pose_s.pose.position.x =node.pose.pos.x
+    #                 pose_s.pose.position.y =node.pose.pos.y
+    #                 pose_s.pose.position.z =node.pose.pos.z
+    #                 quat = quaternion_from_euler(node.pose.rot.x,node.pose.rot.y,node.pose.rot.z)
+    #                 pose_s.pose.orientation.x =quat[0]
+    #                 pose_s.pose.orientation.y =quat[1]
+    #                 pose_s.pose.orientation.z =quat[2]
+    #                 pose_s.pose.orientation.w =quat[3]
+    #                 print(node)
+    #                 pose_s.header.stamp = node.pose.pos.last_update
+    #         ret_list.append(pose_s)
+    #         ret = GetPoseResponse()
+    #         ret.poses=ret_list
+    #     return ret
 
     def run(self):
         while not rospy.is_shutdown():
