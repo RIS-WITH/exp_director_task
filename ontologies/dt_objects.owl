@@ -584,7 +584,7 @@
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">101</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -595,7 +595,7 @@
         <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
         <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">104</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
