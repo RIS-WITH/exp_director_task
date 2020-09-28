@@ -10,8 +10,8 @@
 
 
 	<arg name="bundle_files" default="$(find exp_director_task)/tags/MarkerData_100.xml
-					  $(find exp_director_task)/tags/MarkerData_101.xml
 					  $(find exp_director_task)/tags/MarkerData_102.xml
+					  $(find exp_director_task)/tags/MarkerData_104.xml
 				          $(find exp_director_task)/tags/MarkerData_230.xml
 					  $(find exp_director_task)/tags/MarkerData_206.xml
 					  $(find exp_director_task)/tags/MarkerData_54.xml"/>
