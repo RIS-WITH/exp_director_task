@@ -219,7 +219,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">230</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -279,7 +279,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">242</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -309,7 +309,7 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">254</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -339,7 +339,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBTG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBTG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">236</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -683,7 +683,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_2_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_2_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
