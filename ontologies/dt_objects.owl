@@ -279,7 +279,7 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">242</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
