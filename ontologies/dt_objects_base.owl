@@ -692,6 +692,22 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
     </owl:NamedIndividual>
 
+
+
+    <!-- dt_objects#throw_box_left -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#throw_box_left">
+        <rdf:type rdf:resource="common_ground#StorageBox"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#throw_box_right -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#throw_box_right">
+        <rdf:type rdf:resource="common_ground#StorageBox"/>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
