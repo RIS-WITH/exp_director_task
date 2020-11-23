@@ -32,6 +32,7 @@
 
     <owl:Class rdf:about="dt_objects#DtBox">
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box.dae</common_ground:hasMesh>
     </owl:Class>
 

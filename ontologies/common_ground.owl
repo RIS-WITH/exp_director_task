@@ -428,14 +428,6 @@
 
 
 
-    <!-- common_ground#SpeakableRelation -->
-
-    <owl:ObjectProperty rdf:about="common_ground#SpeakableRelation">
-        <rdfs:subPropertyOf rdf:resource="common_ground#topObjectProperty"/>
-    </owl:ObjectProperty>
-
-
-
     <!-- common_ground#VisualRelation -->
 
     <owl:ObjectProperty rdf:about="common_ground#VisualRelation">
@@ -448,7 +440,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#atLeftOf">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <owl:inverseOf rdf:resource="common_ground#atRightOf"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
@@ -462,7 +453,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#atRightOf">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
         <rdfs:label xml:lang="en">to the right of</rdfs:label>
@@ -475,7 +465,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#behind">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <owl:inverseOf rdf:resource="common_ground#inFrontOf"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
@@ -529,7 +518,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#hasIn">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <owl:inverseOf rdf:resource="common_ground#isIn"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
     </owl:ObjectProperty>
@@ -643,7 +631,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#inFrontOf">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
         <rdfs:label xml:lang="en">in front of</rdfs:label>
@@ -664,7 +651,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isHeldBy">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <owl:inverseOf rdf:resource="common_ground#isHolding"/>
         <rdfs:range rdf:resource="common_ground#Agent"/>
         <rdfs:domain rdf:resource="common_ground#Pickable"/>
@@ -676,7 +662,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isHolding">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <rdfs:range rdf:resource="common_ground#Pickable"/>
         <rdfs:domain rdf:resource="common_ground#Agent"/>
     </owl:ObjectProperty>
@@ -687,7 +672,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isIn">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
         <rdfs:label xml:lang="en">in</rdfs:label>
         <rdfs:label xml:lang="fr">dans</rdfs:label>
@@ -735,18 +719,36 @@
 
 
 
-    <!-- common_ground#isOnTopOf -->
+    <!-- common_ground#isAbove -->
 
-    <owl:ObjectProperty rdf:about="common_ground#isOnTopOf">
+    <owl:ObjectProperty rdf:about="common_ground#isAbove">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
-        <owl:inverseOf rdf:resource="common_ground#isUnder"/>
+        <owl:inverseOf rdf:resource="common_ground#isBellow"/>
         <rdfs:range rdf:resource="common_ground#Support"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="common_ground#isIn"/>
+            <rdf:Description rdf:about="common_ground#isAbove"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="common_ground#isOnTopOf"/>
             <rdf:Description rdf:about="common_ground#isOnTopOf"/>
         </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="fr">qui est au dessus</rdfs:label>
+        <rdfs:label xml:lang="en">that is above</rdfs:label>
+        <onto:label xml:lang="fr">au dessus</onto:label>
+        <onto:label xml:lang="en">above</onto:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- common_ground#isOnTopOf -->
+
+    <owl:ObjectProperty rdf:about="common_ground#isOnTopOf">
+        <rdfs:subPropertyOf rdf:resource="common_ground#isAbove"/>
+        <owl:inverseOf rdf:resource="common_ground#isUnder"/>
+        <rdfs:range rdf:resource="common_ground#Support"/>
+        <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:label xml:lang="fr">qui est sur</rdfs:label>
         <rdfs:label xml:lang="en">that is on</rdfs:label>
         <onto:label xml:lang="fr">sur</onto:label>
@@ -786,11 +788,20 @@
 
 
 
+    <!-- common_ground#isBellow -->
+
+    <owl:ObjectProperty rdf:about="common_ground#isBellow">
+        <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdfs:range rdf:resource="common_ground#Object"/>
+        <rdfs:domain rdf:resource="common_ground#Support"/>
+    </owl:ObjectProperty>
+
+
+
     <!-- common_ground#isUnder -->
 
     <owl:ObjectProperty rdf:about="common_ground#isUnder">
-        <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#SpeakableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#isBellow"/>
         <rdfs:range rdf:resource="common_ground#Object"/>
         <rdfs:domain rdf:resource="common_ground#Support"/>
     </owl:ObjectProperty>
