@@ -723,7 +723,7 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isAbove">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <owl:inverseOf rdf:resource="common_ground#isBellow"/>
+        <owl:inverseOf rdf:resource="common_ground#isBelow"/>
         <rdfs:range rdf:resource="common_ground#Support"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -788,9 +788,9 @@
 
 
 
-    <!-- common_ground#isBellow -->
+    <!-- common_ground#isBelow -->
 
-    <owl:ObjectProperty rdf:about="common_ground#isBellow">
+    <owl:ObjectProperty rdf:about="common_ground#isBelow">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
         <rdfs:range rdf:resource="common_ground#Object"/>
         <rdfs:domain rdf:resource="common_ground#Support"/>
@@ -801,7 +801,7 @@
     <!-- common_ground#isUnder -->
 
     <owl:ObjectProperty rdf:about="common_ground#isUnder">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isBellow"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#isBelow"/>
         <rdfs:range rdf:resource="common_ground#Object"/>
         <rdfs:domain rdf:resource="common_ground#Support"/>
     </owl:ObjectProperty>
