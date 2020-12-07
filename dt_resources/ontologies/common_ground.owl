@@ -107,7 +107,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
         <rdfs:label xml:lang="en">console table</rdfs:label>
         <rdfs:label xml:lang="fr">console</rdfs:label>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/ikea_console.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_console.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -320,7 +320,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
         <rdfs:label xml:lang="en">table</rdfs:label>
         <rdfs:label xml:lang="fr">table</rdfs:label>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/ikea_table.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_table.dae</common_ground:hasMesh>
     </owl:Class>
 
 

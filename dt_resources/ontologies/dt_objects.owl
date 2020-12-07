@@ -23,7 +23,7 @@
 
     <owl:Class rdf:about="dt_objects#DtCube">
         <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_cube.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -33,7 +33,7 @@
     <owl:Class rdf:about="dt_objects#DtBox">
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -42,7 +42,7 @@
 
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -51,7 +51,7 @@
 
     <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -61,7 +61,7 @@
     <owl:Class rdf:about="dt_objects#VisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://exp_director_task/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -518,6 +518,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_A1">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -528,6 +529,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_A2">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -538,6 +540,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_B1">
         <rdf:type rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -548,6 +551,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_B2">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -558,6 +562,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_B3">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -568,6 +573,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_B4">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -578,6 +584,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_B5">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -588,6 +595,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_C1">
         <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -598,6 +606,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_C2">
         <rdf:type rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -608,6 +617,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_C3">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">104</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -618,6 +628,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_C4">
         <rdf:type rdf:resource="dt_objects#VisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">1</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -628,6 +639,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#box_C5">
         <rdf:type rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
         <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">100</common_ground:hasArId>
     </owl:NamedIndividual>
 
@@ -691,22 +703,6 @@
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2_border">
         <rdf:type rdf:resource="common_ground#Border"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- dt_objects#throw_box_left -->
-
-    <owl:NamedIndividual rdf:about="dt_objects#throw_box_left">
-        <rdf:type rdf:resource="common_ground#StorageBox"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- dt_objects#throw_box_right -->
-
-    <owl:NamedIndividual rdf:about="dt_objects#throw_box_right">
-        <rdf:type rdf:resource="common_ground#StorageBox"/>
     </owl:NamedIndividual>
 
 </rdf:RDF>
