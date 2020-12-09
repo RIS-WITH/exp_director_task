@@ -51,7 +51,9 @@ void callback(Action action)
   while (action.end() == false)
   {
     auto param = action.getParameter();
-    onto_->feeder.addProperty(action.getName(), "hasParameter" + param.first, param.second);
+    auto parameter_property = "hasParameter" + param.first;
+    onto_->feeder.addInheritage(parameter_property, "hasParameter");
+    onto_->feeder.addProperty(action.getName(), parameter_property, param.second);
   }
   onto_->feeder.waitUpdate(5000);
   sendAction(action.getName());
