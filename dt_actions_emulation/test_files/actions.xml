@@ -1,0 +1,20 @@
+<actions>
+  <action type="Pick" name="pick_12">
+    <parameter type="Agent">human_0</parameter>
+    <parameter type="Object">cube_412</parameter>
+  </action>
+  <action type="Place">
+    <parameter type="Agent">human_0</parameter>
+    <parameter type="Object">cube_412</parameter>
+    <parameter type="Box">box_2</parameter>
+  </action>
+  <action type="Pick">
+    <parameter type="Agent">human_0</parameter>
+    <parameter type="Object">cube_415</parameter>
+  </action>
+  <action type="Place">
+    <parameter type="Agent">human_0</parameter>
+    <parameter type="Object">cube_415</parameter>
+    <parameter type="Box">box_1</parameter>
+  </action>
+</actions>
