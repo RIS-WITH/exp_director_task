@@ -1,0 +1,25 @@
+<launch>
+  <arg name="intern_directory" default="none"/>
+  <arg name="display" default="false"/>
+  <arg name="files" default="
+    $(find dt_resources)/ontologies/common_ground.owl
+    $(find dt_resources)/ontologies/dt_objects_base.owl
+    $(find dt_resources)/ontologies/actions_emulation.owl
+  "/>
+
+  <group>
+    <remap from="/ontologenius/insert_echo" to="/mementar/insert_fact_stamped"/>
+    <remap from="/ontologenius/insert_explanations" to="/mementar/insert_fact_explanations"/>
+    <include file="$(find ontologenius)/launch/ontologenius_multi_full.launch">
+      <arg name="display" value="$(arg display)" />
+      <arg name="files" value="$(arg files)" />
+      <arg name="intern_file" value="none" />
+      <arg name="config_file" value="$(find dt_resources)/configs/ontologenius.yaml" />
+    </include>
+  </group>
+
+  <include file="$(find mementar)/launch/mementar_multi.launch">
+    <arg name="intern_directory" value="$(arg intern_directory)" />
+    <arg name="config_file" value="$(find dt_resources)/configs/mementar.yaml" />
+  </include>
+</launch>
