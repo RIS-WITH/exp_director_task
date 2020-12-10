@@ -9,13 +9,13 @@
 	<arg name="output_frame" default="/base_footprint" />
 
 
-	<arg name="bundle_files" default="$(find exp_director_task)/tags/MarkerData_100.xml
-					  $(find exp_director_task)/tags/MarkerData_102.xml
-					  $(find exp_director_task)/tags/MarkerData_104.xml
-				          $(find exp_director_task)/tags/MarkerData_236.xml
-					  $(find exp_director_task)/tags/MarkerData_254.xml
-		                          $(find exp_director_task)/tags/MarkerData_212.xml
-					  $(find exp_director_task)/tags/MarkerData_54.xml"/>						
+	<arg name="bundle_files" default="$(find dt_resources)/tags/MarkerData_100.xml
+					  $(find dt_resources)/tags/MarkerData_102.xml
+					  $(find dt_resources)/tags/MarkerData_104.xml
+				          $(find dt_resources)/tags/MarkerData_236.xml
+					  $(find dt_resources)/tags/MarkerData_254.xml
+		                          $(find dt_resources)/tags/MarkerData_212.xml
+					  $(find dt_resources)/tags/MarkerData_54.xml"/>						
 
 	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
 
