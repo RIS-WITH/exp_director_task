@@ -1,0 +1,7 @@
+geometry_msgs/PointStamped central_point
+float64 height
+float64 width
+float64 step_length
+std_msgs/Duration duration_per_point
+---
+bool success
