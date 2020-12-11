@@ -121,7 +121,7 @@ void Menu::run(std::vector<Action> actions)
     int input = kbget();
     if((input == KEY_RIGHT) || (input == KEY_DOWN))
     {
-      if(index < actions.size() + 1)
+      if(index < actions.size() - 1)
         index++;
     }
     else if((input == KEY_LEFT) || (input == KEY_UP))
