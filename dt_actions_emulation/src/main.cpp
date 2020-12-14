@@ -20,8 +20,14 @@ void sendAction(const std::string& action_name)
   dt_actions_emulation::MementarAction msg;
   std::cout << "send action " << action_name << std::endl;
   msg.name = action_name;
-  msg.start_stamp = ros::Time::now() - ros::Duration(1);
-  msg.end_stamp = ros::Time::now() + ros::Duration(1);
+  msg.start_stamp = ros::Time::now();
+  msg.end_stamp = ros::Time(0);
+  timeline_pub_->publish(msg);
+  std::cout << "The action has startd, wait a second..." << std::endl;
+  ros::Duration(2).sleep();
+  msg.name = action_name;
+  msg.start_stamp = ros::Time(0);
+  msg.end_stamp = ros::Time::now();
   timeline_pub_->publish(msg);
 }
 
