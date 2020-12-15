@@ -1,0 +1,9 @@
+uint8 GO_IN_FRONT = 0
+uint8 GO_NEXT = 1
+
+uint8 move_type
+string frame_id
+---
+int32 error_code
+---
+int32 status
