@@ -23,7 +23,7 @@
 
     <owl:Class rdf:about="dt_objects#DtCube">
         <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -33,7 +33,7 @@
     <owl:Class rdf:about="dt_objects#DtBox">
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -42,7 +42,7 @@
 
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -51,7 +51,7 @@
 
     <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -61,7 +61,7 @@
     <owl:Class rdf:about="dt_objects#VisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 

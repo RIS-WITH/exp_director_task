@@ -23,7 +23,7 @@
 
     <owl:Class rdf:about="dt_objects#DtCube">
         <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -33,7 +33,7 @@
     <owl:Class rdf:about="dt_objects#DtBox">
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -42,7 +42,7 @@
 
     <owl:Class rdf:about="dt_objects#DtThrowBox">
         <rdfs:subClassOf rdf:resource="common_ground#StorageBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -51,7 +51,7 @@
 
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -60,7 +60,7 @@
 
     <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -70,7 +70,7 @@
     <owl:Class rdf:about="dt_objects#VisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -709,7 +709,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_green">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_green.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_green.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -719,7 +719,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_pink">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#magenta"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_pink.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_pink.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 </rdf:RDF>
