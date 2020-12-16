@@ -38,6 +38,15 @@
 
 
 
+    <!-- dt_objects#DtThrowBox -->
+
+    <owl:Class rdf:about="dt_objects#DtThrowBox">
+        <rdfs:subClassOf rdf:resource="common_ground#StorageBox"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box.dae</common_ground:hasMesh>
+    </owl:Class>
+
+
+
     <!-- dt_objects#ReceiverVisibleDtBox -->
 
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
@@ -697,16 +706,20 @@
 
     <!-- dt_objects#throw_box_left -->
 
-    <owl:NamedIndividual rdf:about="dt_objects#throw_box_left">
-        <rdf:type rdf:resource="common_ground#StorageBox"/>
+    <owl:NamedIndividual rdf:about="dt_objects#throw_box_green">
+        <rdf:type rdf:resource="common_ground#DtThrowBox"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_green.dae</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
 
     <!-- dt_objects#throw_box_right -->
 
-    <owl:NamedIndividual rdf:about="dt_objects#throw_box_right">
-        <rdf:type rdf:resource="common_ground#StorageBox"/>
+    <owl:NamedIndividual rdf:about="dt_objects#throw_box_pink">
+        <rdf:type rdf:resource="common_ground#DtThrowBox"/>
+        <common_ground:hasColor rdf:resource="common_ground#magenta"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_pink.dae</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 </rdf:RDF>
