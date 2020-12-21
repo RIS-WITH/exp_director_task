@@ -295,8 +295,6 @@
     <owl:Class rdf:about="common_ground#Support">
         <rdfs:subClassOf rdf:resource="common_ground#Object"/>
         <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
-        <rdfs:label xml:lang="en">support</rdfs:label>
-        <rdfs:label xml:lang="fr">support</rdfs:label>
     </owl:Class>
 
 
@@ -731,8 +729,8 @@
             <rdf:Description rdf:about="common_ground#isAbove"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="common_ground#isOnTopOf"/>
-            <rdf:Description rdf:about="common_ground#isOnTopOf"/>
+            <rdf:Description rdf:about="common_ground#isAbove"/>
+            <rdf:Description rdf:about="common_ground#isAbove"/>
         </owl:propertyChainAxiom>
         <rdfs:label xml:lang="fr">qui est au dessus</rdfs:label>
         <rdfs:label xml:lang="en">that is above</rdfs:label>
