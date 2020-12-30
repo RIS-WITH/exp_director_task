@@ -160,7 +160,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">207</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -190,7 +191,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GGCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GGCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">210</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">211</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -220,7 +222,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">208</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">209</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -250,7 +253,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGCG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGCG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">200</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">201</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -280,7 +284,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">202</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">203</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -310,7 +315,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGCB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGCB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">254</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">204</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">205</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -340,7 +346,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BBTG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBTG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">236</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">222</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">223</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -370,7 +377,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGTG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGTG_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">213</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -400,7 +408,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_BGTB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGTB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">214</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">215</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -460,7 +469,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">218</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">219</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -490,7 +500,8 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GGTB_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GGTB_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">216</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">217</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
@@ -684,7 +695,8 @@
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_2_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_2_border"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">220</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">221</common_ground:hasArId>
     </owl:NamedIndividual>
 
 
