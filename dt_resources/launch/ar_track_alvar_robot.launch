@@ -24,6 +24,12 @@
 					  $(find dt_resources)/tags/GBTG.xml
 					  $(find dt_resources)/tags/GGCB.xml
 					  $(find dt_resources)/tags/GGTB.xml
+					  $(find dt_resources)/tags/B5.xml
+					  $(find dt_resources)/tags/C1.xml
+					  $(find dt_resources)/tags/C2.xml
+					  $(find dt_resources)/tags/C3.xml
+					  $(find dt_resources)/tags/C4.xml
+					  $(find dt_resources)/tags/C5.xml
 					  $(find dt_resources)/tags/table_1.xml"/>
 
 	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
