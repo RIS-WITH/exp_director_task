@@ -9,10 +9,7 @@
 	<arg name="output_frame" default="/base_footprint" />
 
 
-	<arg name="bundle_files" default="$(find dt_resources)/tags/MarkerData_100.xml
-					  $(find dt_resources)/tags/MarkerData_102.xml
-					  $(find dt_resources)/tags/MarkerData_104.xml
-					  $(find dt_resources)/tags/BBCG.xml
+	<arg name="bundle_files" default="$(find dt_resources)/tags/BBCG.xml
 					  $(find dt_resources)/tags/BBTG.xml
 					  $(find dt_resources)/tags/BGCB.xml
 					  $(find dt_resources)/tags/BGCG.xml
