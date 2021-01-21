@@ -1,12 +1,14 @@
 #include <ros/ros.h>
 #include <pr2_head_manager_msgs/StateMachineRegister.h>
+#include <resource_management_msgs/StateMachinesStatus.h>
 #include <dt_head_gestures/HeadScan.h>
 
 
 class HeadScan{
 public:
-    HeadScan(const ros::NodeHandlePtr nh): nh_(nh){
+    HeadScan(const ros::NodeHandlePtr nh): nh_(nh), isScanOver_(false), currentId_(-1){
         head_sm_client_ = nh->serviceClient<pr2_head_manager_msgs::StateMachineRegister>("/pr2_head_manager/state_machines_register");
+        fsm_status_sub_ = nh->subscribe("/pr2_head_manager/state_machine_status", 10, &HeadScan::onFSMStatus, this);
         scan_server_  = nh_->advertiseService("head_scan", &HeadScan::onScanRequest, this);
     };
 
@@ -65,14 +67,40 @@ public:
             ROS_ERROR("No state machine created for scan, is step_length too large?");
         }
         srv_obj.request = fsm;
-        res.success = head_sm_client_.call(srv_obj);
+        bool registerSuccess = false;
+        currentId_ = -1;
+        registerSuccess = head_sm_client_.call(srv_obj);
+        if (!registerSuccess){
+            res.success = false;
+            return false;
+        }
+        isScanOver_ = false;
+        currentId_ = srv_obj.response.id;
+        ros::Duration sleepTime = ros::Duration(0, 1000000);
+        while (!isScanOver_){
+            sleepTime.sleep();
+        }
+        res.success = true;
         return res.success;
+    }
+
+    void onFSMStatus(const resource_management_msgs::StateMachinesStatus& msg){
+        if (currentId_ == -1 || msg.id != currentId_){
+            return;
+        }
+        if (msg.state_name == ""){
+            isScanOver_ = true;
+        }
     }
 
 private:
     ros::NodeHandlePtr nh_;
     ros::ServiceClient head_sm_client_;
     ros::ServiceServer scan_server_;
+    ros::Subscriber fsm_status_sub_;
+    int currentId_;
+
+    bool isScanOver_;
 
     static constexpr const char* state_name_base = "scan_state_y%d_z%d";
 
@@ -83,7 +111,11 @@ int main(int argc, char** argv){
     ros::NodeHandlePtr nh(new ros::NodeHandle("~"));
     HeadScan hs(nh);
 
-    ros::spin();
+    ros::AsyncSpinner spinner(2);
+    spinner.start();
+
+    ros::waitForShutdown();
+    
     
 
 
