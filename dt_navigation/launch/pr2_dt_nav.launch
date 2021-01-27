@@ -1,0 +1,16 @@
+<launch>
+  <include file="$(find pr2_machine)/$(env ROBOT).machine" />
+  <include file="$(find pr2_navigation_global)/amcl_node.xml" />
+  <include file="$(find pr2_navigation_teleop)/teleop.xml" />
+  <include file="$(find pr2_navigation_perception)/lasers_and_filters.xml" />
+  <include file="$(find pr2_navigation_perception)/ground_plane.xml" />
+  <node pkg="dt_navigation" name="dt_navigation" name="dt_navigation">
+    <remap from="cmd_vel" to="navigation/cmd_vel" />
+    <param name="goal_tolerance" value="0.05" />
+    <param name="max_speed" value="0.2" />
+    <param name="P" value="0.2" />
+    <param name="I" value="0.05" />
+    <param name="max_integral" value="5" />
+    <param name="control_period" value="0.1" />
+  </node>
+</launch>
