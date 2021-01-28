@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(dt_actions_emulation)
 
+if( NOT $ENV{ROBOT} STREQUAL "pr2")
+
 add_compile_options(-std=c++14)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -60,3 +62,5 @@ target_link_libraries(dt_actions_emulation_lib ${catkin_LIBRARIES} ontologenius_
 add_executable(actions_emulation src/main.cpp)
 add_dependencies(actions_emulation ${catkin_EXPORTED_TARGETS} dt_actions_emulation_gencpp)
 target_link_libraries(actions_emulation dt_actions_emulation_lib)
+
+endif()
