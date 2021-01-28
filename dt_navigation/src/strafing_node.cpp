@@ -75,7 +75,7 @@ public:
         geometry_msgs::Twist cmdVel;
         integral = 0.0;
         tf2::Transform footprint2pose;
-        while (abs(error) > params.goalTolerance){
+        while (std::abs(error) > params.goalTolerance){
             map2footprintMsg = tfBuffer_.lookupTransform("map", "base_footprint", ros::Time(0.0));
             tf2::fromMsg(map2footprintMsg.transform, map2footprint);
             footprint2pose = map2footprint.inverse() * map2pose;
