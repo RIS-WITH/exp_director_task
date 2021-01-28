@@ -1,0 +1,7 @@
+<launch>
+	
+	<node name="pr2_head_manager" pkg="pr2_head_manager" type="pr2_head_manager" respawn="false" output="screen" />
+	<node name="head_scan" pkg="dt_head_gestures" type="head_scan_node" respawn="false" output="screen" />
+
+
+</launch>
