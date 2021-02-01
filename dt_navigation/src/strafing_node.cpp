@@ -24,7 +24,7 @@ public:
         tfListener_ = std::make_shared<tf2_ros::TransformListener>(tfBuffer_);
         cmdVelPub_ = nh_.advertise<geometry_msgs::Twist>("/navigation/cmd_vel", 10, true);
         strafeActionServer_.start();
-
+        ROS_INFO_NAMED("dt_navigation", "Ready");
     }
 
     void onStrafe(const dt_navigation::MoveGoalConstPtr& goal){
@@ -36,7 +36,19 @@ public:
         std::string objectName = goal->frame_id;
         if (!tfBuffer_.canTransform(params.tableFrame, objectName, timeZero)){
             ROS_WARN_STREAM_NAMED("dt_navigation", "Can't transform frame '" << objectName << "' in table frame '" << params.tableFrame << "'. Aborting action.");
-            asResult.error_code = -1;
+            asResult.error_code = asResult.NO_TABLE_TO_OBJ_TRANSFORM;
+            strafeActionServer_.setAborted(asResult);
+            return;
+        }
+        if (!tfBuffer_.canTransform(params.tableFrame, "base_footprint", timeZero)){
+            ROS_WARN_STREAM_NAMED("dt_navigation", "Can't transform frame 'base_footprint' in table frame '" << params.tableFrame << "'. Aborting action.");
+            asResult.error_code = asResult.NO_TABLE_TO_FOOTPRINT_TRANSFORM;
+            strafeActionServer_.setAborted(asResult);
+            return;
+        }
+        if (!tfBuffer_.canTransform("map", params.tableFrame, timeZero)){
+            ROS_WARN_STREAM_NAMED("dt_navigation", "Can't transform table frame '" << params.tableFrame <<"' in map frame. Aborting action.");
+            asResult.error_code = asResult.NO_MAP_TO_TABLE_TRANSFORM;
             strafeActionServer_.setAborted(asResult);
             return;
         }
@@ -60,8 +72,10 @@ public:
             map2pose = map2table * table2pose;
         }else if (goal->move_type == dt_navigation::MoveGoal::GO_NEXT){
             ROS_ERROR_NAMED("dt_navigation", "GO NEXT navigation type not supported yet."); //TODO (guilhembn)
+            strafeActionServer_.setAborted();
         }else {
             ROS_ERROR_STREAM_NAMED("dt_navigation", "Move type asked: '" << goal->move_type << "' is not defined.");
+            strafeActionServer_.setAborted();
         }
 
         geometry_msgs::TransformStamped map2footprintMsg = tfBuffer_.lookupTransform("map", "base_footprint", timeZero);
@@ -72,21 +86,29 @@ public:
         double cmd = 0.0, integral;
         ros::Time lastControl = ros::Time::now();
         ros::Time now = lastControl;
+        ros::Time actionStart = ros::Time::now();
         geometry_msgs::Twist cmdVel;
         integral = 0.0;
         tf2::Transform footprint2pose;
-        while (std::abs(error) > params.goalTolerance){
+        dt_navigation::MoveFeedback feedback;
+        feedback.action_start = actionStart;
+        feedback.distance_to_goal = std::sqrt(error);
+        strafeActionServer_.publishFeedback(feedback);
+        while (std::abs(error) > params.goalTolerance && ros::ok()){
             map2footprintMsg = tfBuffer_.lookupTransform("map", "base_footprint", ros::Time(0.0));
             tf2::fromMsg(map2footprintMsg.transform, map2footprint);
             footprint2pose = map2footprint.inverse() * map2pose;
             error = std::pow(footprint2pose.getOrigin().getX(), 2) + std::pow(footprint2pose.getOrigin().getY(), 2);
+            feedback.distance_to_goal = std::sqrt(error);
+            strafeActionServer_.publishFeedback(feedback);
             getParams(params);
             now = ros::Time::now();
             if (strafeActionServer_.isPreemptRequested()){
                 cmdVel.linear.x = 0.0;
                 cmdVel.linear.y = 0.0;
                 cmdVelPub_.publish(cmdVel);
-                asResult.error_code = -2;
+                asResult.error_code = asResult.PREMPTED;
+                asResult.action_end = ros::Time::now();
                 strafeActionServer_.setPreempted(asResult);
                 return;
             }
@@ -101,12 +123,13 @@ public:
         }
         cmdVel.linear.x = 0.0;
         cmdVel.linear.y = 0.0;
-        for (unsigned int j = 0; j < 10; j++){  // TODO (guilhembn): does not work with morse otherwise, check on real robot
+        asResult.action_end = ros::Time::now();
+        for (unsigned int j = 0; j < 2; j++){  // TODO (guilhembn): does not work with morse otherwise, check on real robot
             cmdVelPub_.publish(cmdVel);
             params.controlPeriod.sleep();
         }
         cmdVelPub_.publish(cmdVel);
-        asResult.error_code = 0;
+        asResult.error_code = asResult.SUCCESS;
         strafeActionServer_.setSucceeded(asResult);
     }
 
@@ -131,6 +154,7 @@ protected:
     std::shared_ptr<tf2_ros::TransformListener> tfListener_;
     actionlib::SimpleActionServer<dt_navigation::MoveAction> strafeActionServer_;
     ros::Publisher cmdVelPub_;
+
 };
 
 int main (int argc, char** argv){
