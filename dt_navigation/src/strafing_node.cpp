@@ -107,7 +107,7 @@ public:
                 cmdVel.linear.x = 0.0;
                 cmdVel.linear.y = 0.0;
                 cmdVelPub_.publish(cmdVel);
-                asResult.error_code = asResult.PREMPTED;
+                asResult.error_code = asResult.PREEMPTED;
                 asResult.action_end = ros::Time::now();
                 strafeActionServer_.setPreempted(asResult);
                 return;
