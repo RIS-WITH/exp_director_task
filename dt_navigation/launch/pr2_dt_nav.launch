@@ -26,4 +26,11 @@
     <param name="max_integral" value="10" />
     <param name="control_period" value="0.1" />
   </node>
+
+  <arg name="map_file" default="$(find dt_navigation)/map/adream_RDC_complet.yaml"/>
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" output="screen"/>
+
+
 </launch>
