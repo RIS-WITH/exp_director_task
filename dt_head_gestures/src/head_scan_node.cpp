@@ -14,17 +14,17 @@ public:
         scan_server_  = nh_->advertiseService("head_scan", &HeadScan::onScanRequest, this);
     };
 
-   ~HeadScan(){
-	if(currentId_ == -1){
-		cancel();
-	}
-   }
+    ~HeadScan(){
+        if(currentId_ != -1){
+            cancel();
+        }
+    }
 
-   bool cancel(){
-	resource_management_msgs::StateMachinesCancel srv_obj;
-	srv_obj.request.id = currentId_;
+    bool cancel(){
+        resource_management_msgs::StateMachinesCancel srv_obj;
+        srv_obj.request.id = currentId_;
         return head_sm_cancel_client_.call(srv_obj);
-   }
+    }
 
     bool onScanRequest(dt_head_gestures::HeadScanRequest& req, dt_head_gestures::HeadScanResponse& res){
         pr2_head_manager_msgs::StateMachineRegister srv_obj;
@@ -100,11 +100,11 @@ public:
 
     void onFSMStatus(const resource_management_msgs::StateMachinesStatus& msg){
         if (currentId_ == -1 || msg.id != currentId_){
-            currentId_ = -1;
-	    return;
+	        return;
         }
         if (msg.state_name == ""){
             isScanOver_ = true;
+            currentId_ = -1;
         }
     }
 
