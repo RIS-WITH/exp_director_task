@@ -62,6 +62,8 @@
   <exec_depend>message_runtime</exec_depend>
   <depend>pr2_head_manager_msgs</depend>
   <depend>resource_management_msgs</depend>
+  <depend>actionlib_msgs</depend>
+  <depend>actionlib</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

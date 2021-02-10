@@ -5,3 +5,6 @@ float64 step_length
 std_msgs/Duration duration_per_point
 ---
 bool success
+time action_end
+---
+time action_start

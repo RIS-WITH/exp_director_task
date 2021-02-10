@@ -9,11 +9,12 @@ add_compile_options(-std=c++11)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
+  actionlib_msgs
   roscpp
   std_msgs
-  message_generation
   pr2_head_manager_msgs
   resource_management_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -57,22 +58,22 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-add_service_files(
-  FILES
-  HeadScan.srv
+# add_service_files(
+#   FILES
+#   HeadScan.srv
 #   Service2.srv
-)
+# )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+  FILES
+  HeadScan.action
+)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
+  actionlib_msgs
   geometry_msgs
   std_msgs
 )
@@ -109,7 +110,7 @@ generate_messages(
 catkin_package(
   #INCLUDE_DIRS include
   LIBRARIES dt_head_gestures
-  CATKIN_DEPENDS geometry_msgs roscpp std_msgs message_runtime
+  CATKIN_DEPENDS geometry_msgs roscpp std_msgs message_runtime actionlib_msgs actionlib
   #DEPENDS system_lib
 )
 
