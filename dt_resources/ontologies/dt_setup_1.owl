@@ -156,6 +156,100 @@
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGTB">
     </owl:NamedIndividual>
 
+    <!-- dt_objects#box_A1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_A1">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_A2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_A2">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B1">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B2">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B3 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B3">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B4 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B4">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_B5 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_B5">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C1">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C2">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C3 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C3">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C4 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C4">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#box_C5 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#box_C5">
+        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
