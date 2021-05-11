@@ -1,0 +1,318 @@
+<?xml version="1.0"?> 
+<rdf:RDF xmlns="urn:absolute:ontologenius#" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:onto="ontologenius#">
+    <owl:Ontology rdf:about="urn:absolute:ontologenius"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:ontologenius#HtnAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#HtnAction">
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#IDLE -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#IDLE">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#PhysicalAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PhysicalAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#CommunicateAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#CommunicateAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#PhysicalCommunication -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PhysicalCommunication">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#VerbalCommunication -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#VerbalCommunication">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#MakeCoffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#MakeCoffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_make_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_make_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#MakeCoffee"/>
+        <rdfs:label xml:lang="en">I made some coffee</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_make_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_make_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#MakeCoffee"/>
+        <rdfs:label xml:lang="en">You made some coffee</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#ServeCoffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#ServeCoffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_serve_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_serve_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ServeCoffee"/>
+        <rdfs:label xml:lang="en">I served some coffee</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_serve_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_serve_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ServeCoffee"/>
+        <rdfs:label xml:lang="en">You served some coffee</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#PickCoffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PickCoffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_pick_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_pick_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickCoffee"/>
+        <rdfs:label xml:lang="en">I picked some coffee beans</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_try_pick_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_try_pick_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickCoffee"/>
+        <rdfs:label xml:lang="en">You tried to pick some coffee beans</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#PutWaterInMachine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PutWaterInMachine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_pour_water_in_machine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_pour_water_in_machine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PutWaterInMachine"/>
+        <rdfs:label xml:lang="en">I put water in the coffee machine</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_pour_water_in_machine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_pour_water_in_machine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PutWaterInMachine"/>
+        <rdfs:label xml:lang="en">You put water in the coffee machine</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#PutCoffeeInMachine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PutCoffeeInMachine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_put_coffee_in_machine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_put_coffee_in_machine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PutCoffeeInMachine"/>
+        <rdfs:label xml:lang="en">I put coffee beans in the coffee machine</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_put_coffee_in_machine -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_put_coffee_in_machine">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PutCoffeeInMachine"/>
+        <rdfs:label xml:lang="en">You put coffee beans in the coffee machine</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#GetCoffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#GetCoffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_get_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_get_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#GetCoffee"/>
+        <rdfs:label xml:lang="en">I took coffee beans</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_get_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_get_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#GetCoffee"/>
+        <rdfs:label xml:lang="en">You took coffee beans</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#GetWater -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#GetWater">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_get_water -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_get_water">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#GetWater"/>
+        <rdfs:label xml:lang="en">I took water</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_get_water -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_get_water">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#GetWater"/>
+        <rdfs:label xml:lang="en">You took water</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#HelpToMakeCoffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#HelpToMakeCoffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_help_make_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_help_make_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HelpToMakeCoffee"/>
+        <rdfs:label xml:lang="en">I helped you make coffee</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_help_make_coffee -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_help_make_coffee">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HelpToMakeCoffee"/>
+        <rdfs:label xml:lang="en">You helped me make coffee </rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#AskForHelp -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#AskForHelp">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VerbalCommunication"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_ask_human_for_help -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_ask_human_for_help">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#AskForHelp"/>
+        <rdfs:label xml:lang="en">I asked you for help</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_ask_robot_for_help -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_ask_robot_for_help">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#AskForHelp"/>
+        <rdfs:label xml:lang="en">You asked me for help</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#UpdateInventory -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#UpdateInventory">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VerbalCommunication"/>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#robot_update_human_inventory -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_update_human_inventory">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#UpdateInventory"/>
+        <rdfs:label xml:lang="en">I gived you information</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#human_update_robot_inventory -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_update_robot_inventory">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#UpdateInventory"/>
+        <rdfs:label xml:lang="en">You gived me information</rdfs:label>
+    </owl:Class>
+

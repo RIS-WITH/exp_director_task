@@ -24,7 +24,7 @@ void sendAction(const std::string& action_name)
   msg.end_stamp = ros::Time(0);
   timeline_pub_->publish(msg);
   std::cout << "The action has startd, wait a second..." << std::endl;
-  ros::Duration(2).sleep();
+  ros::Duration(0.5).sleep();
   msg.name = action_name;
   msg.start_stamp = ros::Time(0);
   msg.end_stamp = ros::Time::now();
