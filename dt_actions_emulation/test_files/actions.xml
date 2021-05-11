@@ -1,20 +1,26 @@
 <actions>
-  <action type="PickAction">
-    <parameter type="Agent">human_0</parameter>
-    <parameter type="Object">cube_412</parameter>
+  <action type="human_pick_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Object">cube_BBCG</parameter>
   </action>
-  <action type="PlaceAction">
-    <parameter type="Agent">human_0</parameter>
-    <parameter type="Object">cube_412</parameter>
-    <parameter type="Box">box_2</parameter>
+  <action type="human_drop_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Box">throw_box_green</parameter>
   </action>
-  <action type="PickAction">
-    <parameter type="Agent">human_0</parameter>
-    <parameter type="Object">cube_415</parameter>
+ <action type="human_pick_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Object">cube_GGCB</parameter>
   </action>
-  <action type="PlaceAction">
-    <parameter type="Agent">human_0</parameter>
-    <parameter type="Object">cube_415</parameter>
-    <parameter type="Box">box_1</parameter>
+  <action type="human_drop_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Box">throw_box_green</parameter>
+  </action>
+ <action type="human_pick_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Object">cube_GBTB</parameter>
+  </action>
+  <action type="human_drop_cube">
+    <parameter type="Agent">Helmet_2</parameter>
+    <parameter type="Box">throw_box_green</parameter>
   </action>
 </actions>

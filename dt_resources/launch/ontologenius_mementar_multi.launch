@@ -2,12 +2,17 @@
   <arg name="files" default="
     $(find dt_resources)/ontologies/common_ground.owl
     $(find dt_resources)/ontologies/dt_objects.owl
+    $(find dt_resources)/ontologies/dt_setup_1.owl
     $(find dt_resources)/ontologies/actions_emulation.owl
+    $(find dt_resources)/ontologies/coffee_actions.owl
+    $(find dt_resources)/ontologies/dt_actions.owl
+    $(find knowledge_sharing_planner)/tests/ontologies/language/language.owl
+    $(find knowledge_sharing_planner)/tests/ontologies/language/verbs.owl
   "/>
 
   <include file="$(find mementar)/launch/mementar_ontologenius_multi.launch">
     <arg name="mementar_intern_directory" value="none" />
-    <arg name="mementar_config_file" value="$(find dt_resources)/configs/mementar.yaml" />
+    <arg name="mementar_config_file" value="none" />
     <arg name="onto_config_file" value="$(find dt_resources)/configs/ontologenius.yaml" />
     <arg name="onto_display" value="false" />
     <arg name="onto_files" value="$(arg files)" />

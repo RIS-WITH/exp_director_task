@@ -1,0 +1,130 @@
+<?xml version="1.0"?> 
+<rdf:RDF xmlns="urn:absolute:ontologenius#" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:onto="ontologenius#">
+    <owl:Ontology rdf:about="urn:absolute:ontologenius"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- urn:absolute:ontologenius#HtnAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#HtnAction">
+    </owl:Class>
+
+
+
+    <!-- urn:absolute:ontologenius#IDLE -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#IDLE">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#PhysicalAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PhysicalAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#CommunicateAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#CommunicateAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#PhysicalCommunication -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PhysicalCommunication">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#VerbalCommunication -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#VerbalCommunication">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#Wait -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#Wait">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#PickAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PickAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+         <rdfs:label xml:lang="en">{Agent} @Pick {Object}</rdfs:label>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#human_pick_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_pick_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_pick_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_pick_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#DropAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#DropAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+        <rdfs:label xml:lang="en">{Agent} @Drop {Cube}</rdfs:label>
+        <rdfs:label xml:lang="en">{Agent} @Drop in {Container}</rdfs:label>
+        <rdfs:label xml:lang="en">{Agent} @Drop {Cube} in {Container}</rdfs:label>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#human_drop_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_drop_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DropAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_drop_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_drop_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DropAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_tell_human_to_tidy -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_tell_human_to_tidy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VerbalCommunication"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_congratulate -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_congratulate">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VerbalCommunication"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_wait_for_human_to_tidy -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_wait_for_human_to_tidy">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Wait"/>
+    </owl:Class>
+
+
+
+
+
+
+

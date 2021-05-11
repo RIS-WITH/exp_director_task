@@ -28,7 +28,7 @@
 
     <!-- actions_emulation#PickAction -->
 
-    <owl:Class rdf:about="actions_emulation#PickAction">
+    <owl:Class rdf:about="actions_emulation#human_pick_cube">
         <rdfs:subClassOf rdf:resource="actions_emulation#Action"/>
     </owl:Class>
 
@@ -44,7 +44,7 @@
 
     <!-- actions_emulation#DropAction -->
 
-    <owl:Class rdf:about="actions_emulation#DropAction">
+    <owl:Class rdf:about="actions_emulation#human_drop_cube">
         <rdfs:subClassOf rdf:resource="actions_emulation#Action"/>
     </owl:Class>
 
