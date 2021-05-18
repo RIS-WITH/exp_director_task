@@ -82,7 +82,9 @@ public:
             t.end_condition.timeout = ros::Duration(-1);
             previousState->header.transitions.push_back(t);
         }else{
+            scan_server_.setAborted();
             ROS_ERROR("No state machine created for scan, is step_length too large?");
+            return;
         }
         srv_obj.request = fsm;
         bool registerSuccess = false;
@@ -111,6 +113,7 @@ public:
         }
         res.success = true;
         res.action_end = ros::Time::now();
+        scan_server_.setSucceeded(res);
     }
 
     void onFSMStatus(const resource_management_msgs::StateMachinesStatus& msg){

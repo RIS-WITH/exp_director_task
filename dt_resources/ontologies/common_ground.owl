@@ -147,7 +147,8 @@
         <rdfs:subClassOf rdf:resource="common_ground#Pickable"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
-        <rdfs:label xml:lang="en">cube</rdfs:label>
+        <rdfs:label xml:lang="en">block</rdfs:label>
+        <onto:label xml:lang="en">cube</onto:label>
         <rdfs:label xml:lang="fr">cube</rdfs:label>
     </owl:Class>
 
@@ -610,6 +611,7 @@
         <rdfs:range rdf:resource="common_ground#GraphicElement"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:label xml:lang="en">with a</rdfs:label>
+        <onto:label xml:lang="en">with the</onto:label>
         <rdfs:label xml:lang="fr">avec un</rdfs:label>
     </owl:ObjectProperty>
 
