@@ -111,6 +111,24 @@
     </owl:Class>
 
 
+    <owl:Class rdf:about="common_ground#SecondTable">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
+    </owl:Class>
+
+    <owl:Class rdf:about="common_ground#LowTable">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
+    </owl:Class>
+
 
     <!-- common_ground#Container -->
 
@@ -1063,6 +1081,8 @@
              <rdf:Description rdf:about="common_ground#Cube"/>
              <rdf:Description rdf:about="common_ground#Drawer"/>
              <rdf:Description rdf:about="common_ground#Table"/>
+             <rdf:Description rdf:about="common_ground#SecondTable"/>
+             <rdf:Description rdf:about="common_ground#LowTable"/>
              <rdf:Description rdf:about="common_ground#ConsoleTable"/>
         </owl:members>
     </rdf:Description>
@@ -1074,6 +1094,8 @@
              <rdf:Description rdf:about="common_ground#Shelf"/>
              <rdf:Description rdf:about="common_ground#TV"/>
              <rdf:Description rdf:about="common_ground#Table"/>
+             <rdf:Description rdf:about="common_ground#SecondTable"/>
+             <rdf:Description rdf:about="common_ground#LowTable"/>
              <rdf:Description rdf:about="common_ground#ConsoleTable"/>
         </owl:members>
     </rdf:Description>
