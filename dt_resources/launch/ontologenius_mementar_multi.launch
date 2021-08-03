@@ -1,9 +1,10 @@
+<!-- dt_setup1.owl removed for test in real environment -->
 <launch>
   <arg name="files" default="
     $(find dt_resources)/ontologies/common_ground.owl
     $(find dt_resources)/ontologies/dt_objects.owl
-    $(find dt_resources)/ontologies/dt_setup_1.owl
     $(find dt_resources)/ontologies/actions_emulation.owl
+    $(find dt_resources)/ontologies/dt_setup_1.owl
     $(find dt_resources)/ontologies/coffee_actions.owl
     $(find dt_resources)/ontologies/block_building_objects.owl
     $(find dt_resources)/ontologies/dt_actions.owl

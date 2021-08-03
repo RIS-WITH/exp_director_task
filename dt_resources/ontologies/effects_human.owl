@@ -1,0 +1,18 @@
+<?xml version="1.0"?> 
+<rdf:RDF xmlns="urn:absolute:ontologenius#" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:onto="ontologenius#">
+    <owl:Ontology rdf:about="urn:absolute:ontologenius"/>	
+       
+	<owl:Class rdf:about="urn:absolute:ontologenius#IsOnTopOfEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ThudEffect"/>
+    </owl:Class>
+
+	<owl:Class rdf:about="urn:absolute:ontologenius#isHotInKettle">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ThudEffect"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#TactileEffect"/>
+    </owl:Class>

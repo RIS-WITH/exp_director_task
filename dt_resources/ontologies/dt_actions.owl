@@ -13,7 +13,7 @@
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Classes
+    // Action Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -68,6 +68,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#HasInRightHandEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Pick {Pickable}</rdfs:label>
     </owl:Class>
 
@@ -75,14 +76,42 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PlaceAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Place {Pickable} on {Support}</rdfs:label>
     </owl:Class>
+    
+     <!-- urn:absolute:ontologenius#ScanAction -->
 
+    <owl:Class rdf:about="urn:absolute:ontologenius#ScanAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsScannedEffect"/>
+         <rdfs:label xml:lang="en">{Agent} @Scan {Pickable}</rdfs:label>
+    </owl:Class>
+
+     <!-- urn:absolute:ontologenius#HeatWaterAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#HeatWaterAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+    </owl:Class>
+    
+     <!-- urn:absolute:ontologenius#HeatWaterInKettle -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#HeatWaterInKettle">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HeatWaterAction"/>
+        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#isHotInKettle"/>
+    </owl:Class>    
+
+    <!-- urn:absolute:ontologenius#human_place_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_place_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PlaceAction"/>
+    </owl:Class>
 
     <!-- urn:absolute:ontologenius#PickAndPlaceAction -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAndPlaceAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
+        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Pick {Pickable} and @Place it on {Support}</rdfs:label>
     </owl:Class>
 
@@ -92,7 +121,7 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAndPlaceAction"/>
     </owl:Class>
 
-            <!-- urn:absolute:ontologenius#PickAndPlaceStickAction -->
+    <!-- urn:absolute:ontologenius#PickAndPlaceStickAction -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAndPlaceStickAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAndPlaceAction"/>
@@ -119,6 +148,18 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAction"/>
     </owl:Class>
 
+    <!-- urn:absolute:ontologenius#take -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#take">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#remove -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#remove">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAndPlaceAction"/>
+    </owl:Class>
+
     <!-- urn:absolute:ontologenius#DropAction -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#DropAction">
@@ -140,6 +181,12 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DropAction"/>
     </owl:Class>
 
+   <!-- urn:absolute:ontologenius#drop -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#drop">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DropAction"/>
+    </owl:Class>
+
     <!-- urn:absolute:ontologenius#robot_tell_human_to_tidy -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#robot_tell_human_to_tidy">
@@ -158,6 +205,61 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Wait"/>
     </owl:Class>
 
+ <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Effect Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+  	<owl:Class rdf:about="urn:absolute:ontologenius#Effect">
+    </owl:Class>  
+    
+    <owl:Class rdf:about="urn:absolute:ontologenius#NonObservableEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Effect"/>
+    </owl:Class>    
+        
+ 	<owl:Class rdf:about="urn:absolute:ontologenius#InstantaneousEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+    </owl:Class>    
+    
+ 	<owl:Class rdf:about="urn:absolute:ontologenius#ObservableEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+    </owl:Class>            
+    
+ 	<owl:Class rdf:about="urn:absolute:ontologenius#VisualEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+    </owl:Class>     
+    
+    <owl:Class rdf:about="urn:absolute:ontologenius#AuditoryEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+    </owl:Class>    
+    
+    <owl:Class rdf:about="urn:absolute:ontologenius#ThudEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#AuditoryEffect"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#InstantaneousEffect"/>        
+    </owl:Class>  
+    
+    <owl:Class rdf:about="urn:absolute:ontologenius#TactileEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+    </owl:Class>  
+     
+	<owl:Class rdf:about="urn:absolute:ontologenius#HasInHandEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VisualEffect"/>
+    </owl:Class>
+
+	<owl:Class rdf:about="urn:absolute:ontologenius#HasInRightHandEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HasInHandEffect"/>
+    </owl:Class>
+     
+	<owl:Class rdf:about="urn:absolute:ontologenius#IsOnTopOfEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#VisualEffect"/>
+    </owl:Class>
+
+	<owl:Class rdf:about="urn:absolute:ontologenius#IsScannedEffect">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#NonObservableEffect"/>
+    </owl:Class>
+     
 <!-- TODO add remove action which is pick+drop/place, add a ReleaseAction which is mother class of Place and Drop  -->
 
 

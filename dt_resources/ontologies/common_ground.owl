@@ -92,7 +92,6 @@
     <owl:Class rdf:about="common_ground#Box">
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
         <rdfs:subClassOf rdf:resource="common_ground#Container"/>
-        <rdfs:subClassOf rdf:resource="common_ground#Pickable"/>
         <rdfs:label xml:lang="en">box</rdfs:label>
         <rdfs:label xml:lang="fr">boite</rdfs:label>
     </owl:Class>
@@ -963,8 +962,8 @@
 
      <owl:NamedIndividual rdf:about="common_ground#black">
          <rdf:type rdf:resource="common_ground#Color"/>
-         <rdfs:label xml:lang="en">black</rdfs:label>
-         <rdfs:label xml:lang="fr">noir</rdfs:label>
+         <!--rdfs:label xml:lang="en">black</rdfs:label>
+         <rdfs:label xml:lang="fr">noir</rdfs:label-->
      </owl:NamedIndividual>
 
 

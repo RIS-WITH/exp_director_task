@@ -740,6 +740,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
         <rdf:type rdf:resource="common_ground#SecondTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
+        <rdfs:label xml:lang="en">table</rdfs:label>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="dt_objects#table_lack">
