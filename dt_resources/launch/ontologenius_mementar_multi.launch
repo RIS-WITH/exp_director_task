@@ -1,4 +1,3 @@
-<!-- dt_setup1.owl removed for test in real environment -->
 <launch>
   <arg name="files" default="
     $(find dt_resources)/ontologies/common_ground.owl
