@@ -158,8 +158,8 @@
     <owl:NamedIndividual rdf:about="dt_humans#human_0">
         <rdf:type rdf:resource="common_ground#Human"/>
         <dt_humans:hasHead rdf:resource="dt_humans#Helmet_2"/>
-        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_2"/>
-        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_1"/>
+        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
+        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
