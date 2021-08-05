@@ -39,6 +39,7 @@
 
     <owl:Class rdf:about="dt_humans#Head">
         <rdfs:subClassOf rdf:resource="dt_humans#BodyPart"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/head.obj</common_ground:hasMesh>
     </owl:Class>
     
 
@@ -47,6 +48,7 @@
 
     <owl:Class rdf:about="dt_humans#LeftHand">
         <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/hand_left.obj</common_ground:hasMesh>
     </owl:Class>
     
 
@@ -55,6 +57,7 @@
 
     <owl:Class rdf:about="dt_humans#RightHand">
         <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/hand_right.obj</common_ground:hasMesh>
     </owl:Class>
     
     
@@ -84,6 +87,7 @@
 
     <owl:ObjectProperty rdf:about="dt_humans#hasHand">
         <rdfs:subPropertyOf rdf:resource="dt_humans#hasBodyPart"/>
+        <rdfs:range rdf:resource="dt_humans#Hand"/>
     </owl:ObjectProperty>
     
 
@@ -92,6 +96,7 @@
 
     <owl:ObjectProperty rdf:about="dt_humans#hasHead">
         <rdfs:subPropertyOf rdf:resource="dt_humans#hasBodyPart"/>
+        <rdfs:range rdf:resource="dt_humans#Head"/>
     </owl:ObjectProperty>
     
 
@@ -100,6 +105,7 @@
 
     <owl:ObjectProperty rdf:about="dt_humans#hasLeftHand">
         <rdfs:subPropertyOf rdf:resource="dt_humans#hasHand"/>
+        <rdfs:range rdf:resource="dt_humans#LeftHand"/>
     </owl:ObjectProperty>
     
 
@@ -108,6 +114,7 @@
 
     <owl:ObjectProperty rdf:about="dt_humans#hasRightHand">
         <rdfs:subPropertyOf rdf:resource="dt_humans#hasHand"/>
+        <rdfs:range rdf:resource="dt_humans#RightHand"/>
     </owl:ObjectProperty>
     
 
@@ -150,9 +157,9 @@
     
     <owl:NamedIndividual rdf:about="dt_humans#human_0">
         <rdf:type rdf:resource="common_ground#Human"/>
-        <dt_humans:hasHead rdf:resources="dt_humans#Helmet_2"/>
-        <dt_humans:hasLeftHand rdf:resources="dt_humans#Glove_2"/>
-        <dt_humans:hasRightHand rdf:resources="dt_humans#Glove_1"/>
+        <dt_humans:hasHead rdf:resource="dt_humans#Helmet_2"/>
+        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_2"/>
+        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_1"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
