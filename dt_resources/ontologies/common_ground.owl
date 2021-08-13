@@ -156,6 +156,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#Pickable"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
         <rdfs:label xml:lang="en">block</rdfs:label>
         <onto:label xml:lang="en">cube</onto:label>
         <rdfs:label xml:lang="fr">cube</rdfs:label>
