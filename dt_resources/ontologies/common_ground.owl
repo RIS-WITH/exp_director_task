@@ -130,6 +130,15 @@
     </owl:Class>
 
 
+    <owl:Class rdf:about="common_ground#RoundTable">
+        <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Support"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+        <rdfs:label xml:lang="en">table</rdfs:label>
+        <rdfs:label xml:lang="fr">table</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/round_table.stl</common_ground:hasMesh>
+    </owl:Class>
+
     <!-- common_ground#Container -->
 
     <owl:Class rdf:about="common_ground#Container">
