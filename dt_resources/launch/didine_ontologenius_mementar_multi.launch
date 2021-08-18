@@ -4,6 +4,11 @@
     $(find dt_resources)/ontologies/didine_objects.owl
     $(find dt_resources)/ontologies/actions_emulation.owl
     $(find dt_resources)/ontologies/dt_humans.owl
+    $(find dt_resources)/ontologies/coffee_actions.owl
+    $(find dt_resources)/ontologies/block_building_objects.owl
+    $(find dt_resources)/ontologies/dt_actions.owl
+    $(find knowledge_sharing_planner)/tests/ontologies/language/language.owl
+    $(find knowledge_sharing_planner)/tests/ontologies/language/verbs.owl
   "/>
 
   <include file="$(find mementar)/launch/mementar_ontologenius_multi.launch">
