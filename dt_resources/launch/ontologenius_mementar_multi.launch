@@ -18,5 +18,7 @@
     <arg name="onto_display" value="false" />
     <arg name="onto_files" value="$(arg files)" />
     <arg name="onto_intern_file" value="none" />
+    <arg name="onto_robot_file" value="$(find dt_resources)/ontologies/effects_robot.owl" />
+    <arg name="onto_human_file" value="$(find dt_resources)/ontologies/effects_human.owl" />
   </include>
 </launch>

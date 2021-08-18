@@ -24,6 +24,7 @@
     <!-- urn:absolute:ontologenius#HtnAction -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#HtnAction">
+		<rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Action"/>
     </owl:Class>
 
 
@@ -50,6 +51,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PhysicalCommunication">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
     </owl:Class>
 
     <!-- urn:absolute:ontologenius#VerbalCommunication -->
@@ -57,10 +59,16 @@
     <owl:Class rdf:about="urn:absolute:ontologenius#VerbalCommunication">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
     </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#DefaultAction -->
 
-    <!-- urn:absolute:ontologenius#Wait -->
+    <owl:Class rdf:about="urn:absolute:ontologenius#DefaultAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
+    </owl:Class>
 
-    <owl:Class rdf:about="urn:absolute:ontologenius#Wait">
+    <!-- urn:absolute:ontologenius#WaitAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#WaitAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HtnAction"/>
     </owl:Class>
 
@@ -68,7 +76,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
-        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#HasInRightHandEffect"/>
+        <dt_actions:hasEffect rdf:resource="urn:absolute:ontologenius#HasInRightHandEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Pick {Pickable}</rdfs:label>
     </owl:Class>
 
@@ -76,7 +84,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PlaceAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
-        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
+        <dt_actions:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Place {Pickable} on {Support}</rdfs:label>
     </owl:Class>
     
@@ -84,7 +92,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#ScanAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
-        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsScannedEffect"/>
+        <dt_actions:hasEffect rdf:resource="urn:absolute:ontologenius#IsScannedEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Scan {Pickable}</rdfs:label>
     </owl:Class>
 
@@ -98,7 +106,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#HeatWaterInKettle">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#HeatWaterAction"/>
-        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#isHotInKettle"/>
+        <dt_actions:hasEffect rdf:resource="urn:absolute:ontologenius#isHotInKettle"/>
     </owl:Class>    
 
     <!-- urn:absolute:ontologenius#human_place_cube -->
@@ -111,7 +119,7 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAndPlaceAction">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PhysicalAction"/>
-        <rdfs:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
+        <dt_actions:hasEffect rdf:resource="urn:absolute:ontologenius#IsOnTopOfEffect"/>
          <rdfs:label xml:lang="en">{Agent} @Pick {Pickable} and @Place it on {Support}</rdfs:label>
     </owl:Class>
 
@@ -133,7 +141,19 @@
 
     <owl:Class rdf:about="urn:absolute:ontologenius#PickAndPlaceStick">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PickAndPlaceStickAction"/>
-        <rdfs:label xml:lang="en">{Agent} @Pick {Pickable} and @Place it on {Support} and {Support}</rdfs:label>
+    </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#PlaceStickAction -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#PlaceStickAction">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PlaceAction"/>
+        <rdfs:label xml:lang="en">{Agent} @Place {Pickable} on {Support} and {Support}</rdfs:label>
+    </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#human_place_stick -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_place_stick">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PlaceStickAction"/>
     </owl:Class>
 
     <!-- urn:absolute:ontologenius#human_pick_cube -->
@@ -180,6 +200,12 @@
     <owl:Class rdf:about="urn:absolute:ontologenius#robot_drop_cube">
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DropAction"/>
     </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#robot_place_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_place_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#PlaceAction"/>
+    </owl:Class>
 
    <!-- urn:absolute:ontologenius#drop -->
 
@@ -202,8 +228,33 @@
     <!-- urn:absolute:ontologenius#robot_wait_for_human_to_tidy -->
 
     <owl:Class rdf:about="urn:absolute:ontologenius#robot_wait_for_human_to_tidy">
-        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Wait"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#WaitAction"/>
     </owl:Class>
+
+    <!-- urn:absolute:ontologenius#robot_wait -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#robot_wait">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#WaitAction"/>
+    </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#WAIT -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#WAIT">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DefaultAction"/>
+    </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#IDLE -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#IDLE">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#DefaultAction"/>
+    </owl:Class>
+    
+    <!-- urn:absolute:ontologenius#human_wait_for_cube -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#human_wait_for_cube">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#WaitAction"/>
+    </owl:Class>
+        
 
  <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -212,6 +263,10 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+    <owl:ObjectProperty rdf:about="expe_ontologies#hasEffect">
+        <rdfs:domain rdf:resource="dt_actions#HtnAction"/>
+    </owl:ObjectProperty>
+     
   	<owl:Class rdf:about="urn:absolute:ontologenius#Effect">
     </owl:Class>  
     
@@ -224,7 +279,7 @@
     </owl:Class>    
     
  	<owl:Class rdf:about="urn:absolute:ontologenius#ObservableEffect">
-        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#ObservableEffect"/>
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#Effect"/>
     </owl:Class>            
     
  	<owl:Class rdf:about="urn:absolute:ontologenius#VisualEffect">
