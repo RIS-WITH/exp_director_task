@@ -748,6 +748,43 @@
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">208</common_ground:hasArId>
     </owl:NamedIndividual>
 
+
+    <owl:NamedIndividual rdf:about="dt_objects#red_cube_1">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#red"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">108</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#red_cube_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#red"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">114</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#blue_cube_1">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#blue_cube_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">96</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="dt_objects#green_cube_2">
+        <rdf:type rdf:resource="common_ground#Cube"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">90</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
