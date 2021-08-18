@@ -738,7 +738,7 @@
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
-        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <rdf:type rdf:resource="common_ground#Table"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>

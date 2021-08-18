@@ -111,13 +111,6 @@
     </owl:Class>
 
 
-    <owl:Class rdf:about="common_ground#SecondTable">
-        <rdfs:subClassOf rdf:resource="common_ground#Table"/>
-        <rdfs:label xml:lang="en">table</rdfs:label>
-        <rdfs:label xml:lang="fr">table</rdfs:label>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
-    </owl:Class>
-
     <owl:Class rdf:about="common_ground#LowTable">
         <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
