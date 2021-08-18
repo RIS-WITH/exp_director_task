@@ -92,7 +92,7 @@
     <owl:Class rdf:about="common_ground#Box">
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
         <rdfs:subClassOf rdf:resource="common_ground#Container"/>
-        <rdfs:subClassOf rdf:resource="common_ground#Pickable"/>
+        <!--<rdfs:subClassOf rdf:resource="common_ground#Pickable"/>-->
         <rdfs:label xml:lang="en">box</rdfs:label>
         <rdfs:label xml:lang="fr">boite</rdfs:label>
     </owl:Class>

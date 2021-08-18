@@ -3,6 +3,7 @@
     $(find dt_resources)/ontologies/common_ground.owl
     $(find dt_resources)/ontologies/dt_objects.owl
     $(find dt_resources)/ontologies/actions_emulation.owl
+    $(find dt_resources)/ontologies/dt_humans.owl
   "/>
 
   <include file="$(find mementar)/launch/mementar_ontologenius_multi.launch">
