@@ -740,12 +740,34 @@
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
         <rdf:type rdf:resource="common_ground#SecondTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
-        <rdfs:label xml:lang="en">table</rdfs:label>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="dt_objects#table_lack">
         <rdf:type rdf:resource="common_ground#LowTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">72</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#round_table">
+        <rdf:type rdf:resource="common_ground#RoundTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">78</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/round_table.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#red_box">
+        <rdf:type rdf:resource="common_ground#Container"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">79</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/red_box.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="dt_objects#table_3">
+        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">80</common_ground:hasArId>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
+    </owl:NamedIndividual>
+
     </owl:NamedIndividual>
 
 </rdf:RDF>
