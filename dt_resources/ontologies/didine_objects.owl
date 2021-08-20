@@ -778,12 +778,79 @@
     </owl:NamedIndividual>
 
 
-    <owl:NamedIndividual rdf:about="dt_objects#green_cube_2">
+    <owl:NamedIndividual rdf:about="dt_objects#green_cube">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">90</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#support1">
+        <rdf:type rdf:resource="common_ground#Spot"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="dt_objects#support2">
+        <rdf:type rdf:resource="common_ground#Spot"/>
+    </owl:NamedIndividual>
+
+    <!-- dt_objects#cube_BBCG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG">
+        <rdf:type rdf:resource="common_ground#DtCube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BBCG_form"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_border"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">202</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">203</common_ground:hasArId>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBCG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG_form">
+        <rdf:type rdf:resource="common_ground#Circle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBCG_border -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG_border">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
+    <!-- dt_objects#cube_BBTG -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG">
+        <rdf:type rdf:resource="common_ground#DtCube"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+        <common_ground:hasFigure rdf:resource="common_ground#cube_BBTG_form"/>
+        <common_ground:hasBorder rdf:resource="common_ground#cube_BBTG_border"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">222</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">223</common_ground:hasArId>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBTG_form -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG_form">
+        <rdf:type rdf:resource="common_ground#Triangle"/>
+        <common_ground:hasColor rdf:resource="common_ground#green"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#cube_BBTG_border -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG_border">
+        <rdf:type rdf:resource="common_ground#Border"/>
+        <common_ground:hasColor rdf:resource="common_ground#blue"/>
+    </owl:NamedIndividual>
+
 
 </rdf:RDF>
 
