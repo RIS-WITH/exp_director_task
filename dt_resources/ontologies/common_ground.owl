@@ -545,6 +545,8 @@
 
     <owl:ObjectProperty rdf:about="common_ground#hasIn">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <owl:inverseOf rdf:resource="common_ground#isIn"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
     </owl:ObjectProperty>
@@ -700,6 +702,8 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isIn">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
         <rdfs:label xml:lang="en">in</rdfs:label>
         <rdfs:label xml:lang="fr">dans</rdfs:label>
@@ -751,6 +755,8 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isAbove">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <owl:inverseOf rdf:resource="common_ground#isBelow"/>
         <rdfs:range rdf:resource="common_ground#Support"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
@@ -820,6 +826,8 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isBelow">
         <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:range rdf:resource="common_ground#Object"/>
         <rdfs:domain rdf:resource="common_ground#Support"/>
     </owl:ObjectProperty>
