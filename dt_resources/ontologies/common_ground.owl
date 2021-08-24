@@ -918,6 +918,16 @@
 
 
 
+    <!-- expe_ontologies#hexRgbValue -->
+
+    <owl:DatatypeProperty rdf:about="expe_ontologies#hexRgbValue">
+        <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+        <rdfs:domain rdf:resource="common_ground#Color"/>
+    </owl:DatatypeProperty>
+
+
+
+
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -980,9 +990,10 @@
      <!-- common_ground#black -->
 
      <owl:NamedIndividual rdf:about="common_ground#black">
-         <rdf:type rdf:resource="common_ground#Color"/>
-         <rdfs:label xml:lang="en">black</rdfs:label>
-         <rdfs:label xml:lang="fr">noir</rdfs:label>
+        <rdf:type rdf:resource="common_ground#Color"/>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+        <rdfs:label xml:lang="fr">noir</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0x101010</common_ground:hexRgbValue>
      </owl:NamedIndividual>
 
 
@@ -990,9 +1001,10 @@
      <!-- common_ground#blue -->
 
      <owl:NamedIndividual rdf:about="common_ground#blue">
-         <rdf:type rdf:resource="common_ground#Color"/>
-         <rdfs:label xml:lang="en">blue</rdfs:label>
-         <rdfs:label xml:lang="fr">bleu</rdfs:label>
+        <rdf:type rdf:resource="common_ground#Color"/>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+        <rdfs:label xml:lang="fr">bleu</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0x1E90FF</common_ground:hexRgbValue>
      </owl:NamedIndividual>
 
 
@@ -1003,6 +1015,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">light blue</rdfs:label>
         <rdfs:label xml:lang="fr">bleu clair</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0x40E0D0</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
@@ -1013,6 +1026,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">green</rdfs:label>
         <rdfs:label xml:lang="fr">vert</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0x3CB371</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
@@ -1023,6 +1037,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">pink</rdfs:label>
         <rdfs:label xml:lang="fr">rose</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0xDC143C</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
@@ -1033,6 +1048,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">red</rdfs:label>
         <rdfs:label xml:lang="fr">rouge</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0xDC143C</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
@@ -1043,6 +1059,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">white</rdfs:label>
         <rdfs:label xml:lang="fr">blanc</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0xFFFAFA</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
@@ -1053,6 +1070,7 @@
         <rdf:type rdf:resource="common_ground#Color"/>
         <rdfs:label xml:lang="en">yellow</rdfs:label>
         <rdfs:label xml:lang="fr">jaune</rdfs:label>
+        <common_ground:hexRgbValue rdf:datatype="common_ground#hexrbg">0xFFD700</common_ground:hexRgbValue>
     </owl:NamedIndividual>
 
 
