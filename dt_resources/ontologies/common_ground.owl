@@ -553,6 +553,14 @@
         <rdfs:domain rdf:resource="common_ground#Agent"/>
     </owl:ObjectProperty>
 
+    <!-- common_ground#leftHandMovingToward -->
+
+    <owl:ObjectProperty rdf:about="common_ground#leftHandMovingToward">
+        <rdfs:subPropertyOf rdf:resource="common_ground#handMovingToward"/>
+        <rdfs:range rdf:resource="common_ground#Object"/>
+        <rdfs:domain rdf:resource="common_ground#Agent"/>
+    </owl:ObjectProperty>
+
 
 
     <!-- common_ground#hasInReach -->
@@ -572,6 +580,14 @@
         <rdfs:subPropertyOf rdf:resource="common_ground#isHolding"/>
         <owl:inverseOf rdf:resource="common_ground#isInRightHandOf"/>
         <rdfs:range rdf:resource="common_ground#Pickable"/>
+        <rdfs:domain rdf:resource="common_ground#Agent"/>
+    </owl:ObjectProperty>
+
+    <!-- common_ground#rightHandMovingToward -->
+
+    <owl:ObjectProperty rdf:about="common_ground#rightHandMovingToward">
+        <rdfs:subPropertyOf rdf:resource="common_ground#handMovingToward"/>
+        <rdfs:range rdf:resource="common_ground#Object"/>
         <rdfs:domain rdf:resource="common_ground#Agent"/>
     </owl:ObjectProperty>
 
@@ -687,7 +703,13 @@
         <rdfs:domain rdf:resource="common_ground#Agent"/>
     </owl:ObjectProperty>
 
+    <!-- common_ground#handMovingToward -->
 
+    <owl:ObjectProperty rdf:about="common_ground#handMovingToward">
+        <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
+        <rdfs:range rdf:resource="common_ground#Object"/>
+        <rdfs:domain rdf:resource="common_ground#Agent"/>
+    </owl:ObjectProperty>
 
     <!-- common_ground#isIn -->
 

@@ -61,25 +61,25 @@
 
     <!-- block_building_objects#PLACEMAT1 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#PLACEMAT1">
+    <owl:NamedIndividual rdf:about="block_building_objects#placement_1">
         <rdf:type rdf:resource="common_ground#Spot"/>
     </owl:NamedIndividual>
 
     <!-- block_building_objects#PLACEMAT2 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#PLACEMAT2">
+    <owl:NamedIndividual rdf:about="block_building_objects#placement_2">
         <rdf:type rdf:resource="common_ground#Spot"/>
     </owl:NamedIndividual>
 
     <!-- block_building_objects#STICK1 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#STICK1">
+    <owl:NamedIndividual rdf:about="block_building_objects#stick">
         <rdf:type rdf:resource="common_ground#Stick"/>
     </owl:NamedIndividual>
 
     <!-- block_building_objects#RED_CUBE1 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#RED_CUBE1">
+    <owl:NamedIndividual rdf:about="block_building_objects#red_cube_1">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#red"/>
     </owl:NamedIndividual>
@@ -87,7 +87,7 @@
 
     <!-- block_building_objects#RED_CUBE2 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#RED_CUBE2">
+    <owl:NamedIndividual rdf:about="block_building_objects#red_cube_2">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#red"/>
     </owl:NamedIndividual>
@@ -95,7 +95,7 @@
 
     <!-- block_building_objects#BLUE_CUBE1 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#BLUE_CUBE1">
+    <owl:NamedIndividual rdf:about="block_building_objects#blue_cube_1">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
     </owl:NamedIndividual>
@@ -103,14 +103,14 @@
 
     <!-- block_building_objects#BLUE_CUBE2 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#BLUE_CUBE2">
+    <owl:NamedIndividual rdf:about="block_building_objects#blue_cube_2">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
     </owl:NamedIndividual>
 
     <!-- block_building_objects#GREEN_CUBE1 -->
 
-    <owl:NamedIndividual rdf:about="block_building_objects#GREEN_CUBE1">
+    <owl:NamedIndividual rdf:about="block_building_objects#green_cube">
         <rdf:type rdf:resource="common_ground#Cube"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
     </owl:NamedIndividual>

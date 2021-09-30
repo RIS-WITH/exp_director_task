@@ -16,7 +16,12 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+    <!-- dt_objects#ICRASupport -->
 
+    <owl:Class rdf:about="dt_objects#ICRASupport">
+        <rdfs:subClassOf rdf:resource="common_ground#Entity"/>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/support.obj</common_ground:hasMesh>
+    </owl:Class>
 
 
     <!-- dt_objects#DtCube -->
@@ -785,13 +790,6 @@
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
-    <owl:NamedIndividual rdf:about="dt_objects#support1">
-        <rdf:type rdf:resource="common_ground#Spot"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="dt_objects#support2">
-        <rdf:type rdf:resource="common_ground#Spot"/>
-    </owl:NamedIndividual>
 
     <!-- dt_objects#cube_BBCG -->
 
@@ -850,6 +848,29 @@
         <rdf:type rdf:resource="common_ground#Border"/>
         <common_ground:hasColor rdf:resource="common_ground#blue"/>
     </owl:NamedIndividual>
+
+        <!-- dt_objects#support1 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#support1">
+        <rdf:type rdf:resource="dt_objects#ICRASupport"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">150</common_ground:hasArId>
+    </owl:NamedIndividual>
+
+
+        <!-- dt_objects#support2 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#support2">
+        <rdf:type rdf:resource="dt_objects#ICRASupport"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">151</common_ground:hasArId>
+    </owl:NamedIndividual>
+
+        <!-- dt_objects#support3 -->
+
+    <owl:NamedIndividual rdf:about="dt_objects#support3">
+        <rdf:type rdf:resource="dt_objects#ICRASupport"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">152</common_ground:hasArId>
+    </owl:NamedIndividual>
+
 
 
 </rdf:RDF>

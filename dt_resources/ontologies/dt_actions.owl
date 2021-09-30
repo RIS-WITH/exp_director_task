@@ -255,7 +255,17 @@
         <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#WaitAction"/>
     </owl:Class>
         
+    <!-- urn:absolute:ontologenius#r_askPunctualHelp -->
 
+    <owl:Class rdf:about="urn:absolute:ontologenius#r_ask_punctual_help">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
+
+    <!-- urn:absolute:ontologenius#r_asksharedgoal -->
+
+    <owl:Class rdf:about="urn:absolute:ontologenius#r_asksharedgoal">
+        <rdfs:subClassOf rdf:resource="urn:absolute:ontologenius#CommunicateAction"/>
+    </owl:Class>
  <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
