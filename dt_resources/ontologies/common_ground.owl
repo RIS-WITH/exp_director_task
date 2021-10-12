@@ -4,7 +4,9 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:common_ground="common_ground#"
+     xmlns:onto="ontologenius#">
     <owl:Ontology rdf:about="common_ground"/>
 
 
@@ -875,18 +877,18 @@
 
 
 
-    <!-- expe_ontologies#hasArId -->
+    <!-- common_ground#hasArId -->
 
-    <owl:DatatypeProperty rdf:about="expe_ontologies#hasArId">
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+    <owl:DatatypeProperty rdf:about="common_ground#hasArId">
+        <rdfs:subPropertyOf rdf:resource="common_ground#topDataProperty"/>
     </owl:DatatypeProperty>
 
 
 
 
-    <!-- expe_ontologies#hasMesh -->
+    <!-- common_ground#hasMesh -->
 
-    <owl:DatatypeProperty rdf:about="expe_ontologies#hasMesh">
+    <owl:DatatypeProperty rdf:about="common_ground#hasMesh">
         <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
     </owl:DatatypeProperty>
@@ -918,10 +920,10 @@
 
 
 
-    <!-- expe_ontologies#hexRgbValue -->
+    <!-- common_ground#hexRgbValue -->
 
-    <owl:DatatypeProperty rdf:about="expe_ontologies#hexRgbValue">
-        <rdfs:subPropertyOf rdf:resource="expe_ontologies#topDataProperty"/>
+    <owl:DatatypeProperty rdf:about="common_ground#hexRgbValue">
+        <rdfs:subPropertyOf rdf:resource="common_ground#topDataProperty"/>
         <rdfs:domain rdf:resource="common_ground#Color"/>
     </owl:DatatypeProperty>
 
