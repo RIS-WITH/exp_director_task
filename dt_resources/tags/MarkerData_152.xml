@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<multimarker markers="1" marker_size="6.62">
+    <marker index="152" status="1">
+        <corner x="-3.31" y="-3.31" z="0" />
+        <corner x="3.31" y="-3.31" z="0" />
+        <corner x="3.31" y="3.31" z="0" />
+        <corner x="-3.31" y="3.31" z="0" />
+    </marker>
+</multimarker>
