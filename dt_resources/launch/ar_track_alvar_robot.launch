@@ -29,7 +29,10 @@
 					  $(find dt_resources)/tags/C3.xml
 					  $(find dt_resources)/tags/C4.xml
 					  $(find dt_resources)/tags/C5.xml
-					  $(find dt_resources)/tags/table_1.xml"/>
+					  $(find dt_resources)/tags/table_1.xml
+					  $(find dt_resources)/tags/table_2.xml
+					  $(find dt_resources)/tags/table_lack.xml
+					  $(find dt_resources)/tags/throw_box_pink.xml"/>
 
 	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
 
