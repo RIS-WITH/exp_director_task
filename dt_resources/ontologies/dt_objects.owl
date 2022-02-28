@@ -8,7 +8,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_objects"/>
+    <owl:Ontology rdf:about="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_objects">
+      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground"/>
+    </owl:Ontology>
 
 
 
@@ -740,11 +742,19 @@
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_pink.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
+
+
+    <!-- dt_objects#table_2 -->
+
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
-        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <rdf:type rdf:resource="common_ground#KallaxTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#table_lack -->
 
     <owl:NamedIndividual rdf:about="dt_objects#table_lack">
         <rdf:type rdf:resource="common_ground#LowTable"/>
@@ -752,11 +762,19 @@
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
+
+
+    <!-- dt_objects#round_table -->
+
     <owl:NamedIndividual rdf:about="dt_objects#round_table">
         <rdf:type rdf:resource="common_ground#RoundTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">78</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/round_table.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
+
+
+
+    <!-- dt_objects#red_box -->
 
     <owl:NamedIndividual rdf:about="dt_objects#red_box">
         <rdf:type rdf:resource="common_ground#Container"/>
@@ -765,8 +783,12 @@
     </owl:NamedIndividual>
 
 
+
+    <!-- dt_objects#table_3 -->
+
+
     <owl:NamedIndividual rdf:about="dt_objects#table_3">
-        <rdf:type rdf:resource="common_ground#SecondTable"/>
+        <rdf:type rdf:resource="common_ground#KallaxTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">80</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
