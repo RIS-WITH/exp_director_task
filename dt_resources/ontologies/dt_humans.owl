@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="dt_humans#"
-     xml:base="dt_humans"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans#"
+     xmlns:dt_humans="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans#"
+     xmlns:common_ground="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="dt_humans"/>
-
+    <owl:Ontology rdf:about="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans">
+      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground"/>
+    </owl:Ontology>
+    
 
 
     <!-- 
@@ -17,7 +20,8 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-  
+    
+
 
     <!-- dt_humans#BodyPart -->
 
@@ -60,7 +64,6 @@
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/hand_right.obj</common_ground:hasMesh>
     </owl:Class>
     
-    
 
 
     <!-- 
@@ -70,7 +73,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
     
 
 
@@ -119,9 +121,6 @@
     
 
 
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -129,7 +128,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
     
 
 
@@ -155,12 +153,17 @@
         <rdf:type rdf:resource="dt_humans#Head"/>
     </owl:NamedIndividual>
     
+
+
+    <!-- dt_humans#human_0 -->
+    
     <owl:NamedIndividual rdf:about="dt_humans#human_0">
         <rdf:type rdf:resource="common_ground#Human"/>
         <dt_humans:hasHead rdf:resource="dt_humans#Helmet_2"/>
         <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
         <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
     </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
