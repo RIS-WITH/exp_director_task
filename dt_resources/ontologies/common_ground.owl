@@ -1181,8 +1181,6 @@
             <rdf:Description rdf:about="common_ground#ConsoleTable"/>
             <rdf:Description rdf:about="common_ground#Cube"/>
             <rdf:Description rdf:about="common_ground#Drawer"/>
-            <rdf:Description rdf:about="common_ground#LowTable"/>
-            <rdf:Description rdf:about="common_ground#KallaxTable"/>
             <rdf:Description rdf:about="common_ground#Table"/>
         </owl:members>
     </rdf:Description>
@@ -1192,11 +1190,17 @@
             <rdf:Description rdf:about="common_ground#ConsoleTable"/>
             <rdf:Description rdf:about="common_ground#Drawer"/>
             <rdf:Description rdf:about="common_ground#Fan"/>
-            <rdf:Description rdf:about="common_ground#LowTable"/>
-            <rdf:Description rdf:about="common_ground#KallaxTable"/>
             <rdf:Description rdf:about="common_ground#Shelf"/>
             <rdf:Description rdf:about="common_ground#TV"/>
             <rdf:Description rdf:about="common_ground#Table"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="common_ground#RoundTable"/>
+            <rdf:Description rdf:about="common_ground#LowTable"/>
+            <rdf:Description rdf:about="common_ground#KallaxTable"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
