@@ -30,33 +30,9 @@
 
     <!-- common_ground#hexRgbValue -->
 
-    <owl:AnnotationProperty rdf:about="common_ground#hexRgbValue"/>
-    
-
-
-    <!-- common_ground#hasMesh -->
-
-    <owl:AnnotationProperty rdf:about="common_ground#hasMesh"/>
-    
-
-
-    <!-- common_ground#hexRgbValue -->
-
     <owl:AnnotationProperty rdf:about="common_ground#hexRgbValue">
         <rdfs:domain rdf:resource="common_ground#Color"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- file:/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/exp_director_task/dt_resources/ontologies/ontologenius#label -->
-
-    <owl:AnnotationProperty rdf:about="file:/home/gsarthou/Robots/Pr2/Semantic/catkin_ws/src/exp_director_task/dt_resources/ontologies/ontologenius#label"/>
-    
-
-
-    <!-- ontologenius#label -->
-
-    <owl:AnnotationProperty rdf:about="ontologenius#label"/>
     
 
 
@@ -270,15 +246,6 @@
         <owl:inverseOf rdf:resource="common_ground#isInRightHandOf"/>
         <rdfs:domain rdf:resource="common_ground#Agent"/>
         <rdfs:range rdf:resource="common_ground#Pickable"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#hasMesh -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasMesh">
-        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
-        <rdfs:domain rdf:resource="common_ground#Object"/>
     </owl:ObjectProperty>
     
 
@@ -566,7 +533,8 @@
     <!-- common_ground#hasMesh -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hasMesh">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
     </owl:DatatypeProperty>
     
 
@@ -574,7 +542,7 @@
     <!-- common_ground#hexRgbValue -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hexRgbValue">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
     </owl:DatatypeProperty>
     
 
