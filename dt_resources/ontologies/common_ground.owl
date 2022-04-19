@@ -539,6 +539,14 @@
     
 
 
+    <!-- common_ground#hasTexture -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- common_ground#hexRgbValue -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hexRgbValue">
