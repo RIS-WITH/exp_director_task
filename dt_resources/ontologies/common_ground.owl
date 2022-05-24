@@ -539,6 +539,30 @@
     
 
 
+    <!-- common_ground#hasVisualMesh -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#hasVisualMesh">
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- common_ground#hasCollisionlMesh -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#hasCollisionlMesh">
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- common_ground#hasUnreallMesh -->
+
+    <owl:DatatypeProperty rdf:about="common_ground#hasUnreallMesh">
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- common_ground#hasTexture -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hasTexture">
@@ -648,7 +672,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_console.stl</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_console.stl</hasMesh>
         <rdfs:label xml:lang="fr">console</rdfs:label>
         <rdfs:label xml:lang="en">console table</rdfs:label>
     </owl:Class>
@@ -672,7 +696,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#Pickable"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cube.stl</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/cube.stl</hasMesh>
         <rdfs:label xml:lang="en">block</rdfs:label>
         <rdfs:label xml:lang="fr">cube</rdfs:label>
         <onto:label xml:lang="en">cube</onto:label>
@@ -755,7 +779,7 @@
 
     <owl:Class rdf:about="common_ground#LowTable">
         <rdfs:subClassOf rdf:resource="common_ground#Table"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_low_table_lack.stl</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_low_table_lack.stl</hasMesh>
         <rdfs:label xml:lang="en">low table</rdfs:label>
         <rdfs:label xml:lang="fr">low table</rdfs:label>
     </owl:Class>
@@ -830,7 +854,7 @@
 
     <owl:Class rdf:about="common_ground#RoundTable">
         <rdfs:subClassOf rdf:resource="common_ground#Table"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/round_table.stl</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/round_table.stl</hasMesh>
     </owl:Class>
     
 
@@ -839,7 +863,7 @@
 
     <owl:Class rdf:about="common_ground#KallaxTable">
         <rdfs:subClassOf rdf:resource="common_ground#Table"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</hasMesh>
     </owl:Class>
     
 
@@ -940,7 +964,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#Furniture"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
-        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_table.dae</hasMesh>
+        <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_table.dae</hasMesh>
         <rdfs:label xml:lang="en">table</rdfs:label>
         <rdfs:label xml:lang="fr">table</rdfs:label>
     </owl:Class>

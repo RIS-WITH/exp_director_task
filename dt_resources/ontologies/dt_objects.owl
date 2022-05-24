@@ -28,7 +28,7 @@
 
     <owl:Class rdf:about="dt_objects#DtCube">
         <rdfs:subClassOf rdf:resource="common_ground#Cube"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_cube.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/dt_cube.stl</common_ground:hasMesh>
         <common_ground:hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/textures/cubes_textures.png</common_ground:hasTexture>
     </owl:Class>
 
@@ -37,7 +37,7 @@
     <owl:Class rdf:about="dt_objects#DtBox">
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/dt_box.stl</common_ground:hasMesh>
         <common_ground:hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/textures/dt_box_color.png</common_ground:hasTexture>
     </owl:Class>
 
@@ -47,7 +47,7 @@
 
     <owl:Class rdf:about="dt_objects#DtThrowBox">
         <rdfs:subClassOf rdf:resource="common_ground#StorageBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box.dae</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -56,7 +56,7 @@
 
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -65,7 +65,7 @@
 
     <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box_back.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/dt_box_back.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -75,7 +75,7 @@
     <owl:Class rdf:about="dt_objects#VisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/dt_box.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/dt_box.stl</common_ground:hasMesh>
     </owl:Class>
 
 
@@ -174,7 +174,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">206</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">207</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GBCG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GBCG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -206,7 +206,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_GGCB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">210</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">211</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GGCB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GGCB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -238,7 +238,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBCB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">208</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">209</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GBCB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GBCB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -270,7 +270,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGCG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">200</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">201</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BGCG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BGCG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -302,7 +302,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBCG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">202</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">203</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BBCG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BBCG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -334,7 +334,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGCB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">204</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">205</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BGCB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BGCB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -366,7 +366,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BBTG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">222</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">223</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BBTG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BBTG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -398,7 +398,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGTG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">212</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">213</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BGTG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BGTG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -430,7 +430,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_BGTB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">214</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">215</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_BGTB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_BGTB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -461,7 +461,7 @@
         <common_ground:hasFigure rdf:resource="common_ground#cube_GBTG_form"/>
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTG_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">0</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GBTG.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GBTG.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -493,7 +493,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_GBTB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">218</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">219</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GBTB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GBTB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -525,7 +525,7 @@
         <common_ground:hasBorder rdf:resource="common_ground#cube_GGTB_border"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">216</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">217</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/cubes/cube_GGTB.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/cubes/obj/cube_GGTB.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -615,7 +615,7 @@
         <rdf:type rdf:resource="dt_objects#DirectorReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">110</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">111</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_B5.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_B5.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -627,7 +627,7 @@
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">108</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">109</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_C1.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_C1.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -639,7 +639,7 @@
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">106</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">107</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_C2.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_C2.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -651,7 +651,7 @@
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">104</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">105</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_C3.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_C3.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -663,7 +663,7 @@
         <rdf:type rdf:resource="dt_objects#ReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">102</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">103</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_C4.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_C4.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -675,7 +675,7 @@
         <rdf:type rdf:resource="dt_objects#ReceiverReachableDtBox"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">100</common_ground:hasArId>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">101</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dT_resources/mesh/boxes/box_C5.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/box_C5.obj</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -748,7 +748,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_green">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_green.dae</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green.dae</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -759,7 +759,7 @@
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#magenta"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">69</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/throw_box_pink.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -769,7 +769,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
         <rdf:type rdf:resource="common_ground#KallaxTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -779,7 +779,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#table_lack">
         <rdf:type rdf:resource="common_ground#LowTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">72</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_low_table_lack.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_low_table_lack.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -789,7 +789,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#round_table">
         <rdf:type rdf:resource="common_ground#RoundTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">78</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/round_table.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/round_table.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -799,7 +799,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#red_box">
         <rdf:type rdf:resource="common_ground#Container"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">79</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/red_box.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/red_box.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 
@@ -810,7 +810,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#table_3">
         <rdf:type rdf:resource="common_ground#KallaxTable"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">80</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/ikea_kallax.stl</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
 </rdf:RDF>

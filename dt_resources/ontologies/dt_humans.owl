@@ -43,7 +43,7 @@
 
     <owl:Class rdf:about="dt_humans#Head">
         <rdfs:subClassOf rdf:resource="dt_humans#BodyPart"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/head.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/head.obj</common_ground:hasMesh>
     </owl:Class>
     
 
@@ -52,7 +52,7 @@
 
     <owl:Class rdf:about="dt_humans#LeftHand">
         <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/hand_left.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/hand_left.obj</common_ground:hasMesh>
     </owl:Class>
     
 
@@ -61,7 +61,7 @@
 
     <owl:Class rdf:about="dt_humans#RightHand">
         <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/hand_right.obj</common_ground:hasMesh>
+        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/hand_right.obj</common_ground:hasMesh>
     </owl:Class>
     
 
