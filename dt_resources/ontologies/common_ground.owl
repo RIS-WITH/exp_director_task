@@ -1074,6 +1074,15 @@
     
 
 
+    <!-- common_ground#skin_color -->
+
+    <owl:NamedIndividual rdf:about="common_ground#skin_color">
+        <rdf:type rdf:resource="common_ground#Color"/>
+        <hexRgbValue rdf:datatype="common_ground#hexrbg">0xF9E4B7</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- common_ground#round -->
 
     <owl:NamedIndividual rdf:about="common_ground#round">
