@@ -993,6 +993,39 @@
     
 
 
+    <!-- common_ground#BuildingPart -->
+
+    <owl:Class rdf:about="common_ground#BuildingPart">
+        <rdfs:subClassOf rdf:resource="common_ground#Container"/>
+        <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Wall -->
+
+    <owl:Class rdf:about="common_ground#Wall">
+        <rdfs:subClassOf rdf:resource="common_ground#BuildingPart"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Floor -->
+
+    <owl:Class rdf:about="common_ground#Floor">
+        <rdfs:subClassOf rdf:resource="common_ground#BuildingPart"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Window -->
+
+    <owl:Class rdf:about="common_ground#Window">
+        <rdfs:subClassOf rdf:resource="common_ground#BuildingPart"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1052,6 +1085,17 @@
     <owl:NamedIndividual rdf:about="common_ground#green">
         <rdf:type rdf:resource="common_ground#Color"/>
         <hexRgbValue rdf:datatype="common_ground#hexrbg">0x3CB371</hexRgbValue>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+        <rdfs:label xml:lang="fr">vert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- common_ground#grey -->
+
+    <owl:NamedIndividual rdf:about="common_ground#grey">
+        <rdf:type rdf:resource="common_ground#Color"/>
+        <hexRgbValue rdf:datatype="common_ground#hexrbg">0xCCCCCC</hexRgbValue>
         <rdfs:label xml:lang="en">green</rdfs:label>
         <rdfs:label xml:lang="fr">vert</rdfs:label>
     </owl:NamedIndividual>
