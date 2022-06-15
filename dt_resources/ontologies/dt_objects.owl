@@ -747,23 +747,25 @@
 
 
 
-    <!-- dt_objects#throw_box_left -->
+    <!-- dt_objects#throw_box_green -->
 
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_green">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green.dae</common_ground:hasMesh>
+        <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green.obj</common_ground:hasVisualMesh>
+        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green_vhacd.obj</common_ground:hasCollisionlMesh>
     </owl:NamedIndividual>
 
 
 
-    <!-- dt_objects#throw_box_right -->
+    <!-- dt_objects#throw_box_pink -->
 
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_pink">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#magenta"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">69</common_ground:hasArId>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink.stl</common_ground:hasMesh>
+        <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink.obj</common_ground:hasVisualMesh>
+        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink_vhacd.obj</common_ground:hasCollisionlMesh>
     </owl:NamedIndividual>
 
 
