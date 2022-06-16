@@ -224,7 +224,7 @@
 
 
 
-    <!-- dt_objects#cube_GGCB_border -->
+    <!-- dt_objects#cube_GGCB_border -->SOGo/so/gsarthou/Mail/null
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB_border">
         <rdf:type rdf:resource="common_ground#Border"/>
@@ -752,6 +752,7 @@
     <owl:NamedIndividual rdf:about="dt_objects#throw_box_green">
         <rdf:type rdf:resource="common_ground#DtThrowBox"/>
         <common_ground:hasColor rdf:resource="common_ground#green"/>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">67</common_ground:hasArId>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green.obj</common_ground:hasVisualMesh>
         <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green_vhacd.obj</common_ground:hasCollisionlMesh>
     </owl:NamedIndividual>
@@ -774,7 +775,7 @@
 
     <owl:NamedIndividual rdf:about="dt_objects#table_2">
         <rdf:type rdf:resource="common_ground#KallaxTable"/>
-        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">76</common_ground:hasArId>
+        <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">71</common_ground:hasArId>
         <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</common_ground:hasMesh>
     </owl:NamedIndividual>
 
