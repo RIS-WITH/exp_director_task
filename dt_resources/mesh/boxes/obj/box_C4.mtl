@@ -1,8 +1,8 @@
-# Blender MTL File: 'director_task.blend'
+# Blender MTL File: 'None'
 # Material Count: 1
 
-newmtl dt_box
-Ns 250.000000
+newmtl dt_box.015
+Ns 249.999987
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -12,4 +12,3 @@ d 1.000000
 illum 2
 map_Bump /home/gsarthou/Documents/blender_scenes/director_task/textures/dt_boxes/dt_box_normal.png
 map_Kd /home/gsarthou/Documents/blender_scenes/director_task/textures/dt_boxes/dt_box_color.png
-map_Ns /home/gsarthou/Documents/blender_scenes/director_task/textures/dt_boxes/dt_box_roughness.png
