@@ -1014,6 +1014,7 @@
 
     <owl:Class rdf:about="common_ground#TimePoint">
         <rdfs:subClassOf rdf:resource="common_ground#TimeDescriptor"/>
+        <owl:disjointWith rdf:resource="common_ground#TimeInterval"/>
     </owl:Class>
     
 
@@ -1352,10 +1353,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="common_ground#Area"/>
             <rdf:Description rdf:about="common_ground#Color"/>
-            <rdf:Description rdf:about="common_ground#Entity"/>
+            <rdf:Description rdf:about="common_ground#Location"/>
             <rdf:Description rdf:about="common_ground#Shape"/>
+            <rdf:Description rdf:about="common_ground#Size"/>
+            <rdf:Description rdf:about="common_ground#Weight"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
