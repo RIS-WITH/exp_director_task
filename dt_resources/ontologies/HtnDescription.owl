@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/HtnDescription#"
+     xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/HtnDescription#"
+     xmlns:HtnDescription="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/HtnDescription#"
+     xmlns:common_ground="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/HtnDescription">
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- HtnDescription#enableSubtask -->
+
+    <owl:AnnotationProperty rdf:about="HtnDescription#enableSubtask">
+        <rdfs:range rdf:resource="HtnDescription#HtnTask"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnTask"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!-- HtnDescription#hasDecomposition -->
+
+    <owl:AnnotationProperty rdf:about="HtnDescription#hasDecomposition">
+        <rdfs:range rdf:resource="HtnDescription#HtnDecomposition"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnAbstractTask"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!-- HtnDescription#hasSubtask -->
+
+    <owl:AnnotationProperty rdf:about="HtnDescription#hasSubtask">
+        <rdfs:range rdf:resource="HtnDescription#HtnTask"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnDecomposition"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!-- HtnDescription#isDecompositionOf -->
+
+    <owl:AnnotationProperty rdf:about="HtnDescription#isDecompositionOf">
+        <rdfs:range rdf:resource="HtnDescription#HtnAbstractTask"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnDecomposition"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!-- HtnDescription#requireSubtask -->
+
+    <owl:AnnotationProperty rdf:about="HtnDescription#requireSubtask">
+        <rdfs:range rdf:resource="HtnDescription#HtnTask"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnTask"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- HtnDescription#DecompositionUsedBy -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#DecompositionUsedBy">
+        <rdfs:range rdf:resource="HtnDescription#HtnDecomposition"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnAbstractTask"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasNextPrimitiveTask -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasNextPrimitiveTask">
+        <owl:inverseOf rdf:resource="HtnDescription#hasPreviousPrimitiveTask"/>
+        <rdfs:range rdf:resource="HtnDescription#HtnPrimitiveTask"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnPrimitiveTask"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter">
+        <owl:inverseOf rdf:resource="HtnDescription#isParameterOf"/>
+        <rdfs:domain rdf:resource="HtnDescription#HtnTask"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter0 -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter0">
+        <rdfs:subPropertyOf rdf:resource="HtnDescription#hasParameter"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter1 -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter1">
+        <rdfs:subPropertyOf rdf:resource="HtnDescription#hasParameter"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter2 -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter2">
+        <rdfs:subPropertyOf rdf:resource="HtnDescription#hasParameter"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter3 -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter3">
+        <rdfs:subPropertyOf rdf:resource="HtnDescription#hasParameter"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasParameter4 -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasParameter4">
+        <rdfs:subPropertyOf rdf:resource="HtnDescription#hasParameter"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasPreviousPrimitiveTask -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasPreviousPrimitiveTask">
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#hasSubtask -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#hasSubtask">
+        <owl:inverseOf rdf:resource="HtnDescription#isSubtaskOf"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#isParameterOf -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#isParameterOf">
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#isSubtaskOf -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#isSubtaskOf">
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#useDecomposition -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#useDecomposition">
+        <owl:inverseOf rdf:resource="HtnDescription#DecompositionUsedBy"/>
+        <rdfs:range rdf:resource="HtnDescription#HtnAbstractTask"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- HtnDescription#htnHasRootTask -->
+
+    <owl:ObjectProperty rdf:about="HtnDescription#htnHasRootTask">
+        <rdfs:domain rdf:resource="HtnDescription#HierarchicalTaskNetwork"/>
+        <rdfs:range rdf:resource="HtnDescription#HtnAbstractTask"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- HtnDescription#HtnDescriptor -->
+
+    <owl:Class rdf:about="HtnDescription#HtnDescriptor"/>
+
+
+
+    <!-- HtnDescription#HierarchicalTaskNetwork -->
+
+    <owl:Class rdf:about="HtnDescription#HierarchicalTaskNetwork">
+        <rdfs:subClassOf rdf:resource="HtnDescription#HtnDescriptor"/>
+    </owl:Class>
+
+
+
+    <!-- HtnDescription#HtnAbstractTask -->
+
+    <owl:Class rdf:about="HtnDescription#HtnAbstractTask">
+        <rdfs:subClassOf rdf:resource="HtnDescription#HtnTask"/>
+    </owl:Class>
+
+
+
+    <!-- HtnDescription#HtnDecomposition -->
+
+    <owl:Class rdf:about="HtnDescription#HtnDecomposition">
+        <rdfs:subClassOf rdf:resource="HtnDescription#HtnDescriptor"/>
+    </owl:Class>
+
+
+
+    <!-- HtnDescription#HtnPrimitiveTask -->
+
+    <owl:Class rdf:about="HtnDescription#HtnPrimitiveTask">
+        <rdfs:subClassOf rdf:resource="HtnDescription#HtnTask"/>
+        <owl:disjointWith rdf:resource="HtnDescription#HtnAbstractTask"/>
+    </owl:Class>
+
+
+
+    <!-- HtnDescription#HtnTask -->
+
+    <owl:Class rdf:about="HtnDescription#HtnTask">
+        <rdfs:subClassOf rdf:resource="HtnDescription#HtnDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="HtnDescription#HierarchicalTaskNetwork"/>
+            <rdf:Description rdf:about="HtnDescription#HtnTask"/>
+            <rdf:Description rdf:about="HtnDescription#HtnDecomposition"/>
+        </owl:members>
+    </rdf:Description>
+
+
+
+</rdf:RDF>
