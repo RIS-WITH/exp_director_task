@@ -269,10 +269,19 @@
     
 
 
+    <!-- common_ground#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="common_ground#hasQuality">
+        <rdfs:domain rdf:resource="common_ground#PhysicalEntity"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- common_ground#hasShape -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasShape">
         <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:range rdf:resource="common_ground#Shape"/>
     </owl:ObjectProperty>
@@ -283,8 +292,19 @@
 
     <owl:ObjectProperty rdf:about="common_ground#hasSize">
         <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:range rdf:resource="common_ground#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- common_ground#hasWeight -->
+
+    <owl:ObjectProperty rdf:about="common_ground#hasWeight">
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
+        <rdfs:domain rdf:resource="common_ground#Object"/>
+        <rdfs:range rdf:resource="common_ground#Weight"/>
     </owl:ObjectProperty>
     
 
@@ -292,7 +312,7 @@
     <!-- common_ground#hasVolume -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasVolume">
-        <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
     </owl:ObjectProperty>
     
@@ -627,7 +647,7 @@
 
     <owl:Class rdf:about="common_ground#Area">
         <rdfs:subClassOf rdf:resource="common_ground#frFemaleGender"/>
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Location"/>
         <rdfs:label xml:lang="en">area</rdfs:label>
         <rdfs:label xml:lang="fr">zone</rdfs:label>
     </owl:Class>
@@ -944,10 +964,81 @@
     
 
 
+    <!-- common_ground#TimeDescriptor -->
+
+    <owl:Class rdf:about="common_ground#TimeDescriptor">
+        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#TimeInterval -->
+
+    <owl:Class rdf:about="common_ground#TimeInterval">
+        <rdfs:subClassOf rdf:resource="common_ground#TimeDescriptor"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Day -->
+
+    <owl:Class rdf:about="common_ground#Day">
+        <rdfs:subClassOf rdf:resource="common_ground#TimeInterval"/>
+        <rdfs:label xml:lang="fr">jour</rdfs:label>
+        <rdfs:label xml:lang="en">day</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Month -->
+
+    <owl:Class rdf:about="common_ground#Month">
+        <rdfs:subClassOf rdf:resource="common_ground#TimeInterval"/>
+        <rdfs:label xml:lang="fr">mois</rdfs:label>
+        <rdfs:label xml:lang="en">month</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Year -->
+
+    <owl:Class rdf:about="common_ground#Year">
+        <rdfs:subClassOf rdf:resource="common_ground#TimeInterval"/>
+        <rdfs:label xml:lang="fr">année</rdfs:label>
+        <rdfs:label xml:lang="en">year</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#TimePoint -->
+
+    <owl:Class rdf:about="common_ground#TimePoint">
+        <rdfs:subClassOf rdf:resource="common_ground#TimeDescriptor"/>
+    </owl:Class>
+    
+
+
     <!-- common_ground#Size -->
 
     <owl:Class rdf:about="common_ground#Size">
         <rdfs:subClassOf rdf:resource="common_ground#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Weight -->
+
+    <owl:Class rdf:about="common_ground#Weight">
+        <rdfs:subClassOf rdf:resource="common_ground#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- common_ground#Location -->
+
+    <owl:Class rdf:about="common_ground#Location">
+        <rdfs:subClassOf rdf:resource="common_ground#PhysicalQuality"/>
+        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
     </owl:Class>
 
     
@@ -956,7 +1047,7 @@
     <!-- common_ground#Spot -->
 
     <owl:Class rdf:about="common_ground#Spot">
-        <rdfs:subClassOf rdf:resource="common_ground#Area"/>
+        <rdfs:subClassOf rdf:resource="common_ground#Location"/>
         <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
         <rdfs:label xml:lang="fr">endroit</rdfs:label>
         <rdfs:label xml:lang="en">spot</rdfs:label>
