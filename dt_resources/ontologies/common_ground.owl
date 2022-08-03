@@ -498,9 +498,19 @@
 
     <owl:ObjectProperty rdf:about="common_ground#isInArea">
         <rdfs:subPropertyOf rdf:resource="common_ground#isIn"/>
-        <owl:inverseOf rdf:resource="common_ground#AreaHasIn"/>
+        <owl:inverseOf rdf:resource="common_ground#areaHasIn"/>
         <rdfs:range rdf:resource="common_ground#Entity"/>
         <rdfs:domain rdf:resource="common_ground#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- common_ground#areaHasIn -->
+
+    <owl:ObjectProperty rdf:about="common_ground#areaHasIn">
+        <rdfs:subPropertyOf rdf:resource="common_ground#hasIn"/>
+        <rdfs:range rdf:resource="common_ground#Area"/>
+        <rdfs:domain rdf:resource="common_ground#Entity"/>
     </owl:ObjectProperty>
     
 
@@ -708,7 +718,6 @@
     <owl:Class rdf:about="common_ground#Agent">
         <rdfs:subClassOf rdf:resource="common_ground#PhysicalEntity"/>
         <rdfs:subClassOf rdf:resource="common_ground#FrMaleGender"/>
-        <owl:disjointWith rdf:resource="common_ground#Object"/>
         <rdfs:label xml:lang="en">agent</rdfs:label>
         <rdfs:label xml:lang="fr">agent</rdfs:label>
     </owl:Class>
@@ -1524,6 +1533,14 @@
             <rdf:Description rdf:about="common_ground#KallaxTable"/>
             <rdf:Description rdf:about="common_ground#LowTable"/>
             <rdf:Description rdf:about="common_ground#RoundTable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="common_ground#Object"/>
+            <rdf:Description rdf:about="common_ground#Agent"/>
+            <rdf:Description rdf:about="common_ground#Area"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
