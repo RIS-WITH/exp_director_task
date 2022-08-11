@@ -4,3 +4,4 @@ flow:
   - ReasonerInverseOf
   - ReasonerRangeDomain
   - ReasonerSymetric
+  - ReasonerEgocentrics
