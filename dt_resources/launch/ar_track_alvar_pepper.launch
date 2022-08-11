@@ -1,0 +1,9 @@
+<launch>
+
+  <include file="$(find dt_resources)/launch/ar_track_alvar_robot.launch">
+    <arg name="cam_image_topic" value="/camera/color/image_raw" />
+    <arg name="cam_info_topic" value="/camera/color/camera_info" />
+    <arg name="output_frame" value="/base_footprint" />
+  </include>
+
+</launch>
