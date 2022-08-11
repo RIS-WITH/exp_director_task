@@ -1,0 +1,20 @@
+modules:
+  robot:
+    PR2JointsPerception: pepper_joints
+  #humans:
+   # OptitrackPerceptionModule: optitrack
+  objects:
+    ArTrackPerceptionModule: ar_track
+    StaticObjectsPerceptionModule: static
+
+pepper_joints:
+  name : pepper
+  right_hand : r_gripper
+  left_hand : l_gripper
+  head : CameraTop_optical_frame
+  base : base_link
+
+optitrack:
+  name: human_0
+  offset_x: 6.4868
+  offset_y: 2.8506
