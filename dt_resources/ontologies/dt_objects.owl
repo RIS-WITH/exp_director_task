@@ -38,7 +38,7 @@
         <rdfs:subClassOf rdf:resource="common_ground#Box"/>
         <rdfs:subClassOf rdf:resource="common_ground#Support"/>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/stl/dt_box.stl</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_vhacd.obj</common_ground:hasCollisionMesh>
         <common_ground:hasTexture rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/textures/dt_box_color.png</common_ground:hasTexture>
     </owl:Class>
 
@@ -58,7 +58,7 @@
     <owl:Class rdf:about="dt_objects#ReceiverVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/stl/dt_box_back.stl</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_back_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_back_vhacd.obj</common_ground:hasCollisionMesh>
     </owl:Class>
 
 
@@ -68,7 +68,7 @@
     <owl:Class rdf:about="dt_objects#DirectorVisibleDtBox">
         <rdfs:subClassOf rdf:resource="dt_objects#DtBox"/>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/stl/dt_box_back.stl</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_back_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_back_vhacd.obj</common_ground:hasCollisionMesh>
     </owl:Class>
 
 
@@ -79,7 +79,7 @@
         <rdfs:subClassOf rdf:resource="dt_objects#DirectorVisibleDtBox"/>
         <rdfs:subClassOf rdf:resource="dt_objects#ReceiverVisibleDtBox"/>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/stl/dt_box.stl</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/boxes/obj/dt_box_vhacd.obj</common_ground:hasCollisionMesh>
     </owl:Class>
 
 
@@ -225,7 +225,7 @@
 
 
 
-    <!-- dt_objects#cube_GGCB_border -->SOGo/so/gsarthou/Mail/null
+    <!-- dt_objects#cube_GGCB_border -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB_border">
         <rdf:type rdf:resource="common_ground#Border"/>
@@ -755,7 +755,7 @@
         <common_ground:hasColor rdf:resource="common_ground#green"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">67</common_ground:hasArId>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green.obj</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_green_vhacd.obj</common_ground:hasCollisionMesh>
     </owl:NamedIndividual>
 
 
@@ -767,7 +767,7 @@
         <common_ground:hasColor rdf:resource="common_ground#magenta"/>
         <common_ground:hasArId rdf:datatype="http://www.w3.org/2002/07/owl#real">69</common_ground:hasArId>
         <common_ground:hasVisualMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink.obj</common_ground:hasVisualMesh>
-        <common_ground:hasCollisionlMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink_vhacd.obj</common_ground:hasCollisionlMesh>
+        <common_ground:hasCollisionMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/throw_box_pink_vhacd.obj</common_ground:hasCollisionMesh>
     </owl:NamedIndividual>
 
 
