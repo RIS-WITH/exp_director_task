@@ -120,15 +120,6 @@
 
     <!-- common_ground#isAtLeftOf -->
 
-<<<<<<< HEAD
-    <owl:ObjectProperty rdf:about="common_ground#atLeftOf">
-        <rdfs:subPropertyOf rdf:resource="common_ground#GeometricalRelation"/>
-        <owl:inverseOf rdf:resource="common_ground#atRightOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Entity"/>
-        <rdfs:range rdf:resource="common_ground#Entity"/>
-=======
     <owl:ObjectProperty rdf:about="common_ground#isAtLeftOf">
         <rdfs:subPropertyOf rdf:resource="common_ground#egocentricGeometricalRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
@@ -136,7 +127,6 @@
         <owl:inverseOf rdf:resource="common_ground#isAtRightOf"/>
         <rdfs:domain rdf:resource="common_ground#PhysicalEntity"/>
         <rdfs:range rdf:resource="common_ground#PhysicalEntity"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
         <rdfs:label xml:lang="fr">a gauche de</rdfs:label>
         <rdfs:label xml:lang="en">to the left of</rdfs:label>
     </owl:ObjectProperty>
@@ -347,13 +337,8 @@
     <!-- common_ground#hasShape -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasShape">
-<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
         <rdfs:subPropertyOf rdf:resource="common_ground#hasPhysicalQuality"/>
-=======
-        <rdfs:subPropertyOf rdf:resource="common_ground#visualRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:range rdf:resource="common_ground#Shape"/>
     </owl:ObjectProperty>
@@ -363,13 +348,8 @@
     <!-- common_ground#hasSize -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasSize">
-<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="common_ground#VisualRelation"/>
         <rdfs:subPropertyOf rdf:resource="common_ground#hasPhysicalQuality"/>
-=======
-        <rdfs:subPropertyOf rdf:resource="common_ground#visualRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasQuality"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:range rdf:resource="common_ground#Size"/>
     </owl:ObjectProperty>
@@ -677,14 +657,8 @@
 
     <!-- common_ground#hasCollisionlMesh -->
 
-<<<<<<< HEAD
     <owl:DatatypeProperty rdf:about="common_ground#hasCollisionlMesh">
         <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
-=======
-    <owl:DatatypeProperty rdf:about="common_ground#hasMesh">
-        <rdfs:subPropertyOf rdf:resource="common_ground#displayableRelation"/>
-        <rdfs:subPropertyOf rdf:resource="common_ground#visualRelation"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
     </owl:DatatypeProperty>
     
 
@@ -698,17 +672,10 @@
     
 
 
-<<<<<<< HEAD
     <!-- common_ground#hasTexture -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hasTexture">
         <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
-=======
-    <!-- common_ground#hasCollisionMesh -->
-
-    <owl:DatatypeProperty rdf:about="common_ground#hasCollisionMesh">
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
     </owl:DatatypeProperty>
     
 
@@ -723,13 +690,8 @@
 
     <!-- common_ground#hasVisualMesh -->
 
-<<<<<<< HEAD
     <owl:DatatypeProperty rdf:about="common_ground#hasVisualMesh">
         <rdfs:subPropertyOf rdf:resource="common_ground#hasMesh"/>
-=======
-    <owl:DatatypeProperty rdf:about="common_ground#hasTexture">
-        <rdfs:subPropertyOf rdf:resource="common_ground#displayableRelation"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
     </owl:DatatypeProperty>
     
 
@@ -737,12 +699,8 @@
     <!-- common_ground#hexRgbValue -->
 
     <owl:DatatypeProperty rdf:about="common_ground#hexRgbValue">
-<<<<<<< HEAD
         <rdfs:subPropertyOf rdf:resource="common_ground#DisplayableRelation"/>
         <rdfs:domain rdf:resource="common_ground#Color"/>
-=======
-        <rdfs:subPropertyOf rdf:resource="common_ground#displayableRelation"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
     </owl:DatatypeProperty>
     
 
@@ -778,11 +736,7 @@
 
     <owl:Class rdf:about="common_ground#Agent">
         <rdfs:subClassOf rdf:resource="common_ground#PhysicalEntity"/>
-<<<<<<< HEAD
         <rdfs:subClassOf rdf:resource="common_ground#FrMaleGender"/>
-=======
-        <rdfs:subClassOf rdf:resource="common_ground#frMaleGender"/>
->>>>>>> 075f20b0448963d07018277f04f3ae5e7cf704c0
         <rdfs:label xml:lang="en">agent</rdfs:label>
         <rdfs:label xml:lang="fr">agent</rdfs:label>
     </owl:Class>
@@ -1408,6 +1362,17 @@
         <rdf:type rdf:resource="common_ground#Shape"/>
         <rdfs:label xml:lang="fr">rectangulaire</rdfs:label>
         <rdfs:label xml:lang="en">rectangular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- common_ground#brown -->
+
+    <owl:NamedIndividual rdf:about="common_ground#brown">
+        <rdf:type rdf:resource="common_ground#Color"/>
+        <rdfs:label xml:lang="fr">marron</rdfs:label>
+        <rdfs:label xml:lang="en">brown</rdfs:label>
+        <hexRgbValue rdf:datatype="common_ground#hexrbg">0xA0522D</hexRgbValue>
     </owl:NamedIndividual>
     
 
