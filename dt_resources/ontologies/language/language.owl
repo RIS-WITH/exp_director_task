@@ -1,0 +1,655 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="ontologenius#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="ontologenius"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- ontologenius#CoodinationConjunction -->
+
+    <owl:Class rdf:about="ontologenius#LanguageModel">
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#CoodinationConjunction -->
+
+    <owl:Class rdf:about="ontologenius#CoodinationConjunction">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // PersonalForm
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#PersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#PersonalForm">
+    </owl:Class>
+
+
+
+    <!-- ontologenius#SingularPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#SingularPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalForm"/>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#PluralPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#PluralPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalForm"/>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#FirstPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#FirstPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#SecondPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#SecondPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#ThirdPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#ThirdPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalForm"/>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#FirstSingularPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#FirstSingularPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#SecondSingularPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#SecondSingularPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#ThirdSingularPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#ThirdSingularPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalForm"/>
+    </owl:Class>
+
+
+
+    <!-- ontologenius#FirstPluralPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#FirstPluralPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#SecondPluralPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#SecondPluralPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalForm"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#ThirdPluralPersonalForm -->
+
+    <owl:Class rdf:about="ontologenius#ThirdPluralPersonalForm">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalForm"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // PersonalPronoun
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#PersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#PersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#SubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalPronoun"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#ObjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#ObjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalPronoun"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#PossessivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#PossessivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalPronoun"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SingularPersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#SingularPersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalPronoun"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#PluralPersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#PluralPersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#PersonalPronoun"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FirstSingularSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#FirstSingularSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">I</rdfs:label>
+        <rdfs:label xml:lang="fr">je</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SecondSingularSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#SecondSingularSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">you</rdfs:label>
+        <rdfs:label xml:lang="fr">tu</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#ThirdSingularSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#ThirdSingularSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">it</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#ThirdFemaleSingularSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#ThirdFemaleSingularSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularSubjectivePersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="en">she</rdfs:label>
+        <rdfs:label xml:lang="fr">elle</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#ThirdMaleSingularSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#ThirdMaleSingularSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularSubjectivePersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#MaleGender"/>
+        <rdfs:label xml:lang="en">he</rdfs:label>
+        <rdfs:label xml:lang="fr">il</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FirstPluralPersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#FirstPluralSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">we</rdfs:label>
+        <rdfs:label xml:lang="fr">nous</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SecondPluralSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#SecondPluralSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">you</rdfs:label>
+        <rdfs:label xml:lang="fr">vous</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#ThirdPluralSubjectivePersonalPronoun -->
+
+    <owl:Class rdf:about="ontologenius#SecondPluralSubjectivePersonalPronoun">
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPersonalForm"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralPersonalPronoun"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SubjectivePersonalPronoun"/>
+        <rdfs:label xml:lang="en">they</rdfs:label>
+        <rdfs:label xml:lang="fr">ils</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Gender
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Gender -->
+
+    <owl:Class rdf:about="ontologenius#Gender">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FemaleGender -->
+
+    <owl:Class rdf:about="ontologenius#FemaleGender">
+        <rdfs:subClassOf rdf:resource="ontologenius#Gender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#MaleGender -->
+
+    <owl:Class rdf:about="ontologenius#MaleGender">
+        <rdfs:subClassOf rdf:resource="ontologenius#Gender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FrFemaleGender -->
+
+    <owl:Class rdf:about="ontologenius#FrFemaleGender">
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FrMaleGender -->
+
+    <owl:Class rdf:about="ontologenius#FrMaleGender">
+        <rdfs:subClassOf rdf:resource="ontologenius#MaleGender"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // DefinedArticle
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#DefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#DefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+        <rdfs:label xml:lang="en">the</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SingularDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#SingularDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#DefinedArticle"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#PluralDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#PluralDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#DefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#MaleGender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FemaleSingularDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#FemaleSingularDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularDefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">la</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#MaleSingularDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#MaleSingularDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularDefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">le</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FemalePluralDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#FemalePluralDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralDefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#MalePluralrDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#MalePluralrDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralDefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#VowelSingularDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#VowelSingularDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularDefinedArticle"/>
+        <rdfs:label xml:lang="fr">l'</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#VowelPluralDefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#VowelPluralDefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralDefinedArticle"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // UndefinedArticle
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#UndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#UndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#SingularUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#SingularUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#UndefinedArticle"/>
+        <rdfs:label xml:lang="en">the one</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#PluralUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#PluralUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#UndefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#MaleGender"/>
+        <rdfs:label xml:lang="en">the ones</rdfs:label>
+        <rdfs:label xml:lang="en">those</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FemaleSingularUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#FemaleSingularUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularUndefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">celle</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#MaleSingularUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#MaleSingularUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#SingularUndefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">celui</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#FemalePluralUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#FemalePluralUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralUndefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">celles</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!-- ontologenius#MalePluralrUndefinedArticle -->
+
+    <owl:Class rdf:about="ontologenius#MalePluralrUndefinedArticle">
+        <rdfs:subClassOf rdf:resource="ontologenius#PluralUndefinedArticle"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FemaleGender"/>
+        <rdfs:label xml:lang="fr">ceux</rdfs:label>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- ontologenius#CcAddition -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcAddition">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">and</rdfs:label>
+        <rdfs:label xml:lang="fr">et</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#CcNegation -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcNegation">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">nor</rdfs:label>
+        <rdfs:label xml:lang="fr">ni</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#CcChoice -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcChoice">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">or</rdfs:label>
+        <rdfs:label xml:lang="fr">ou</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#CcRestriction -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcRestriction">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">but</rdfs:label>
+        <rdfs:label xml:lang="fr">mais</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#CcConsequence -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcConsequence">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">so</rdfs:label>
+        <rdfs:label xml:lang="en">thus</rdfs:label>
+        <rdfs:label xml:lang="en">therefore</rdfs:label>
+        <rdfs:label xml:lang="fr">donc</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- ontologenius#CcCausality -->
+
+    <owl:NamedIndividual rdf:about="ontologenius#CcCausality">
+        <rdf:type rdf:resource="ontologenius#CoodinationConjunction"/>
+        <rdfs:label xml:lang="en">because</rdfs:label>
+        <rdfs:label xml:lang="fr">car</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+             <rdf:Description rdf:about="ontologenius#CcAddition"/>
+             <rdf:Description rdf:about="ontologenius#CcNegation"/>
+             <rdf:Description rdf:about="ontologenius#CcChoice"/>
+             <rdf:Description rdf:about="ontologenius#CcRestriction"/>
+             <rdf:Description rdf:about="ontologenius#CcConsequence"/>
+             <rdf:Description rdf:about="ontologenius#CcCausality"/>
+        </owl:members>
+    </rdf:Description>
+
+
+
+<!-- Generated by the ontologenius https://sarthou.github.io/ontologenius/ -->

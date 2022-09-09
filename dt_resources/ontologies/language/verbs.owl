@@ -1,0 +1,1514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="ontologenius#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="ontologenius"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- ontologenius#LanguageVerb -->
+
+    <owl:Class rdf:about="ontologenius#LanguageVerb">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#ActionVerb -->
+
+    <owl:Class rdf:about="ontologenius#ActionVerb">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageVerb"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Conjugation
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Conjugation -->
+
+    <owl:Class rdf:about="ontologenius#Conjugation">
+        <rdfs:subClassOf rdf:resource="ontologenius#LanguageModel"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#SimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#SimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#Conjugation"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#SimplePast -->
+
+    <owl:Class rdf:about="ontologenius#SimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#Conjugation"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#PastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#Conjugation"/>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Pack
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Pack -->
+
+    <owl:Class rdf:about="ontologenius#Pack">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pack"/>
+        <rdfs:label xml:lang="en">pack</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">mets</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">mets</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">met</rdfs:label>
+        <rdfs:label xml:lang="en">packs</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mettons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mettez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PackTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mettent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pack"/>
+        <rdfs:label xml:lang="en">packed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PackTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pack"/>
+        <rdfs:label xml:lang="en">had packed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez mis</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PackTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PackTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PackPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient mis</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Take
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Take -->
+
+    <owl:Class rdf:about="ontologenius#Take">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Take"/>
+        <rdfs:label xml:lang="en">take</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prends</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prends</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prend</rdfs:label>
+        <rdfs:label xml:lang="en">takes</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prenons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prenez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#TakeTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prennent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Take"/>
+        <rdfs:label xml:lang="en">took</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#TakeTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakeSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakePastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakePastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Take"/>
+        <rdfs:label xml:lang="en">had taken</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#TakeTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#TakeTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#TakePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient pris</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Cut
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Cut -->
+
+    <owl:Class rdf:about="ontologenius#Cut">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Cut"/>
+        <rdfs:label xml:lang="en">cut</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupe</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupes</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupe</rdfs:label>
+        <rdfs:label xml:lang="en">cuts</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#CutTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">coupent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Cut"/>
+        <rdfs:label xml:lang="en">cut</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#CutTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Cut"/>
+        <rdfs:label xml:lang="en">had cut</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez coupé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#CutTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#CutTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#CutPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient coupé</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Mix
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Mix -->
+
+    <owl:Class rdf:about="ontologenius#Mix">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Mix"/>
+        <rdfs:label xml:lang="en">mix</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélange</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélanges</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélange</rdfs:label>
+        <rdfs:label xml:lang="en">mixes</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélangeons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélangez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#MixTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">mélangent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Mix"/>
+        <rdfs:label xml:lang="en">mixed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#MixTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Mix"/>
+        <rdfs:label xml:lang="en">had mixed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez mélangé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#MixTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#MixTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#MixPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient mélangé</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Remove
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Remove -->
+
+    <owl:Class rdf:about="ontologenius#Remove">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Remove"/>
+        <rdfs:label xml:lang="en">remove</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlève</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlèves</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlève</rdfs:label>
+        <rdfs:label xml:lang="en">removes</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlevons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlevez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">enlèvent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Remove"/>
+        <rdfs:label xml:lang="en">removed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemoveSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemovePastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemovePastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Remove"/>
+        <rdfs:label xml:lang="en">had removed</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez enlevé</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#RemoveTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#RemoveTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#RemovePastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient enlevé</rdfs:label>
+    </owl:Class>
+
+
+
+
+    <!--
+    ///////////////////
+    // Drop
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Drop -->
+
+    <owl:Class rdf:about="ontologenius#Drop">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Drop"/>
+        <rdfs:label xml:lang="en">drop</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâche</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâches</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâche</rdfs:label>
+        <rdfs:label xml:lang="en">drops</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâchons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâchez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#DropTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">lâchent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Drop"/>
+        <rdfs:label xml:lang="en">dropped</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#DropTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Drop"/>
+        <rdfs:label xml:lang="en">had dropped</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez lâché</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#DropTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#DropTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#DropPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient lâché</rdfs:label>
+    </owl:Class>
+
+     <!--
+    ///////////////////
+    // Pick
+    ///////////////////
+     -->
+
+
+    <!-- ontologenius#Pick -->
+
+    <owl:Class rdf:about="ontologenius#Pick">
+        <rdfs:subClassOf rdf:resource="ontologenius#ActionVerb"/>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pick"/>
+        <rdfs:label xml:lang="en">pick</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickFSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prends</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickSSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prends</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickTSPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">prend</rdfs:label>
+        <rdfs:label xml:lang="en">picks</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickFPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prenons</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickSPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prenez</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPSimplePresent -->
+
+    <owl:Class rdf:about="ontologenius#PickTPPSimplePresent">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePresent"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">prennent</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#SimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pick"/>
+        <rdfs:label xml:lang="en">picked</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickFSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">ai pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickSSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">as pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickTSPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickTSPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">a pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickFPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avons pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickSPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avez pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickTPPSimplePast -->
+
+    <owl:Class rdf:about="ontologenius#PickTPPSimplePast">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickSimplePast"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">ont pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#Pick"/>
+        <rdfs:label xml:lang="en">had picked</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickFSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickSSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avais pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickTSPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickTSPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdSingularPersonalForm"/>
+        <rdfs:label xml:lang="fr">avait pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickFPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickFPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#FirstPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avions pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickSPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickSPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#SecondPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">aviez pris</rdfs:label>
+    </owl:Class>
+
+
+    <!-- ontologenius#PickTPPPastParticiple -->
+
+    <owl:Class rdf:about="ontologenius#PickTPPPastParticiple">
+        <rdfs:subClassOf rdf:resource="ontologenius#PickPastParticiple"/>
+        <rdfs:subClassOf rdf:resource="ontologenius#ThirdPluralPersonalForm"/>
+        <rdfs:label xml:lang="fr">avaient pris</rdfs:label>
+    </owl:Class>
+
+
+
+<!-- Generated by the ontologenius https://sarthou.github.io/ontologenius/ -->

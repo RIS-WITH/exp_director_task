@@ -4,6 +4,8 @@
   <arg name="files" default="
   $(find dt_resources)/ontologies/common_ground.owl
   $(find dt_resources)/ontologies/dt_objects.owl
+  $(find dt_resources)/ontologies/language/language.owl
+  $(find dt_resources)/ontologies/language/verbs.owl
   $(find overworld)/ontologies/adream_building.owl
   "/>
   <arg name="config" default="$(find dt_resources)/configs/ontologenius.yaml"/>
