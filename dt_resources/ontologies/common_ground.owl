@@ -1004,6 +1004,7 @@
         <rdfs:label xml:lang="en">low table</rdfs:label>
         <rdfs:label xml:lang="fr">low table</rdfs:label>
         <hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_low_table_lack.stl</hasMesh>
+        <hasColor rdf:resource="common_ground#black"/>
     </owl:Class>
     
 
