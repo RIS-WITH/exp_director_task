@@ -191,6 +191,7 @@
         <rdfs:subPropertyOf rdf:resource="common_ground#hasGraphicalEntity"/>
         <rdfs:domain rdf:resource="common_ground#Object"/>
         <rdfs:range rdf:resource="common_ground#Border"/>
+        <rdfs:label xml:lang="fr">avec une</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -768,9 +769,10 @@
 
     <owl:Class rdf:about="common_ground#Border">
         <rdfs:subClassOf rdf:resource="common_ground#GraphicalEntity"/>
-        <rdfs:label xml:lang="fr">bodure</rdfs:label>
+        <!--rdfs:subClassOf rdf:resource="common_ground#FrFemaleGender"/-->
+        <rdfs:label xml:lang="fr">bordure</rdfs:label>
         <rdfs:label xml:lang="en">border</rdfs:label>
-        <rdfs:label xml:lang="fr">contour</rdfs:label>
+        <onto:label xml:lang="fr">contour</onto:label>
     </owl:Class>
     
 
