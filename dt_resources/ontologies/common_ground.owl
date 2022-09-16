@@ -1405,8 +1405,8 @@
 
     <owl:NamedIndividual rdf:about="common_ground#grey">
         <rdf:type rdf:resource="common_ground#Color"/>
-        <rdfs:label xml:lang="en">green</rdfs:label>
-        <rdfs:label xml:lang="fr">vert</rdfs:label>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+        <rdfs:label xml:lang="fr">gris</rdfs:label>
         <hexRgbValue rdf:datatype="common_ground#hexrbg">0xCCCCCC</hexRgbValue>
     </owl:NamedIndividual>
     
