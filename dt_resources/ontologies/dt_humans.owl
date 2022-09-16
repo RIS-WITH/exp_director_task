@@ -27,6 +27,7 @@
 
     <owl:Class rdf:about="dt_humans#BodyPart">
         <rdfs:subClassOf rdf:resource="common_ground#Entity"/>
+        <common_ground:hasColor rdf:resource="common_ground#skin_color"/>
     </owl:Class>
     
 
@@ -81,7 +82,6 @@
     <owl:ObjectProperty rdf:about="dt_humans#hasBodyPart">
         <rdfs:domain rdf:resource="common_ground#Agent"/>
         <rdfs:range rdf:resource="dt_humans#BodyPart"/>
-        <common_ground:hasColor rdf:resource="common_ground#skin_color"/>
     </owl:ObjectProperty>
     
 
