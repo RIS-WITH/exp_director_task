@@ -1,0 +1,13 @@
+<launch>
+
+  <include file="$(find particle_person_tracker)/launch/main.launch">
+    <arg name="color" value="/camera/color/image_raw" />
+    <arg name="config" value="config_openpose.ini" />
+    <arg name="delay" value="50" />
+    <arg name="particles" value="100" />
+    <arg name="scale" value="0.5" />
+    <arg name="detector" value="openheadpose" />
+    <arg name="visu" value="1" />
+  </include>
+
+</launch>
