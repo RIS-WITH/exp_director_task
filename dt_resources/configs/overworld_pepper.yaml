@@ -1,8 +1,8 @@
 modules:
   robot:
     PR2JointsPerception: pepper_joints
-  #humans:
-   # OptitrackPerceptionModule: optitrack
+  humans:
+    StampedPosePerceptionModule: human
   objects:
     ArTrackPerceptionModule: ar_track
     StaticObjectsPerceptionModule: static
@@ -14,7 +14,5 @@ pepper_joints:
   head : CameraTop_optical_frame
   base : base_link
 
-optitrack:
+human:
   name: human_0
-  offset_x: 6.4868
-  offset_y: 2.8506
