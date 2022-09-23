@@ -16,3 +16,6 @@ pepper_joints:
 
 human:
   name: human_0
+
+ar_track:
+  min_track_err: 0.05
