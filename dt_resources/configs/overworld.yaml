@@ -1,6 +1,6 @@
 modules:
   robot:
-    PR2JointsPerception: pr2_joints
+    JointStatePerceptionModule: pr2_joints
   #humans:
    # OptitrackPerceptionModule: optitrack
   objects:
