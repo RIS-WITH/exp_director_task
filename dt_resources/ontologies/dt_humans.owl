@@ -156,11 +156,38 @@
     
 
 
+    <!-- dt_humans#Helmet_4 -->
+
+    <owl:NamedIndividual rdf:about="dt_humans#Helmet_4">
+        <rdf:type rdf:resource="dt_humans#Head"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dt_humans#herakles -->
+
+    <owl:NamedIndividual rdf:about="dt_humans#herakles">
+        <rdf:type rdf:resource="dt_humans#Head"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- dt_humans#human_0 -->
     
     <owl:NamedIndividual rdf:about="dt_humans#human_0">
         <rdf:type rdf:resource="common_ground#Human"/>
         <dt_humans:hasHead rdf:resource="dt_humans#Helmet_2"/>
+        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
+        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dt_humans#human_1 -->
+    
+    <owl:NamedIndividual rdf:about="dt_humans#human_1">
+        <rdf:type rdf:resource="common_ground#Human"/>
+        <dt_humans:hasHead rdf:resource="dt_humans#Helmet_4"/>
         <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
         <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
     </owl:NamedIndividual>
