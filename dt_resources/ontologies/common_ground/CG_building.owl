@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building"
+     xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building#"
+     xmlns:cg_building="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building#"
+     xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
+     xmlns:onto="ontologenius"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building">
+      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_building#hasBuildingPart -->
+
+    <owl:ObjectProperty rdf:about="cg_building#hasBuildingPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="cg_building#Building"/>
+        <rdfs:range rdf:resource="cg_building#BuildingPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_building#isPartOfBuilding -->
+
+    <owl:ObjectProperty rdf:about="cg_building#isPartOfBuilding">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="cg_building#BuildingPart"/>
+        <rdfs:range rdf:resource="cg_building#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_building#Building -->
+
+    <owl:Class rdf:about="cg_building#Building">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_building#BuildingPart -->
+
+    <owl:Class rdf:about="cg_building#BuildingPart">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_building#Floor -->
+
+    <owl:Class rdf:about="cg_building#Floor">
+        <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
+        <rdfs:subClassOf rdf:resource="cg_building#FrMaleGender"/>
+        <rdfs:label xml:lang="en">floor</rdfs:label>
+        <rdfs:label xml:lang="fr">sol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- cg_building#Wall -->
+
+    <owl:Class rdf:about="cg_building#Wall">
+        <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
+        <rdfs:subClassOf rdf:resource="cg_building#FrMaleGender"/>
+        <rdfs:label xml:lang="en">wall</rdfs:label>
+        <rdfs:label xml:lang="fr">mur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- cg_building#Window -->
+
+    <owl:Class rdf:about="cg_building#Window">
+        <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
+        <rdfs:subClassOf rdf:resource="cg_building#FrFemaleGender"/>
+        <rdfs:label xml:lang="en">window</rdfs:label>
+        <rdfs:label xml:lang="fr">fenetre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="cg_building#Floor"/>
+            <rdf:Description rdf:about="cg_building#Wall"/>
+            <rdf:Description rdf:about="cg_building#Window"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"
+     xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
+     xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
+     xmlns:onto="ontologenius"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- cg_entities#hasMesh -->
+
+    <owl:AnnotationProperty rdf:about="cg_entities#hasMesh"/>
+    
+
+
+    <!-- cg_entities#hexRgbValue -->
+
+    <owl:AnnotationProperty rdf:about="cg_entities#hexRgbValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- cg_entities#hexrbg -->
+
+    <rdfs:Datatype rdf:about="cg_entities#hexrbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_entities#hasColor -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasColor">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
+        <rdfs:domain rdf:resource="cg_entities#Entity"/>
+        <rdfs:range rdf:resource="cg_entities#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasConceptualQuality -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasConceptualQuality">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasQuality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasPhysicalQuality -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasPhysicalQuality">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasQuality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasQuality">
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasShape -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasShape">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
+        <rdfs:domain rdf:resource="cg_entities#Object"/>
+        <rdfs:range rdf:resource="cg_entities#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasSize -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasSize">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
+        <rdfs:range rdf:resource="cg_entities#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasVolume -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- cg_entities#hasWeight -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#hasWeight">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
+        <rdfs:range rdf:resource="cg_entities#Weight"/>
+    </owl:ObjectProperty>
+
+    
+
+
+    <!-- cg_entities#visualProperty -->
+
+    <owl:ObjectProperty rdf:about="cg_entities#visualProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+   <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- cg_entities#displayableProperty -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#displayableProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#visualProperty -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#visualProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hasCollisionlMesh -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hasCollisionlMesh">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hasMesh -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hasMesh">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#displayableProperty"/>
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hasTexture -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#displayableProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hasUnreallMesh -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hasUnreallMesh">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hasVisualMesh -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hasVisualMesh">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#hasMesh"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- cg_entities#hexRgbValue -->
+
+    <owl:DatatypeProperty rdf:about="cg_entities#hexRgbValue">
+        <rdfs:subPropertyOf rdf:resource="cg_entities#displayableProperty"/>
+        <rdfs:domain rdf:resource="cg_entities#Color"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_entities#Color -->
+
+    <owl:Class rdf:about="cg_entities#Color">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalQuality"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrFemaleGender"/>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#ConceptualEntity -->
+
+    <owl:Class rdf:about="cg_entities#ConceptualEntity">
+        <rdfs:subClassOf rdf:resource="cg_entities#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#ConceptualQuality -->
+
+    <owl:Class rdf:about="cg_entities#ConceptualQuality">
+        <rdfs:subClassOf rdf:resource="cg_entities#Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#Entity -->
+
+    <owl:Class rdf:about="cg_entities#Entity"/>
+    
+
+
+    <!-- cg_entities#PhysicalEntity -->
+
+    <owl:Class rdf:about="cg_entities#PhysicalEntity">
+        <rdfs:subClassOf rdf:resource="cg_entities#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#PhysicalQuality -->
+
+    <owl:Class rdf:about="cg_entities#PhysicalQuality">
+        <rdfs:subClassOf rdf:resource="cg_entities#Quality"/>
+    
+
+
+    <!-- cg_entities#Quality -->
+
+    <owl:Class rdf:about="cg_entities#Quality"/>
+    
+
+
+    <!-- cg_entities#Shape -->
+
+    <owl:Class rdf:about="cg_entities#Shape">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalQuality"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrFemaleGender"/>
+        <rdfs:label xml:lang="fr">forme</rdfs:label>
+        <rdfs:label xml:lang="en">shape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#Size -->
+
+    <owl:Class rdf:about="cg_entities#Size">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_entities#Weight -->
+
+    <owl:Class rdf:about="cg_entities#Weight">
+        <rdfs:subClassOf rdf:resource="cg_entities#PhysicalQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- cg_entities#black -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#black">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="en">black</rdfs:label>
+        <rdfs:label xml:lang="fr">noir</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x101010</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#blue -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#blue">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="fr">bleu</rdfs:label>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x1E90FF</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#box -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#box">
+        <rdf:type rdf:resource="cg_entities#Shape"/>
+        <rdfs:label xml:lang="fr">rectangulaire</rdfs:label>
+        <rdfs:label xml:lang="en">rectangular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#brown -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#brown">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="fr">marron</rdfs:label>
+        <rdfs:label xml:lang="en">brown</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xA0522D</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#cyan -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#cyan">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="fr">bleu clair</rdfs:label>
+        <rdfs:label xml:lang="en">light blue</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x40E0D0</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#green -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#green">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+        <rdfs:label xml:lang="fr">vert</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x3CB371</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#grey -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#grey">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="en">grey</rdfs:label>
+        <rdfs:label xml:lang="fr">gris</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xCCCCCC</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#large -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#large">
+        <rdf:type rdf:resource="cg_entities#Size"/>
+        <rdfs:label xml:lang="fr">grand</rdfs:label>
+        <rdfs:label xml:lang="en">large</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#magenta -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#magenta">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="en">pink</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFF00FF</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#medium -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#medium">
+        <rdf:type rdf:resource="cg_entities#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#red -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#red">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+        <rdfs:label xml:lang="fr">rouge</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xDC143C</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#round -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#round">
+        <rdf:type rdf:resource="cg_entities#Shape"/>
+        <rdfs:label xml:lang="fr">circulaire</rdfs:label>
+        <rdfs:label xml:lang="en">circular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#skin_color -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#skin_color">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xF9E4B7</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#small -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#small">
+        <rdf:type rdf:resource="cg_entities#Size"/>
+        <rdfs:label xml:lang="fr">petit</rdfs:label>
+        <rdfs:label xml:lang="en">small</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#white -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#white">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="fr">blanc</rdfs:label>
+        <rdfs:label xml:lang="en">white</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFFAFA</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- cg_entities#yellow -->
+
+    <owl:NamedIndividual rdf:about="cg_entities#yellow">
+        <rdf:type rdf:resource="cg_entities#Color"/>
+        <rdfs:label xml:lang="fr">jaune</rdfs:label>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFD700</hexRgbValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="cg_entities#Color"/>
+            <rdf:Description rdf:about="cg_entities#Shape"/>
+            <rdf:Description rdf:about="cg_entities#Size"/>
+            <rdf:Description rdf:about="cg_entities#Weight"/>
+        </owl:members>
+    </rdf:Description>
+
+</rdf:RDF>

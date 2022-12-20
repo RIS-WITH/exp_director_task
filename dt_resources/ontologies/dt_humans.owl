@@ -1,124 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans#"
      xmlns:dt_humans="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans#"
-     xmlns:common_ground="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
+     xmlns:cg_agents="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/dt_humans">
-      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground"/>
+      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-    
-
-
-    <!-- dt_humans#BodyPart -->
-
-    <owl:Class rdf:about="dt_humans#BodyPart">
-        <rdfs:subClassOf rdf:resource="common_ground#Entity"/>
-        <common_ground:hasColor rdf:resource="common_ground#skin_color"/>
-    </owl:Class>
-    
-
-
-    <!-- dt_humans#Hand -->
-
-    <owl:Class rdf:about="dt_humans#Hand">
-        <rdfs:subClassOf rdf:resource="dt_humans#BodyPart"/>
-    </owl:Class>
-    
-
-
-    <!-- dt_humans#Head -->
-
-    <owl:Class rdf:about="dt_humans#Head">
-        <rdfs:subClassOf rdf:resource="dt_humans#BodyPart"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/head.obj</common_ground:hasMesh>
-    </owl:Class>
-    
-
-
-    <!-- dt_humans#LeftHand -->
-
-    <owl:Class rdf:about="dt_humans#LeftHand">
-        <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/hand_left.obj</common_ground:hasMesh>
-    </owl:Class>
-    
-
-
-    <!-- dt_humans#RightHand -->
-
-    <owl:Class rdf:about="dt_humans#RightHand">
-        <rdfs:subClassOf rdf:resource="dt_humans#Hand"/>
-        <common_ground:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/humans/hand_right.obj</common_ground:hasMesh>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-    
-
-
-    <!-- dt_humans#hasBodyPart -->
-
-    <owl:ObjectProperty rdf:about="dt_humans#hasBodyPart">
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="dt_humans#BodyPart"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dt_humans#hasHand -->
-
-    <owl:ObjectProperty rdf:about="dt_humans#hasHand">
-        <rdfs:subPropertyOf rdf:resource="dt_humans#hasBodyPart"/>
-        <rdfs:range rdf:resource="dt_humans#Hand"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dt_humans#hasHead -->
-
-    <owl:ObjectProperty rdf:about="dt_humans#hasHead">
-        <rdfs:subPropertyOf rdf:resource="dt_humans#hasBodyPart"/>
-        <rdfs:range rdf:resource="dt_humans#Head"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dt_humans#hasLeftHand -->
-
-    <owl:ObjectProperty rdf:about="dt_humans#hasLeftHand">
-        <rdfs:subPropertyOf rdf:resource="dt_humans#hasHand"/>
-        <rdfs:range rdf:resource="dt_humans#LeftHand"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- dt_humans#hasRightHand -->
-
-    <owl:ObjectProperty rdf:about="dt_humans#hasRightHand">
-        <rdfs:subPropertyOf rdf:resource="dt_humans#hasHand"/>
-        <rdfs:range rdf:resource="dt_humans#RightHand"/>
-    </owl:ObjectProperty>
     
 
 
@@ -135,7 +26,7 @@
     <!-- dt_humans#Glove_1 -->
 
     <owl:NamedIndividual rdf:about="dt_humans#Glove_1">
-        <rdf:type rdf:resource="dt_humans#RightHand"/>
+        <rdf:type rdf:resource="cg_agents#RightHand"/>
     </owl:NamedIndividual>
     
 
@@ -143,7 +34,7 @@
     <!-- dt_humans#Glove_2 -->
 
     <owl:NamedIndividual rdf:about="dt_humans#Glove_2">
-        <rdf:type rdf:resource="dt_humans#LeftHand"/>
+        <rdf:type rdf:resource="cg_agents#LeftHand"/>
     </owl:NamedIndividual>
     
 
@@ -151,7 +42,7 @@
     <!-- dt_humans#Helmet_2 -->
 
     <owl:NamedIndividual rdf:about="dt_humans#Helmet_2">
-        <rdf:type rdf:resource="dt_humans#Head"/>
+        <rdf:type rdf:resource="cg_agents#Head"/>
     </owl:NamedIndividual>
     
 
@@ -159,7 +50,7 @@
     <!-- dt_humans#Helmet_4 -->
 
     <owl:NamedIndividual rdf:about="dt_humans#Helmet_4">
-        <rdf:type rdf:resource="dt_humans#Head"/>
+        <rdf:type rdf:resource="cg_agents#Head"/>
     </owl:NamedIndividual>
     
 
@@ -167,7 +58,7 @@
     <!-- dt_humans#herakles -->
 
     <owl:NamedIndividual rdf:about="dt_humans#herakles">
-        <rdf:type rdf:resource="dt_humans#Head"/>
+        <rdf:type rdf:resource="cg_agents#Head"/>
     </owl:NamedIndividual>
     
 
@@ -175,10 +66,10 @@
     <!-- dt_humans#human_0 -->
     
     <owl:NamedIndividual rdf:about="dt_humans#human_0">
-        <rdf:type rdf:resource="common_ground#Human"/>
-        <dt_humans:hasHead rdf:resource="dt_humans#Helmet_2"/>
-        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
-        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
+        <rdf:type rdf:resource="cg_agents#Human"/>
+        <cg_agents:hasHead rdf:resource="dt_humans#Helmet_2"/>
+        <cg_agents:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
+        <cg_agents:hasRightHand rdf:resource="dt_humans#Glove_2"/>
     </owl:NamedIndividual>
     
 
@@ -186,10 +77,10 @@
     <!-- dt_humans#human_1 -->
     
     <owl:NamedIndividual rdf:about="dt_humans#human_1">
-        <rdf:type rdf:resource="common_ground#Human"/>
-        <dt_humans:hasHead rdf:resource="dt_humans#Helmet_4"/>
-        <dt_humans:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
-        <dt_humans:hasRightHand rdf:resource="dt_humans#Glove_2"/>
+        <rdf:type rdf:resource="cg_agents#Human"/>
+        <cg_agents:hasHead rdf:resource="dt_humans#Helmet_4"/>
+        <cg_agents:hasLeftHand rdf:resource="dt_humans#Glove_1"/>
+        <cg_agents:hasRightHand rdf:resource="dt_humans#Glove_2"/>
     </owl:NamedIndividual>
 
 </rdf:RDF>
