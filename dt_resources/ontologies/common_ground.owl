@@ -2,13 +2,26 @@
 <rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
      xmlns:common_ground="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
+     xmlns:cg_context="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context#"
+     xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
+     xmlns:cg_agents="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
+     xmlns:cg_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects#"
+     xmlns:cg_area="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_area#"
+     xmlns:cg_geometric="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric#"
      xmlns:onto="ontologenius"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground"/>
+    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground">
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_area"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context"/>
+    </owl:Ontology>
     
 
 
@@ -116,23 +129,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- common_ground#Activity -->
-
-    <owl:Class rdf:about="common_ground#Activity">
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#ActivityGoal -->
-
-    <owl:Class rdf:about="common_ground#ActivityGoal">
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
-    </owl:Class>
     
 
 
@@ -194,15 +190,6 @@
         <rdfs:subClassOf rdf:resource="common_ground#TimeInterval"/>
         <rdfs:label xml:lang="fr">mois</rdfs:label>
         <rdfs:label xml:lang="en">month</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#Role -->
-
-    <owl:Class rdf:about="common_ground#Role">
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualQuality"/>
     </owl:Class>
     
 
