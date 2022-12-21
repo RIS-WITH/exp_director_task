@@ -50,15 +50,6 @@
     
 
 
-    <!-- common_ground#hasConnectionFrom -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasConnectionFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="common_ground#isConnectedTo"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- common_ground#hasFigure -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasFigure">
@@ -82,14 +73,6 @@
     
 
 
-    <!-- common_ground#hasLocation -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasLocation">
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasConceptualQuality"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- common_ground#hasPose -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasPose">
@@ -104,58 +87,6 @@
 
     <owl:ObjectProperty rdf:about="common_ground#hasRole">
         <rdfs:subPropertyOf rdf:resource="common_ground#hasConceptualQuality"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isConnectedTo -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isConnectedTo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isInRoom -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isInRoom">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isInArea"/>
-        <owl:inverseOf rdf:resource="common_ground#roomHasIn"/>
-        <rdfs:range rdf:resource="common_ground#Entity"/>
-        <rdfs:domain rdf:resource="common_ground#Room"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isInArea -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isInArea">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isIn"/>
-        <owl:inverseOf rdf:resource="common_ground#areaHasIn"/>
-        <rdfs:range rdf:resource="common_ground#Entity"/>
-        <rdfs:domain rdf:resource="common_ground#Area"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#areaHasIn -->
-
-    <owl:ObjectProperty rdf:about="common_ground#areaHasIn">
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasIn"/>
-        <rdfs:range rdf:resource="common_ground#Area"/>
-        <rdfs:domain rdf:resource="common_ground#Entity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#roomHasIn -->
-
-    <owl:ObjectProperty rdf:about="common_ground#roomHasIn">
-        <rdfs:subPropertyOf rdf:resource="common_ground#hasIn"/>
-        <rdfs:domain rdf:resource="common_ground#Room"/>
-        <rdfs:range rdf:resource="common_ground#Entity"/>
     </owl:ObjectProperty>
     
 
@@ -201,27 +132,6 @@
 
     <owl:Class rdf:about="common_ground#ActivityGoal">
         <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#Area -->
-
-    <owl:Class rdf:about="common_ground#Area">
-        <rdfs:subClassOf rdf:resource="common_ground#Location"/>
-        <rdfs:subClassOf rdf:resource="common_ground#FrFemaleGender"/>
-        <rdfs:label xml:lang="en">area</rdfs:label>
-        <rdfs:label xml:lang="fr">zone</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#Bedroom -->
-
-    <owl:Class rdf:about="common_ground#Bedroom">
-        <rdfs:subClassOf rdf:resource="common_ground#Room"/>
-        <rdfs:label xml:lang="en">bedroom</rdfs:label>
-        <rdfs:label xml:lang="fr">chambre</rdfs:label>
     </owl:Class>
     
 
@@ -278,15 +188,6 @@
     
 
 
-    <!-- common_ground#Location -->
-
-    <owl:Class rdf:about="common_ground#Location">
-        <rdfs:subClassOf rdf:resource="common_ground#ConceptualEntity"/>
-        <rdfs:subClassOf rdf:resource="common_ground#PhysicalQuality"/>
-    </owl:Class>
-    
-
-
     <!-- common_ground#Month -->
 
     <owl:Class rdf:about="common_ground#Month">
@@ -306,44 +207,12 @@
     
 
 
-    <!-- common_ground#Room -->
-
-    <owl:Class rdf:about="common_ground#Room">
-        <rdfs:subClassOf rdf:resource="common_ground#Area"/>
-        <rdfs:subClassOf rdf:resource="common_ground#FrFemaleGender"/>
-        <rdfs:label xml:lang="en">room</rdfs:label>
-        <rdfs:label xml:lang="fr">salle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#Spot -->
-
-    <owl:Class rdf:about="common_ground#Spot">
-        <rdfs:subClassOf rdf:resource="common_ground#Location"/>
-        <rdfs:subClassOf rdf:resource="common_ground#FrMaleGender"/>
-        <rdfs:label xml:lang="fr">endroit</rdfs:label>
-        <rdfs:label xml:lang="en">spot</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- common_ground#Square -->
 
     <owl:Class rdf:about="common_ground#Square">
         <rdfs:subClassOf rdf:resource="common_ground#Figure"/>
         <rdfs:label xml:lang="fr">carré</rdfs:label>
         <rdfs:label xml:lang="en">square</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- common_ground#StorageArea -->
-
-    <owl:Class rdf:about="common_ground#StorageArea">
-        <rdfs:subClassOf rdf:resource="common_ground#Area"/>
-        <rdfs:label xml:lang="en">storage area</rdfs:label>
-        <rdfs:label xml:lang="fr">zone de stockage</rdfs:label>
     </owl:Class>
     
 
