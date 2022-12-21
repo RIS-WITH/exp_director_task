@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
      xmlns:cg_agents="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
      xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"

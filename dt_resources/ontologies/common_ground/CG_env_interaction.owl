@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_env_interaction"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_env_interaction#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_env_interaction#"
      xmlns:gc_env_int="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_env_interaction#"
      xmlns:cg_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects#"

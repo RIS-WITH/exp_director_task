@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects#"
      xmlns:cg_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects#"
      xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
@@ -113,7 +113,7 @@
 
     <owl:Class rdf:about="cg_objects#KallaxTable">
         <rdfs:subClassOf rdf:resource="cg_objects#Table"/>
-        <cg_entitiesLhasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</cg_entities:hasMesh>
+        <cg_entities:hasMesh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">package://dt_resources/mesh/furnitures/ikea_kallax.stl</cg_entities:hasMesh>
     </owl:Class>
     
 

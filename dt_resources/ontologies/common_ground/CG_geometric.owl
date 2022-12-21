@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric#"
      xmlns:cg_geometric="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_geometric#"
      xmlns:cg_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_object#"
@@ -30,7 +30,7 @@
     <!-- cg_geometric#geometricalProperty -->
 
     <owl:ObjectProperty rdf:about="cg_geometric#geometricalProperty">
-        <rdfs:subPropertyOf rdf:resource="cg_geometric#visualRelation"/> <!--this should be defined elsewhere-->
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
     </owl:ObjectProperty>
     
 

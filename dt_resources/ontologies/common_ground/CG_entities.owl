@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
      xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
      xmlns:onto="ontologenius"
@@ -101,7 +101,7 @@
     <owl:ObjectProperty rdf:about="cg_entities#hasShape">
         <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
         <rdfs:subPropertyOf rdf:resource="cg_entities#hasPhysicalQuality"/>
-        <rdfs:domain rdf:resource="cg_entities#Object"/>
+        <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
         <rdfs:range rdf:resource="cg_entities#Shape"/>
     </owl:ObjectProperty>
     
@@ -165,9 +165,9 @@
     
 
 
-    <!-- cg_entities#visualProperty -->
+    <!-- cg_entities#visualDataProperty -->
 
-    <owl:DatatypeProperty rdf:about="cg_entities#visualProperty">
+    <owl:DatatypeProperty rdf:about="cg_entities#visualDataProperty">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="cg_entities#PhysicalEntity"/>
     </owl:DatatypeProperty>
@@ -186,7 +186,7 @@
 
     <owl:DatatypeProperty rdf:about="cg_entities#hasMesh">
         <rdfs:subPropertyOf rdf:resource="cg_entities#displayableProperty"/>
-        <rdfs:subPropertyOf rdf:resource="cg_entities#visualProperty"/>
+        <rdfs:subPropertyOf rdf:resource="cg_entities#visualDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -279,6 +279,7 @@
 
     <owl:Class rdf:about="cg_entities#PhysicalQuality">
         <rdfs:subClassOf rdf:resource="cg_entities#Quality"/>
+    </owl:Class>
     
 
 
@@ -315,6 +316,18 @@
     
 
 
+    <!-- cg_entities#FrFemaleGender -->
+
+    <owl:Class rdf:about="cg_entities#FrFemaleGender"/>
+    
+
+
+    <!-- cg_entities#FrMaleGender -->
+
+    <owl:Class rdf:about="cg_entities#FrMaleGender"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -332,7 +345,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="en">black</rdfs:label>
         <rdfs:label xml:lang="fr">noir</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x101010</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0x101010</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -343,7 +356,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="fr">bleu</rdfs:label>
         <rdfs:label xml:lang="en">blue</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x1E90FF</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0x1E90FF</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -364,7 +377,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="fr">marron</rdfs:label>
         <rdfs:label xml:lang="en">brown</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xA0522D</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xA0522D</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -375,7 +388,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="fr">bleu clair</rdfs:label>
         <rdfs:label xml:lang="en">light blue</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x40E0D0</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0x40E0D0</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -386,7 +399,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="en">green</rdfs:label>
         <rdfs:label xml:lang="fr">vert</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0x3CB371</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0x3CB371</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -397,7 +410,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="en">grey</rdfs:label>
         <rdfs:label xml:lang="fr">gris</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xCCCCCC</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xCCCCCC</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -418,7 +431,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="en">pink</rdfs:label>
         <rdfs:label xml:lang="fr">rose</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFF00FF</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFF00FF</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -437,7 +450,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="en">red</rdfs:label>
         <rdfs:label xml:lang="fr">rouge</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xDC143C</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xDC143C</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -456,7 +469,7 @@
 
     <owl:NamedIndividual rdf:about="cg_entities#skin_color">
         <rdf:type rdf:resource="cg_entities#Color"/>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xF9E4B7</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xF9E4B7</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -477,7 +490,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="fr">blanc</rdfs:label>
         <rdfs:label xml:lang="en">white</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFFAFA</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFFAFA</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 
@@ -488,7 +501,7 @@
         <rdf:type rdf:resource="cg_entities#Color"/>
         <rdfs:label xml:lang="fr">jaune</rdfs:label>
         <rdfs:label xml:lang="en">yellow</rdfs:label>
-        <hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFD700</hexRgbValue>
+        <cg_entities:hexRgbValue rdf:datatype="cg_entities#hexrbg">0xFFD700</cg_entities:hexRgbValue>
     </owl:NamedIndividual>
     
 

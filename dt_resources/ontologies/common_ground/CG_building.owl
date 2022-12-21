@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building"
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building#"
      xmlns:cg_building="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_building#"
      xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
@@ -75,7 +75,7 @@
 
     <owl:Class rdf:about="cg_building#Door">
         <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
-        <rdfs:subClassOf rdf:resource="cg_building#FrFemaleGender"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrFemaleGender"/>
         <rdfs:label xml:lang="en">door</rdfs:label>
         <rdfs:label xml:lang="fr">porte</rdfs:label>
     </owl:Class>
@@ -86,7 +86,7 @@
 
     <owl:Class rdf:about="cg_building#Floor">
         <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
-        <rdfs:subClassOf rdf:resource="cg_building#FrMaleGender"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrMaleGender"/>
         <rdfs:label xml:lang="en">floor</rdfs:label>
         <rdfs:label xml:lang="fr">sol</rdfs:label>
     </owl:Class>
@@ -97,7 +97,7 @@
 
     <owl:Class rdf:about="cg_building#Wall">
         <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
-        <rdfs:subClassOf rdf:resource="cg_building#FrMaleGender"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrMaleGender"/>
         <rdfs:label xml:lang="en">wall</rdfs:label>
         <rdfs:label xml:lang="fr">mur</rdfs:label>
     </owl:Class>
@@ -108,7 +108,7 @@
 
     <owl:Class rdf:about="cg_building#Window">
         <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
-        <rdfs:subClassOf rdf:resource="cg_building#FrFemaleGender"/>
+        <rdfs:subClassOf rdf:resource="cg_entities#FrFemaleGender"/>
         <rdfs:label xml:lang="en">window</rdfs:label>
         <rdfs:label xml:lang="fr">fenetre</rdfs:label>
     </owl:Class>
