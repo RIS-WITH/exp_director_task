@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context"
+     xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context#"
+     xmlns:cg_context="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context#"
+     xmlns:cg_entities="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities#"
+     xmlns:cg_agents="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents#"
+     xmlns:onto="ontologenius"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_context">
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_agents"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_context#agentCurrentContext -->
+
+    <owl:ObjectProperty rdf:about="cg_context#agentCurrentContext">
+        <rdfs:domain rdf:resource="cg_agents#Agent"/>
+        <rdfs:range rdf:resource="cg_context#GlobalContext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+
+    <!-- cg_context#ContextMeaning -->
+
+    <owl:Class rdf:about="cg_context#ContextMeaning">
+        <rdfs:subClassOf rdf:resource="cg_entities#ConceptualQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_context#LocationContextMeaning -->
+
+    <owl:Class rdf:about="cg_context#LocationContextMeaning">
+        <rdfs:subClassOf rdf:resource="cg_context#ContextMeaning"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_context#ObjectContextMeaning -->
+
+    <owl:Class rdf:about="cg_context#ObjectContextMeaning">
+        <rdfs:subClassOf rdf:resource="cg_context#ContextMeaning"/>
+    </owl:Class>
+    
+
+
+    <!-- cg_context#RoleContextMeaning -->
+
+    <owl:Class rdf:about="cg_context#RoleContextMeaning">
+        <rdfs:subClassOf rdf:resource="cg_context#ContextMeaning"/>
+    </owl:Class>
+</rdf:RDF>
