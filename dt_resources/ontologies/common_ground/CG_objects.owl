@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_objects">
-      <owl:imports rdf:resource="https://github.com/LAAS-HRI/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground/CG_entities"/>
     </owl:Ontology>
     
 
