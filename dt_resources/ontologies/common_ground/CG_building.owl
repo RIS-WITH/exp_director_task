@@ -71,6 +71,17 @@
     
 
 
+    <!-- cg_building#Door -->
+
+    <owl:Class rdf:about="cg_building#Door">
+        <rdfs:subClassOf rdf:resource="cg_building#BuildingPart"/>
+        <rdfs:subClassOf rdf:resource="cg_building#FrFemaleGender"/>
+        <rdfs:label xml:lang="en">door</rdfs:label>
+        <rdfs:label xml:lang="fr">porte</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- cg_building#Floor -->
 
     <owl:Class rdf:about="cg_building#Floor">

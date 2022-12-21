@@ -39,16 +39,6 @@
     
 
 
-    <!-- common_ground#canSee -->
-
-    <owl:ObjectProperty rdf:about="common_ground#canSee">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#PhysicalEntity"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- common_ground#hasBorder -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasBorder">
@@ -92,39 +82,6 @@
     
 
 
-    <!-- common_ground#hasInLeftHand -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasInLeftHand">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isHolding"/>
-        <owl:inverseOf rdf:resource="common_ground#isInLeftHandOf"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#Pickable"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#hasInReach -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasInReach">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="common_ground#isReachableBy"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#Object"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#hasInRightHand -->
-
-    <owl:ObjectProperty rdf:about="common_ground#hasInRightHand">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isHolding"/>
-        <owl:inverseOf rdf:resource="common_ground#isInRightHandOf"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#Pickable"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- common_ground#hasLocation -->
 
     <owl:ObjectProperty rdf:about="common_ground#hasLocation">
@@ -161,47 +118,6 @@
     
 
 
-    <!-- common_ground#isHeldBy -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isHeldBy">
-        <rdfs:subPropertyOf rdf:resource="common_ground#geometricalProperty"/>
-        <owl:inverseOf rdf:resource="common_ground#isHolding"/>
-        <rdfs:domain rdf:resource="common_ground#Pickable"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isHolding -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isHolding">
-        <rdfs:subPropertyOf rdf:resource="common_ground#geometricalProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#Pickable"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isInLeftHandOf -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isInLeftHandOf">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isHeldBy"/>
-        <rdfs:domain rdf:resource="common_ground#Pickable"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isInRightHandOf -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isInRightHandOf">
-        <rdfs:subPropertyOf rdf:resource="common_ground#isHeldBy"/>
-        <rdfs:domain rdf:resource="common_ground#Pickable"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- common_ground#isInRoom -->
 
     <owl:ObjectProperty rdf:about="common_ground#isInRoom">
@@ -230,47 +146,6 @@
         <rdfs:subPropertyOf rdf:resource="common_ground#hasIn"/>
         <rdfs:range rdf:resource="common_ground#Area"/>
         <rdfs:domain rdf:resource="common_ground#Entity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isReachableBy -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isReachableBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Object"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isSeeing -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isSeeing">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="common_ground#isSeenBy"/>
-        <rdfs:domain rdf:resource="common_ground#Agent"/>
-        <rdfs:range rdf:resource="common_ground#Object"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isSeenBy -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isSeenBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Object"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- common_ground#isVisibleBy -->
-
-    <owl:ObjectProperty rdf:about="common_ground#isVisibleBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="common_ground#Object"/>
-        <rdfs:range rdf:resource="common_ground#Agent"/>
     </owl:ObjectProperty>
     
 
