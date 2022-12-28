@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_setup_1#"
      xmlns:dt_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects#"
-     xmlns:common_ground="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/common_ground#"
+     xmlns:cg_geometric="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_geometric#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_setup_1">
       <owl:imports rdf:resource="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_geometric"/>
     </owl:Ontology>
 
 
@@ -63,7 +64,7 @@
     <!-- dt_objects#cube_GGCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GGCB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_A2"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_A2"/>
     </owl:NamedIndividual>
 
 
@@ -71,7 +72,7 @@
     <!-- dt_objects#cube_GBCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_C5"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_C5"/>
     </owl:NamedIndividual>
 
 
@@ -79,7 +80,7 @@
     <!-- dt_objects#cube_GBCB_2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBCB_2">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_C2"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_C2"/>
     </owl:NamedIndividual>
 
 
@@ -87,7 +88,7 @@
     <!-- dt_objects#cube_BGCG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGCG">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_C4"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_C4"/>
     </owl:NamedIndividual>
 
 
@@ -95,7 +96,7 @@
     <!-- dt_objects#cube_BBCG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BBCG">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_C3"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_C3"/>
     </owl:NamedIndividual>
 
 
@@ -103,7 +104,7 @@
     <!-- dt_objects#cube_BGCB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGCB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_B1"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_B1"/>
     </owl:NamedIndividual>
 
 
@@ -111,7 +112,7 @@
     <!-- dt_objects#cube_BBTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BBTG">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_B2"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_B2"/>
     </owl:NamedIndividual>
 
 
@@ -126,7 +127,7 @@
     <!-- dt_objects#cube_BGTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_BGTB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_A1"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_A1"/>
     </owl:NamedIndividual>
 
 
@@ -134,7 +135,7 @@
     <!-- dt_objects#cube_GBTG -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_B4"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_B4"/>
     </owl:NamedIndividual>
 
 
@@ -142,7 +143,7 @@
     <!-- dt_objects#cube_GBTG_2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTG_2">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_B5"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_B5"/>
     </owl:NamedIndividual>
 
 
@@ -150,7 +151,7 @@
     <!-- dt_objects#cube_GBTB -->
 
     <owl:NamedIndividual rdf:about="dt_objects#cube_GBTB">
-      <common_ground:isInContainer rdf:resource="dt_objects#box_B3"/>
+      <cg_geometric:isInContainer rdf:resource="dt_objects#box_B3"/>
     </owl:NamedIndividual>
 
 
@@ -163,7 +164,7 @@
     <!-- dt_objects#box_A1 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_A1">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -171,7 +172,7 @@
     <!-- dt_objects#box_A2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_A2">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -179,7 +180,7 @@
     <!-- dt_objects#box_B1 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_B1">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -187,7 +188,7 @@
     <!-- dt_objects#box_B2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_B2">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -195,7 +196,7 @@
     <!-- dt_objects#box_B3 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_B3">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -203,7 +204,7 @@
     <!-- dt_objects#box_B4 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_B4">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -211,7 +212,7 @@
     <!-- dt_objects#box_B5 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_B5">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -219,7 +220,7 @@
     <!-- dt_objects#box_C1 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_C1">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -227,7 +228,7 @@
     <!-- dt_objects#box_C2 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_C2">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -235,7 +236,7 @@
     <!-- dt_objects#box_C3 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_C3">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -243,7 +244,7 @@
     <!-- dt_objects#box_C4 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_C4">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 
@@ -251,11 +252,7 @@
     <!-- dt_objects#box_C5 -->
 
     <owl:NamedIndividual rdf:about="dt_objects#box_C5">
-        <common_ground:isOnTopOf rdf:resource="dt_objects#table_1"/>
+        <cg_geometric:isOnTopOf rdf:resource="dt_objects#table_1"/>
     </owl:NamedIndividual>
 
 </rdf:RDF>
-
-
-
-<!-- Generated by the dt_objects https://sarthou.github.io/dt_objects/ -->
