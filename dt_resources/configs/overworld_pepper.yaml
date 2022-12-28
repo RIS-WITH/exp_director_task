@@ -19,3 +19,6 @@ human:
 
 ar_track:
   min_track_err: 0.05
+
+static:
+  file: package://overworld/config/adream.yaml
