@@ -2,16 +2,16 @@
 <rdf:RDF xmlns="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects#"
      xml:base="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects#"
      xmlns:dt_objects="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects#"
-     xmlns:cg_objects="https://github.com/RIS-WITH/common_ground_ontology/CG_objects#"
-     xmlns:cg_entities="https://github.com/RIS-WITH/common_ground_ontology/CG_entities#"
-     xmlns:common_ground="https://github.com/RIS-WITH/common_ground_ontology/CG_root#"
+     xmlns:cg_objects="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_objects#"
+     xmlns:cg_entities="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_entities#"
+     xmlns:common_ground="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_root#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://github.com/RIS-WITH/exp_director_task/blob/master/dt_resources/ontologies/dt_objects">
-      <owl:imports rdf:resource="https://github.com/RIS-WITH/common_ground_ontology/CG_root"/>
+      <owl:imports rdf:resource="https://github.com/RIS-WITH/common_ground_ontology/blob/master/CG_root"/>
     </owl:Ontology>
 
 
