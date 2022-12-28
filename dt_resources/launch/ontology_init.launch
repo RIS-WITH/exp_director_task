@@ -2,12 +2,13 @@
   <arg name="language" default="en"/>
   <arg name="intern_file" default="none"/>
   <arg name="files" default="
-  $(find dt_resources)/ontologies/common_ground.owl
-  $(find dt_resources)/ontologies/dt_objects.owl
-  $(find dt_resources)/ontologies/language/language.owl
-  $(find dt_resources)/ontologies/language/verbs.owl
-  $(find dt_resources)/ontologies/dt_humans.owl
-  $(find overworld)/ontologies/adream_building.owl
+    $(find common_ground_ontology)/CG_root.owl
+    $(find dt_resources)/ontologies/dt_objects.owl
+    $(find dt_resources)/ontologies/dt_humans.owl
+    $(find dt_resources)/ontologies/actions_emulation.owl
+    $(find dt_resources)/ontologies/language/language.owl
+    $(find dt_resources)/ontologies/language/verbs.owl
+    $(find overworld)/ontologies/adream_building.owl
   "/>
   <arg name="config" default="$(find dt_resources)/configs/ontologenius.yaml"/>
   <node name="ontologenius_core" pkg="ontologenius" type="ontologenius_multi" output="screen" args="-l $(arg language) -i $(arg intern_file) -c $(arg config) -d false $(arg files)"> </node>

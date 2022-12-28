@@ -1,7 +1,8 @@
 <launch>
   <arg name="files" default="
-    $(find dt_resources)/ontologies/common_ground.owl
+    $(find common_ground_ontology)/CG_root.owl
     $(find dt_resources)/ontologies/dt_objects.owl
+    $(find dt_resources)/ontologies/dt_humans.owl
     $(find dt_resources)/ontologies/actions_emulation.owl
   "/>
 
