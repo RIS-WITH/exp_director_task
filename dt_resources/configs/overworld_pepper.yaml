@@ -9,10 +9,6 @@ modules:
 
 pepper_joints:
   name : pepper
-  right_hand : r_gripper
-  left_hand : l_gripper
-  head : CameraTop_optical_frame
-  base : base_link
 
 human:
   name: human_0

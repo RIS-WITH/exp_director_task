@@ -3,6 +3,7 @@
   <arg name="intern_file" default="none"/>
   <arg name="files" default="
     $(find common_ground_ontology)/CG_root.owl
+    $(find common_ground_ontology)/ris_agents.owl
     $(find dt_resources)/ontologies/dt_humans.owl
     $(find dt_resources)/ontologies/dt_setup_2.owl
     $(find knowledge_sharing_planner)/tests/ontologies/language/language.owl
