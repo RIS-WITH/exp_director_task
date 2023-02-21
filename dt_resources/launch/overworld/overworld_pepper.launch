@@ -1,5 +1,5 @@
 <launch>
   <arg name="configuration_file" default="$(find dt_resources)/configs/overworld_pepper.yaml"/>
   <arg name="robot_name" default="pepper"/>
-  <node name="overworld" pkg="overworld" type="overworld_node" output="screen" args="$(arg configuration_file) $(arg robot_name)"/>
+  <node name="overworld" pkg="overworld" type="overworld_node" output="screen" args="-c $(arg configuration_file) -n $(arg robot_name)"/>
 </launch>
