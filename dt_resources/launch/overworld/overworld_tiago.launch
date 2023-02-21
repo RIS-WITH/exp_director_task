@@ -1,0 +1,5 @@
+<launch>
+  <arg name="configuration_file" default="$(find dt_resources)/configs/overworld_tiago.yaml"/>
+  <arg name="robot_name" default="tiago"/>
+  <node name="overworld" pkg="overworld" type="overworld_node" output="screen" args="-c $(arg configuration_file) -n $(arg robot_name) -s false"/>
+</launch>

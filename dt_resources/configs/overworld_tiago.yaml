@@ -1,0 +1,11 @@
+modules:
+  robot:
+    JointStatePerceptionModule: tiago_joints
+  objects:
+    StaticObjectsPerceptionModule: static
+
+tiago_joints:
+  robot_name : tiago
+
+static:
+  file: package://overworld/config/adream.yaml

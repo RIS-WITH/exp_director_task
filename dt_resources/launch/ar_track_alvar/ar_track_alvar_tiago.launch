@@ -1,0 +1,41 @@
+<launch>
+	<arg name="marker_size" default="10" />
+	<arg name="max_new_marker_error" default="0.08" />
+	<arg name="max_track_error" default="1.0" />
+
+	<arg name="cam_image_topic" default="/xtion/rgb/image_raw" />
+	<arg name="cam_info_topic" default="/xtion/rgb/camera_info" />
+
+	<arg name="output_frame" default="/base_footprint" />
+
+
+	<arg name="bundle_files" default="$(find dt_resources)/tags/BBCG.xml
+					  $(find dt_resources)/tags/BBTG.xml
+					  $(find dt_resources)/tags/BGCB.xml
+					  $(find dt_resources)/tags/BGCG.xml
+					  $(find dt_resources)/tags/BGTB.xml
+					  $(find dt_resources)/tags/BGTG.xml
+					  $(find dt_resources)/tags/GBCB.xml
+					  $(find dt_resources)/tags/GBCG.xml
+					  $(find dt_resources)/tags/GBTB.xml
+					  $(find dt_resources)/tags/GBTG.xml
+					  $(find dt_resources)/tags/GGCB.xml
+					  $(find dt_resources)/tags/GGTB.xml
+					  $(find dt_resources)/tags/B5.xml
+					  $(find dt_resources)/tags/C1.xml
+					  $(find dt_resources)/tags/C2.xml
+					  $(find dt_resources)/tags/C3.xml
+					  $(find dt_resources)/tags/C4.xml
+					  $(find dt_resources)/tags/C5.xml
+					  $(find dt_resources)/tags/table_1.xml
+					  $(find dt_resources)/tags/table_2.xml
+						$(find dt_resources)/tags/table_3.xml
+						$(find dt_resources)/tags/round_table.xml
+					  $(find dt_resources)/tags/table_lack.xml
+					  $(find dt_resources)/tags/throw_box_pink.xml
+					  $(find dt_resources)/tags/throw_box_green.xml
+					  $(find dt_resources)/tags/table.xml"/>
+
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" />
+
+</launch>
