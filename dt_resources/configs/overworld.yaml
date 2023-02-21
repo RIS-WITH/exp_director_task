@@ -11,7 +11,7 @@ modules:
     StaticObjectsPerceptionModule: static
 
 pr2_joints:
-  name : pr2
+  robot_name : pr2
   min_period : 0.06
 
 pr2_left_gripper:

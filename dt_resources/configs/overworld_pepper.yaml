@@ -1,6 +1,6 @@
 modules:
   robot:
-    PR2JointsPerception: pepper_joints
+    JointStatePerceptionModule: pepper_joints
   humans:
     StampedPosePerceptionModule: human
   objects:
@@ -8,7 +8,7 @@ modules:
     StaticObjectsPerceptionModule: static
 
 pepper_joints:
-  name : pepper
+  robot_name : pepper
 
 human:
   name: human_0
