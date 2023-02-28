@@ -1,5 +1,5 @@
 <launch>
-  <arg name="configuration_file" default="$(find dt_resources)/configs/overworld.yaml"/>
+  <arg name="configuration_file" default="$(find dt_resources)/configs/overworld_pr2.yaml"/>
   <arg name="robot_name" default="pr2"/>
   <arg name="simulate" default="true"/>
 
